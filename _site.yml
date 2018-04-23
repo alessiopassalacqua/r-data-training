@@ -1,13 +1,19 @@
-name: "my-website"
+name: "R-Data-Training"
 navbar:
-  title: "My Website"
+  title: "R-Data-Training"
   left:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+
+output_dir: '.'
 output:
   html_document:
-    theme: cosmo
+    theme: jekyll-theme-cayman
     highlight: textmate
-    css: styles.css
+    mathjax: null
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+    css: css/rmarkdown.css
