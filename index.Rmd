@@ -1,18 +1,23 @@
 ---
-title: "R Notebook"
-output: html_notebook
+output:
+  html_document: 
+    toc: true
+    toc_float: true
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+## Cos'è R-data training
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+<link rel="stylesheet" href="styles.css" type="text/css">
 
-```{r}
-plot(cars)
-```
+E' un sito
+In questo sito raccolgo
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+1. Raccontare la mia attività per farmi conoscere
+2. Condividere alcune mie conoscenze per favorire la diffusione delle conoscenze
+3. Appassionare nuovi utenti
+4. Un punto di appoggio agli studenti dei miei corsi dove trovare nuove informazioni
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+Il sito di per se è poco originale, ma lo faccio perchè voglio raccontare R usando il mio punto di vista.
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+## Perchè R?
+
