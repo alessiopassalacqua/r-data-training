@@ -10,12 +10,12 @@ output:
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 
-Penso possa essere utile condividere materiale per una serie di motivi che cerco di riassumere:
+Con questo sito raccolgo materiale a riguardo ai temi data science in R cercando di:
 
 1. Raccontare la mia attività e per farmi conoscere
 2. Favorire la diffusione delle conoscenze
-3. Appassionare nuovi utenti
-4. Un punto di appoggio agli studenti dei miei corsi
+3. Coinvolgere nuovi utenti
+4. Supportare gli studenti dei miei corsi
 
 ## Perchè R?
 
@@ -42,4 +42,4 @@ library(nome_pachetto)
 
 
 R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning come mettere in produzione il codice.. 
-Trovate la lista al sito [CRAN TASK] VIEW(https://cran.r-project.org/web/views/)
+Trovate la lista al sito [CRAN TASK VIEW](https://cran.r-project.org/web/views/)
