@@ -9,15 +9,38 @@ output:
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-E' un sito
-In questo sito raccolgo
 
-1. Raccontare la mia attività per farmi conoscere
-2. Condividere alcune mie conoscenze per favorire la diffusione delle conoscenze
+Penso possa essere utile condividere materiale per una serie di motivi che cerco di riassumere:
+
+1. Raccontare la mia attività e per farmi conoscere
+2. Favorire la diffusione delle conoscenze
 3. Appassionare nuovi utenti
-4. Un punto di appoggio agli studenti dei miei corsi dove trovare nuove informazioni
-
-Il sito di per se è poco originale, ma lo faccio perchè voglio raccontare R usando il mio punto di vista.
+4. Un punto di appoggio agli studenti dei miei corsi
 
 ## Perchè R?
 
+Per rispondere a questa domanda, si deve capire perchè 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
+
+R viene sviluppato da due statistici, [Robert Gentleman](https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)) e [Ross Ihaka](https://en.wikipedia.org/wiki/Ross_Ihaka), per favorire l'analisi dati, la statistica e la visualizzazione. [maggiori info](https://www.orison.biz/blogs/ch3ckmat3/2015/06/r-vs-python-for-data-science/)
+
+
+La sua forte diffusione è dovuta alla sua forza: la capacità di rendere semplice l'analisi dati.
+
+Se hai un problema in R c'è sicuramente un pachetto che te lo risolve o una guida che ti aiuta. 
+
+Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Li scariche una volta e poi per utilizzarli ci devi cliccarci su. In R è la stessa cosa, scarichi con
+
+```{r,eval=FALSE}
+install.packages("nome_pachetto")
+```
+
+E poi renderli attivi
+
+```{r,eval=F}
+library(nome_pachetto)
+```
+
+E' 
+
+
+R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate, grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning come mettere in produzione il codice.. trovate la lista al sito CRAN TEST
