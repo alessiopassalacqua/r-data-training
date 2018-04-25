@@ -21,25 +21,25 @@ Con questo sito raccolgo materiale a riguardo ai temi data science in R cercando
 
 Per rispondere a questa domanda, si deve capire perchè 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
 
-R viene sviluppato da due statistici, [Robert Gentleman](https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)) e [Ross Ihaka](https://en.wikipedia.org/wiki/Ross_Ihaka), per favorire l'analisi dati, la statistica e la visualizzazione. [maggiori info](https://www.orison.biz/blogs/ch3ckmat3/2015/06/r-vs-python-for-data-science/)
+R viene sviluppato da due statistici, [Robert Gentleman](https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)) e [Ross Ihaka](https://en.wikipedia.org/wiki/Ross_Ihaka), per favorire l'analisi dati, la statistica e la visualizzazione  ([maggiori info](https://www.orison.biz/blogs/ch3ckmat3/2015/06/r-vs-python-for-data-science/)).
 
 
 La sua forte diffusione è dovuta alla sua forza: la capacità di rendere semplice l'analisi dati.
 
 Se hai un problema in R c'è sicuramente un pachetto che te lo risolve o una guida che ti aiuta. 
 
-Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Li scariche una volta e poi per utilizzarli ci devi cliccarci su. In R è la stessa cosa, scarichi con
+Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Per potere utilizzare un app la devi prima scaricare. Così un pachetto di R: 
 
 ```{r,eval=FALSE}
 install.packages("nome_pachetto")
 ```
 
-E poi renderli attivi
+Poi quando ti serve la richiamiamo con il comando:
 
 ```{r,eval=F}
 library(nome_pachetto)
 ```
 
 
-R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning come mettere in produzione il codice.. 
+R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il codice.. 
 Trovate la lista al sito [CRAN TASK VIEW](https://cran.r-project.org/web/views/)
