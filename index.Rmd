@@ -40,7 +40,6 @@ E poi renderli attivi
 library(nome_pachetto)
 ```
 
-E' 
 
-
-R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate, grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning come mettere in produzione il codice.. trovate la lista al sito CRAN TEST
+R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning come mettere in produzione il codice.. 
+Trovate la lista al sito [CRAN TASK] VIEW(https://cran.r-project.org/web/views/)

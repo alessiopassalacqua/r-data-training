@@ -5,8 +5,10 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Smart Factory"
+      href: smartfactory.html
+    - text: "Marketing"
+      href: marketing.html
 
 
 
