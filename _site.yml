@@ -9,6 +9,8 @@ navbar:
       href: smartfactory.html
     - text: "Marketing"
       href: marketing.html
+    - text: "Faq"
+      href: rfaq.html
 
 
 

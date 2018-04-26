@@ -285,6 +285,9 @@ div.tocify {
 <li>
   <a href="marketing.html">Marketing</a>
 </li>
+<li>
+  <a href="rfaq.html">Faq</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -302,11 +305,11 @@ div.tocify {
 
 
 <div id="cose-r-data-training" class="section level2">
-<h2>Cos’è R-data training</h2>
+<h2>Cos’è R-data training?</h2>
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
 <p>Con questo sito raccolgo materiale a riguardo ai temi data science in R cercando di:</p>
 <ol style="list-style-type: decimal">
-<li>Raccontare la mia attività e per farmi conoscere</li>
+<li>Raccontare la mia attività</li>
 <li>Favorire la diffusione delle conoscenze</li>
 <li>Coinvolgere nuovi utenti</li>
 <li>Supportare gli studenti dei miei corsi</li>
@@ -314,11 +317,20 @@ div.tocify {
 </div>
 <div id="perche-r" class="section level2">
 <h2>Perchè R?</h2>
-<p>Per rispondere a questa domanda, si deve capire perchè 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( <a href="http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html">History of R</a>)</p>
+<p>Ho scelto R circa 10 anni quando ero all’università. In quel periodo avevo bisogno di un software capace di analizzare i dati raccolti da un DOE e dovevo fare una regressione multilineare. L’alternativa era utilizzare matlab, ma un amico mi suggerì di provare R perchè ne aveva sentito parlare bene. Dalla prima regressione fino ad oggi ho scoperto la potenza di questo linguaggio.</p>
+<p>Tant’è che questo sito è interamente sviluppato con R, utilizzando <a href="https://www.rstudio.com/">RStudio</a> la libreria <a href="https://rmarkdown.rstudio.com/rmarkdown_websites.html">rmarkdown</a>, la piattaforma <a href="https://github.com/">github</a> e il fantastico tutorial di <a href="http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html">Emily C. Zabor</a> con il quale step-by-step sono stato guidato nella creazione del sito.</p>
+<p>Non solo analisi, ma si possono creare deliziose dashboard interattive grazie alle libreria <a href="https://shiny.rstudio.com/">shiny</a></p>
+<p>Tutto questo grazie alla fantastica comunità di R e in particolare grazie al team di <a href="https://www.rstudio.com/">RStudio</a>, capitanati dall’eccletico <a href="http://hadley.nz/">Hadley Wickham</a>. R è passato ad essere un linguaggio di analisi ad essere IL LINGUAGGIO DI ANALISI DATI. Con R allora si può fare davvero di tutto coi dati.</p>
+<p>Io in questi anni ho provato anche altri linguaggi come python, spark e hadoop, e la conclusione è che R non è il migliore ne peggiore è solo perfetto per me, il mio lavoro e ne sposo interamente la sua filosofia.</p>
+<p>Ed eccomi qui con questo sito dedicato a chi vuole iniziare. Troverete: tutorials e materiale relativo ad R. So di per certo che iniziare ad usare un nuovo linguaggio è la cosa più difficile e sono qui per aiutarti.</p>
+<p>Perchè scegliere R?</p>
+<p>Non c’è una risposta, lo devi provare e vedere se fa per te. Di certo non puoi scartarlo a priori senza averlo provato.</p>
+<p>Per rispondere meglio a questa domanda, si deve capire il perchè nel 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( <a href="http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html">History of R</a>)</p>
 <p>R viene sviluppato da due statistici, <a href="https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)">Robert Gentleman</a> e <a href="https://en.wikipedia.org/wiki/Ross_Ihaka">Ross Ihaka</a>, per favorire l’analisi dati, la statistica e la visualizzazione (<a href="https://www.orison.biz/blogs/ch3ckmat3/2015/06/r-vs-python-for-data-science/">maggiori info</a>).</p>
-<p>La sua forte diffusione è dovuta alla sua forza: la capacità di rendere semplice l’analisi dati.</p>
-<p>Se hai un problema in R c’è sicuramente un pachetto che te lo risolve o una guida che ti aiuta.</p>
-<p>Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Per potere utilizzare un app la devi prima scaricare. Così un pachetto di R:</p>
+<p>Quindi, per essere chiari R ha come principale obiettivo rendere l’analisi dati un processo ben definito e lineare, accessibile a tutti.</p>
+<p>Infatti, la sua veloce diffusione è dovuta alla sua forza: la capacità di rendere semplice il processo di analisi dati.</p>
+<p>Se hai un problema con l’analisi dati c’è sicuramente in R un pachetto che te lo risolve o una guida che ti aiuta.</p>
+<p>Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Per potere utilizzare un app la devi prima scaricare. Così un pacchetto di R ti colleghi con app store, <a href="https://cran.r-project.org/">CRAN</a> e scarichi il pachetto:</p>
 <pre class="r"><code>install.packages(&quot;nome_pachetto&quot;)</code></pre>
 <p>Poi quando ti serve la richiamiamo con il comando:</p>
 <pre class="r"><code>library(nome_pachetto)</code></pre>
