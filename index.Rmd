@@ -56,3 +56,9 @@ library(nome_pachetto)
 
 R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il modello prodotto. 
 Per poter navigare al meglio all'interno delle funzionalità potete trovare la lista delle librerie suddivise dalla loro funzione alla pagina [CRAN TASK VIEW](https://cran.r-project.org/web/views/)
+
+prova
+
+```{r, eval=FALSE}
+<iframe width="560" height="315" src="http://www.youtube.com/embed/9bZkp7q19f0?rel=0" frameborder="0" allowfullscreen></iframe>
+```
