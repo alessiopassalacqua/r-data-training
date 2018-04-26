@@ -9,13 +9,8 @@ output:
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-
-Con questo sito raccolgo materiale a riguardo ai temi data science in R cercando di:
-
-1. Raccontare la mia attività 
-2. Favorire la diffusione delle conoscenze
-3. Coinvolgere nuovi utenti
-4. Supportare gli studenti dei miei corsi
+So di per certo che iniziare ad usare un nuovo linguaggio è la cosa più difficile e sono qui per aiutarti.
+Questo sito dedicato a chi vuole iniziare. Troverete: tutorials e materiale relativo ad R. 
 
 ## Perchè R?
 
@@ -27,19 +22,15 @@ Tant'è che questo sito è interamente sviluppato con R, utilizzando [RStudio](h
 Non solo analisi, ma si possono creare deliziose dashboard interattive grazie alle libreria [shiny](https://shiny.rstudio.com/) 
 
 Tutto questo è possibile grazie alla fantastica comunità di R e in particolare grazie al team di [RStudio](https://www.rstudio.com/), capitanato dall'eccletico [Hadley Wickham](http://hadley.nz/). 
-R è passato ad essere un linguaggio di analisi ad essere IL LINGUAGGIO DI ANALISI DATI. Con R allora si può fare davvero di tutto coi dati.
 
 Io in questi anni ho provato anche altri linguaggi come python, spark e hadoop, e la conclusione è che R non è il migliore ne peggiore è solo perfetto per me, il mio lavoro e ne sposo interamente la sua filosofia.
 
 
-Ed eccomi qui con questo sito dedicato a chi vuole iniziare. Troverete: tutorials e materiale relativo ad R. 
-So di per certo che iniziare ad usare un nuovo linguaggio è la cosa più difficile e sono qui per aiutarti.
-
 Perchè scegliere R? 
 
-Non c'è una risposta, lo devi provare e vedere se fa per te. Di certo non puoi scartarlo a priori senza averlo provato.
+A questa domanda non c'è una vera risposta, lo devi provare e vedere se fa per te. Di certo non puoi scartarlo a priori senza averlo provato.
 
-Però per rispondere meglio a questa domanda, si deve capire il perchè nel 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
+Però per provare a rispondere meglio a questa domanda, si deve capire *il perchè* nel 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
 
 R viene sviluppato da due statistici, [Robert Gentleman](https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)) e [Ross Ihaka](https://en.wikipedia.org/wiki/Ross_Ihaka), per favorire l'analisi dati, la statistica e la visualizzazione  ([maggiori info](https://www.orison.biz/blogs/ch3ckmat3/2015/06/r-vs-python-for-data-science/)).
 
@@ -49,18 +40,18 @@ Infatti, la sua veloce diffusione è dovuta alla sua forza: la capacità di rend
 
 Se hai un problema con l'analisi dati c'è sicuramente in R un pachetto che te lo risolve o una guida che ti aiuta. 
 
-Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Per potere utilizzare un app la devi prima scaricare. Così un pacchetto di R ti colleghi con app store, [CRAN](https://cran.r-project.org/) e scarichi il pachetto: 
+Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Per potere utilizzare un app la devi prima scaricare. Così un pacchetto di R ti colleghi allo store, nel nostro caso [CRAN](https://cran.r-project.org/), e scarichi il pachetto: 
 
 ```{r,eval=FALSE}
 install.packages("nome_pachetto")
 ```
 
-Poi quando ti serve la richiamiamo con il comando:
+Poi quando l'app ti serve la richiami con il comando:
 
 ```{r,eval=F}
 library(nome_pachetto)
 ```
 
 
-R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il codice.. 
-Trovate la lista al sito [CRAN TASK VIEW](https://cran.r-project.org/web/views/)
+R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il codice. 
+Trovate la lista delle librerie suddivise dalla loro funzione al sito [CRAN TASK VIEW](https://cran.r-project.org/web/views/)
