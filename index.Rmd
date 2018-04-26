@@ -9,8 +9,8 @@ output:
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-So di per certo che iniziare ad usare un nuovo linguaggio è la cosa più difficile e sono qui per aiutarti.
-Questo sito dedicato a chi vuole iniziare. Troverete: tutorials e materiale relativo ad R. 
+So di certo che quando si inizia ad usare un nuovo linguaggio è il periodo più difficile perchè ci sono logiche, comandi e filosofie che sono ancora oscure.
+Questo sito è dedicato a chi vuole iniziare. Troverete: tutorials e materiale relativo ad R. 
 
 ## Perchè R?
 
