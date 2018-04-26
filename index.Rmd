@@ -23,35 +23,36 @@ Non solo analisi, ma si possono creare deliziose dashboard interattive grazie al
 
 Tutto questo è possibile grazie alla fantastica comunità di R e in particolare grazie al team di [RStudio](https://www.rstudio.com/), capitanato dall'eccletico [Hadley Wickham](http://hadley.nz/). 
 
-Io in questi anni ho provato anche altri linguaggi come python, spark e hadoop, e la conclusione è che R non è il migliore ne peggiore è solo perfetto per me, il mio lavoro e ne sposo interamente la sua filosofia.
+In questi anni ho provato anche altri linguaggi come python, spark e hadoop. Alla fine di tutte queste prove, la conclusione è stata che R non è ne il migliore ne peggiore rispetto ad altri linguaggi di analisi. E' solo perfetto per me, il mio lavoro in quanto ne sposo interamente la sua filosofia e uso appieno le sue funzionalità.
 
 
-Perchè scegliere R? 
+Allora, perchè tu dovresti scegliere R? 
 
 A questa domanda non c'è una vera risposta, lo devi provare e vedere se fa per te. Di certo non puoi scartarlo a priori senza averlo provato.
 
-Però per provare a rispondere meglio a questa domanda, si deve capire *il perchè* nel 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
+Cercherò di essere più preciso e cercare di rispondere meglio a questa domanda.
+Per spiegare perchè R, si deve capire *il perchè* nel 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
 
 R viene sviluppato da due statistici, [Robert Gentleman](https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)) e [Ross Ihaka](https://en.wikipedia.org/wiki/Ross_Ihaka), per favorire l'analisi dati, la statistica e la visualizzazione  ([maggiori info](https://www.orison.biz/blogs/ch3ckmat3/2015/06/r-vs-python-for-data-science/)).
 
-Quindi, per essere chiari R ha come principale obiettivo rendere l'analisi dati un processo ben definito e lineare, accessibile a tutti.
+Quindi, per essere chiari R ha come principale obiettivo rendere l'analisi dati un processo ben definito, lineare e accessibile a tutti.
 
 Infatti, la sua veloce diffusione è dovuta alla sua forza: la capacità di rendere semplice il processo di analisi dati.
 
 Se hai un problema con l'analisi dati c'è sicuramente in R un pachetto che te lo risolve o una guida che ti aiuta. 
 
-Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Per potere utilizzare un app la devi prima scaricare. Così un pacchetto di R ti colleghi allo store, nel nostro caso [CRAN](https://cran.r-project.org/), e scarichi il pachetto: 
+Esistono più di 12000 pachetti. I pachetti sono come le app di uno smartphone. Per potere utilizzare un app la devi prima scaricare. Così un pacchetto di R, ti colleghi allo store, nel nostro caso [CRAN](https://cran.r-project.org/), e scarichi il pachetto che desideri: 
 
 ```{r,eval=FALSE}
 install.packages("nome_pachetto")
 ```
 
-Poi quando l'app ti serve la richiami con il comando:
+Poi quando l'app ti serve richiami le funzionalità con il comando:
 
 ```{r,eval=F}
 library(nome_pachetto)
 ```
 
 
-R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il codice. 
-Trovate la lista delle librerie suddivise dalla loro funzione al sito [CRAN TASK VIEW](https://cran.r-project.org/web/views/)
+R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il modello prodotto. 
+Per poter navigare al meglio all'interno delle funzionalità potete trovare la lista delle librerie suddivise dalla loro funzione alla pagina [CRAN TASK VIEW](https://cran.r-project.org/web/views/)
