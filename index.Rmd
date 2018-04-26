@@ -26,7 +26,7 @@ Tant'è che questo sito è interamente sviluppato con R, utilizzando [RStudio](h
 
 Non solo analisi, ma si possono creare deliziose dashboard interattive grazie alle libreria [shiny](https://shiny.rstudio.com/) 
 
-Tutto questo grazie alla fantastica comunità di R e in particolare grazie al team di [RStudio](https://www.rstudio.com/), capitanati dall'eccletico [Hadley Wickham](http://hadley.nz/). 
+Tutto questo è possibile grazie alla fantastica comunità di R e in particolare grazie al team di [RStudio](https://www.rstudio.com/), capitanato dall'eccletico [Hadley Wickham](http://hadley.nz/). 
 R è passato ad essere un linguaggio di analisi ad essere IL LINGUAGGIO DI ANALISI DATI. Con R allora si può fare davvero di tutto coi dati.
 
 Io in questi anni ho provato anche altri linguaggi come python, spark e hadoop, e la conclusione è che R non è il migliore ne peggiore è solo perfetto per me, il mio lavoro e ne sposo interamente la sua filosofia.
@@ -39,7 +39,7 @@ Perchè scegliere R?
 
 Non c'è una risposta, lo devi provare e vedere se fa per te. Di certo non puoi scartarlo a priori senza averlo provato.
 
-Per rispondere meglio a questa domanda, si deve capire il perchè nel 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
+Però per rispondere meglio a questa domanda, si deve capire il perchè nel 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
 
 R viene sviluppato da due statistici, [Robert Gentleman](https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)) e [Ross Ihaka](https://en.wikipedia.org/wiki/Ross_Ihaka), per favorire l'analisi dati, la statistica e la visualizzazione  ([maggiori info](https://www.orison.biz/blogs/ch3ckmat3/2015/06/r-vs-python-for-data-science/)).
 
