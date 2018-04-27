@@ -1,0 +1,21 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+```
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+Video introduttivo di [Brandon Rohrer](https://www.linkedin.com/in/brohrer/), Data Scientist at Facebook.
+
+
+```{r,echo=F}
+library(vembedr)
+embed_url("https://www.youtube.com/watch?v=tKa0zDDDaQk")
+```
+

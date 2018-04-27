@@ -72,14 +72,14 @@ Poi quando ti serviranno le funzionalità della *app* (libreria) la richiami con
 library(nome_pachetto)
 ```
 
-Esistono più di 12000 pachetti per cui se vorrai sfuttare appieno le potenzialità di R dovrai impararli ad usare subito. 
+Esistono più di 12000 pachetti per cui se vorrai sfuttare appieno le potenzialità di R dovrai impararli ad usare subito questi due comandi. 
 
 R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il modello predittivo sviluppato. 
 Per poter navigare al meglio all'interno delle funzionalità di R potete utilizzare la pagina [CRAN TASK VIEW](https://cran.r-project.org/web/views/). Al suo interno troverete la lista delle principali funzionalità con le relative librerie.
 
 Per ogni dubbio o richiesta di informazioni non esitate a contattarmi.
 
-Io sono Alessio Passalacqua, se vuoi sapere chi sono visita la mia [pagina personale](https://alessiopassalacqua.github.io/passalacqua/)
+Io sono Alessio Passalacqua, se vuoi sapere chi sono visita la mia [pagina personale](https://alessiopassalacqua.github.io/passalacqua/).
 
 
 
