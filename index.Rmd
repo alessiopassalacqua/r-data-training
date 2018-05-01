@@ -56,6 +56,9 @@ Invece, se desideri imparare un linguaggio di programmazione più performante e 
 
 Torniamo ad R. Se hai un problema con l'analisi dati c'è sicuramente in R un pachetto che te lo risolve.
 
+Oppure come disse in un articolo [articolo](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=3&) del New York times, l'allora chief economist di Google, Hal Varian:
+"The great beauty of R is that you can modify it to do all sorts of things, and you have a lot of prepackaged stuff that's already available, so you're standing on the shoulders of giants"
+
 Cosa sono i pachetti o librerie? 
 
 I pachetti sono come le app di uno smartphone. Le app vengono sviluppate per risolvere un determinato problema.
@@ -76,6 +79,16 @@ Esistono più di 12000 pachetti per cui se vorrai sfuttare appieno le potenziali
 
 R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il modello predittivo sviluppato. 
 Per poter navigare al meglio all'interno delle funzionalità di R potete utilizzare la pagina [CRAN TASK VIEW](https://cran.r-project.org/web/views/). Al suo interno troverete la lista delle principali funzionalità con le relative librerie.
+
+Se non sei ancora convito devi sapere che R è:
+
+1.	integrato in numerose applicazioni sviluppate dai principali data providers: Microsoft, Oracle, IBM, SAP, Tibco
+2.	usato e sviluppato nelle [migliore università](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/) di tutto il mondo come Stanford, Oxford, Harvard
+3.	Il più completo software per l'analisi dati: da stastistica di base al deep learning
+4. Utlizzato dai giganti della [silicon valley](http://blog.revolutionanalytics.com/2014/05/companies-using-r-in-2014.html) come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), [google, uber, twitter, facebook](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
+
+
+## Keep in touch
 
 Per ogni dubbio o richiesta di informazioni non esitate a contattarmi.
 
