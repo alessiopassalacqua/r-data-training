@@ -82,11 +82,11 @@ Per poter navigare al meglio all'interno delle funzionalità di R potete utilizz
 
 Se non sei ancora convito devi sapere che R è:
 
-1.	integrato in numerose applicazioni sviluppate dai principali data providers: Microsoft, Oracle, IBM, SAP, Tibco
-2.	usato e sviluppato nelle [migliore università](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/) di tutto il mondo come Stanford, Oxford, Harvard
-3.	Il più completo software per l'analisi dati: da stastistica di base al deep learning
-4. Utlizzato dai giganti della [silicon valley](http://blog.revolutionanalytics.com/2014/05/companies-using-r-in-2014.html) come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), [google, uber, twitter, facebook](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
-
+1.	integrato in numerose applicazioni sviluppate dai principali data providers: [Microsoft, Oracle, IBM, SAP, Tibco](http://blog.revolutionanalytics.com/2014/05/companies-using-r-in-2014.html)
+2.	insegnato nelle [migliore università](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/) di tutto il mondo come Stanford, Oxford, Harvard
+3.	il più completo software per l'analisi dati: dalla stastistica di base al deep learning
+4. Utlizzato dai giganti della [silicon valley](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
+ come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), google, uber, twitter, facebook.
 
 ## Keep in touch
 
