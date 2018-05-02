@@ -5,14 +5,9 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Getting Started"
-      href: gettingstarted.html
-    - text: "Smart Factory"
-      href: smartfactory.html
-    - text: "Marketing"
-      href: marketing.html
-    - text: "Faq"
-      href: rfaq.html
+    - text: "Warmup"
+      href: warmup.html
+
 
 
 
