@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -164,6 +167,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -200,13 +298,46 @@ $(document).ready(function () {
 </div>
 
 
-<div id="passalacqua" class="section level1">
-<h1>passalacqua</h1>
-<p>R-data-training</p>
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<div id="installazione-di-r-e-rstudio" class="section level2">
+<h2>Installazione di R e RStudio</h2>
+<p>Per installare l’ultima versione di R bisogna andare sulla pagina [CRAN] (<a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a>) e seguire le istruzioni per il download. Al termine del quale eseguire il file di installazione e seguire le istruzioni.</p>
+<p>Istruzioni più dettagliate li potete trovare in questa presentazione che ho preparato e accessibile al seguente link.</p>
+<p>Come tutti i linguaggi di programmazione è opportuno lavorare su un’interfaccia IDE, cioè un’applicazione grafica con una serie di strumenti che ci possano aiutare nello sviluppare ed eseguire il codice. RStudio è un ambiente di sviluppo integrato (IDE) per R. E’ un software open-source che gira su Linux, Mac OS X e Windows e può essere scaricato dal sito di <a href="http://www.rstudio.com">RStudio</a></p>
+</div>
+<div id="avviare-un-progetto-di-rstudio" class="section level2">
+<h2>Avviare un progetto di RStudio</h2>
+</div>
+<div id="oggetti-e-funzioni" class="section level2">
+<h2>Oggetti e Funzioni</h2>
+<p>Per sfruttare al meglio il linguaggio R, è necessaria una solida comprensione dei tipi di dati di base e delle strutture dei dati e di come operare su di essi.</p>
+<p>E’ molto importante capire perché questi sono considerati oggetti che vengono manipolate attraverso una funzione.</p>
+<p>Tutto è una funzione, dal calcolo della media da un algoritmo di deeplearning</p>
+<p>Tutto ciò che esiste è un oggetto. Tutto ciò che accade è una chiamata di funzione.</p>
+</div>
+<div id="le-strutture-di-dati" class="section level2">
+<h2>Le strutture di dati</h2>
+<p>I dati sono conetuti in oggetti</p>
+</div>
+<div id="i-comandi-di-base" class="section level2">
+<h2>I comandi di base</h2>
+<p>c, help, #</p>
+</div>
+<div id="tipi-di-dati" class="section level2">
+<h2>Tipi di dati</h2>
+<ul>
+<li>Carattere</li>
+<li>Numerico</li>
+<li>Intero</li>
+<li>Logico</li>
+<li>Complesso</li>
+</ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 

@@ -7,10 +7,6 @@ navbar:
       href: index.html
     - text: "Warmup"
       href: warmup.html
-
-
-
-
 output:
   html_document:
     theme: paper
