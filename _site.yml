@@ -5,7 +5,7 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Warmup"
+    - text: "WarmUp"
       href: warmup.html
 output:
   html_document:

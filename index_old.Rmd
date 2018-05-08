@@ -5,54 +5,13 @@ output:
     toc_float: true
 ---
 
-## You're standing on the shoulders of giants"
+## Cos'è "R data training"?
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-
-
-In un articolo [articolo](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=3&) del New York times, l'allora chief economist di Google, Hal Varian disse di R:
-"The great beauty of R is that you can modify it to do all sorts of things, and you have a lot of prepackaged stuff that's already available, so....
-
-> you're standing on the shoulders of giants"
-
-R ha come principale obiettivo rendere l'analisi dati un processo ben definito, lineare e accessibile a tutti.
-
-Infatti la sua veloce diffusione è dovuta alla sua forza: la capacità di rendere semplice il processo di analisi dati.
-
-Con questo non voglio dire che R sia facile da imparare, tutt'altro. Voglio invece dire che l'analisi dati sarà facile ed elegante se imparerai ad utilizzare R.
-
-Non solo analisi, ma si possono creare deliziose dashboard interattive grazie alle libreria [shiny](https://shiny.rstudio.com/) 
-
-Oppure creare dei siti web.
-
-Tant'è che questo sito è interamente sviluppato con R, utilizzando [RStudio](https://www.rstudio.com/), la libreria [rmarkdown](https://rmarkdown.rstudio.com/rmarkdown_websites.html), la piattaforma [github](https://github.com/) e il fantastico tutorial di [Emily C. Zabor](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html) con il quale step-by-step sono stato guidato nella creazione del sito.
-
-Tutto questo è possibile grazie alla fantastica comunità di R e in particolare grazie al team di [RStudio](https://www.rstudio.com/), capitanato dall'eclettico [Hadley Wickham](http://hadley.nz/). 
-
-
-
-Devi sapere anche che R è:
-
-1.	integrato in numerose applicazioni sviluppate dai principali data providers: [Microsoft, Oracle, IBM, SAP, Tibco](http://blog.revolutionanalytics.com/2014/05/companies-using-r-in-2014.html)
-2.	insegnato nelle [migliore università](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/) di tutto il mondo come Stanford, Oxford, Harvard
-3.	il più completo software per l'analisi dati: dalla stastistica di base al deep learning
-4. Utlizzato dai giganti della [silicon valley](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
- come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), google, uber, twitter, facebook.
-
-## Keep in touch
+Iniziare ad imparare un nuovo linguaggio di programmazione non  è mai facile. Ci sono logiche, comandi e filosofie che spesso rimangono oscure per molto tempo.
 
 Questo sito è dedicato a chi vuole iniziare ad usare R ed ha poca esperienza e conoscenza del mondo Data Science. Con tutorials step-by-step e casi concreti cercherò di guidarvi all'interno del mondo Data Science con R.
-
-Per ogni dubbio o richiesta di informazioni non esitate a contattarmi.
-
-Io sono Alessio Passalacqua, se vuoi sapere chi sono visita la mia [pagina personale](https://alessiopassalacqua.github.io/passalacqua/).
-
-
-
-
-
-
 
 
 ## Perchè R?
@@ -62,7 +21,16 @@ In quel periodo avevo bisogno di un software capace di analizzare i dati raccolt
 
 Dalla prima regressione fino ad oggi ho potuto scoprire la vera potenza di questo linguaggio: rendere semplice ed elegante l'analisi dati.
 
+Con questo non voglio dire che R sia facile da imparare, tutt'altro. Voglio invece dire che l'analisi dati sarà facile ed elegante se imparerai ad utilizzare R.
 
+Non solo analisi, ma si possono creare deliziose dashboard interattive grazie alle libreria [shiny](https://shiny.rstudio.com/) 
+
+Oppure creare dei siti web.
+
+Tant'è che questo sito è interamente sviluppato con R, utilizzando [RStudio](https://www.rstudio.com/), la libreria [rmarkdown](https://rmarkdown.rstudio.com/rmarkdown_websites.html), la piattaforma [github](https://github.com/) e il fantastico tutorial di [Emily C. Zabor](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html) con il quale step-by-step sono stato guidato nella creazione del sito.
+
+
+Tutto questo è possibile grazie alla fantastica comunità di R e in particolare grazie al team di [RStudio](https://www.rstudio.com/), capitanato dall'eccletico [Hadley Wickham](http://hadley.nz/). 
 
 
 
@@ -112,4 +80,19 @@ Esistono più di 12000 pachetti per cui se vorrai sfuttare appieno le potenziali
 R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il modello predittivo sviluppato. 
 Per poter navigare al meglio all'interno delle funzionalità di R potete utilizzare la pagina [CRAN TASK VIEW](https://cran.r-project.org/web/views/). Al suo interno troverete la lista delle principali funzionalità con le relative librerie.
 
-Se non sei ancora convito 
+Se non sei ancora convito devi sapere che R è:
+
+1.	integrato in numerose applicazioni sviluppate dai principali data providers: [Microsoft, Oracle, IBM, SAP, Tibco](http://blog.revolutionanalytics.com/2014/05/companies-using-r-in-2014.html)
+2.	insegnato nelle [migliore università](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/) di tutto il mondo come Stanford, Oxford, Harvard
+3.	il più completo software per l'analisi dati: dalla stastistica di base al deep learning
+4. Utlizzato dai giganti della [silicon valley](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
+ come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), google, uber, twitter, facebook.
+
+## Keep in touch
+
+Per ogni dubbio o richiesta di informazioni non esitate a contattarmi.
+
+Io sono Alessio Passalacqua, se vuoi sapere chi sono visita la mia [pagina personale](https://alessiopassalacqua.github.io/passalacqua/).
+
+
+
