@@ -5,7 +5,7 @@ output:
     toc_float: true
 ---
 
-## You're standing on the shoulders of giants"
+## You're standing on the shoulders of giants
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
@@ -16,21 +16,25 @@ In un articolo [articolo](https://www.nytimes.com/2009/01/07/technology/business
 
 > you're standing on the shoulders of giants"
 
-R ha come principale obiettivo rendere l'analisi dati un processo ben definito, lineare e accessibile a tutti.
+Se hai un problema con i dati c'è un pachetto in R che te lo risolve.
 
-Infatti la sua veloce diffusione è dovuta alla sua forza: la capacità di rendere semplice il processo di analisi dati.
+I pacchetti sono le unità fondamentali del codice R.  
+Un pacchetto raggruppa codice, dati, documentazione e test e fornisce un metodo semplice per condividerli con gli altri. Insomma, tutto quello che ti serve per essere operativo.
 
-Con questo non voglio dire che R sia facile da imparare, tutt'altro. Voglio invece dire che l'analisi dati sarà facile ed elegante se imparerai ad utilizzare R.
+Questa enorme varietà di pacchetti è una delle ragioni per cui R ha così tanto successo: è probabile che qualcuno abbia già risolto un problema al quale stai lavorando, e che tu possa trarre vantaggio dal loro lavoro scaricando il loro pacchetto. C'è un pachetto per tutto; dai big data, al deep learning o come mettere in produzione il modello predittivo sviluppato. 
+Per poter navigare al meglio all'interno delle funzionalità di R potete utilizzare la pagina [CRAN TASK VIEW](https://cran.r-project.org/web/views/). Al suo interno troverete la lista delle principali funzionalità con le relative librerie.
+Ad oggi troviamo più di 12000 pachetti in [CRAN](https://cran.r-project.org/)
 
-Non solo analisi, ma si possono creare deliziose dashboard interattive grazie alle libreria [shiny](https://shiny.rstudio.com/) 
+Oggi con R non fai solo analisi, ma si possono creare deliziose dashboard interattive web-based grazie alle libreria [shiny](https://shiny.rstudio.com/) 
 
-Oppure creare dei siti web.
-
-Tant'è che questo sito è interamente sviluppato con R, utilizzando [RStudio](https://www.rstudio.com/), la libreria [rmarkdown](https://rmarkdown.rstudio.com/rmarkdown_websites.html), la piattaforma [github](https://github.com/) e il fantastico tutorial di [Emily C. Zabor](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html) con il quale step-by-step sono stato guidato nella creazione del sito.
+Creare dei siti web. Tant'è che questo sito è interamente sviluppato con R, utilizzando [RStudio](https://www.rstudio.com/), la libreria [rmarkdown](https://rmarkdown.rstudio.com/rmarkdown_websites.html), la piattaforma [github](https://github.com/) e il fantastico tutorial di [Emily C. Zabor](http://www.emilyzabor.com/tutorials/rmarkdown_websites_tutorial.html) con il quale step-by-step sono stato guidato nella creazione del sito.
 
 Tutto questo è possibile grazie alla fantastica comunità di R e in particolare grazie al team di [RStudio](https://www.rstudio.com/), capitanato dall'eclettico [Hadley Wickham](http://hadley.nz/). 
 
 
+Se anche tu vorrai far sfruttare al massimo la potenza di R dovrai imparare ad utilizzare al meglio le sue librerie. Per iniziare passa alla sezione [WarmUp](https://alessiopassalacqua.github.io/r-data-training/warmup.html), ti insegnerò come iniziare.
+
+## Cose devi sapere
 
 Devi sapere anche che R è:
 
@@ -40,7 +44,15 @@ Devi sapere anche che R è:
 4. Utlizzato dai giganti della [silicon valley](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
  come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), google, uber, twitter, facebook.
 
+
 ## Keep in touch
+
+R nasce dall'idea di rendere l'analisi dati un processo ben definito, lineare e accessibile a tutti.
+
+Infatti la sua veloce diffusione è dovuta alla sua forza: la capacità di rendere semplice il processo di analisi dati.
+
+Con questo non voglio dire che R sia facile da imparare, tutt'altro. Voglio invece dire che l'analisi dati sarà facile ed elegante se imparerai ad utilizzare R.
+
 
 Questo sito è dedicato a chi vuole iniziare ad usare R ed ha poca esperienza e conoscenza del mondo Data Science. Con tutorials step-by-step e casi concreti cercherò di guidarvi all'interno del mondo Data Science con R.
 
@@ -55,61 +67,3 @@ Io sono Alessio Passalacqua, se vuoi sapere chi sono visita la mia [pagina perso
 
 
 
-## Perchè R?
-
-Ho scelto R circa 10 anni fa, quando ero all'università. 
-In quel periodo avevo bisogno di un software capace di analizzare i dati raccolti da un DOE e fare una regressione lineare. L'alternativa più semplice era utilizzare matlab. Un software per l'analisi molto evoluto ma a pagamento. Un amico però mi suggerì di provare R. Ne aveva sentito parlare bene e si stava diffondendo velocemente nel modo accademico e professionale. 
-
-Dalla prima regressione fino ad oggi ho potuto scoprire la vera potenza di questo linguaggio: rendere semplice ed elegante l'analisi dati.
-
-
-
-
-
-In questi anni ho provato anche altri linguaggi come python, spark e hadoop. Alla fine di tutte queste prove, la conclusione è stata che R non è ne il migliore, ne peggiore rispetto ad altri linguaggi di analisi dati. E' solo perfetto per me e per il mio lavoro in quanto ne sposo interamente la sua filosofia e uso appieno le sue funzionalità.
-
-
-Allora, perchè tu dovresti scegliere R? 
-
-A questa domanda non c'è una vera risposta, lo devi provare e vedere se fa per te. Di certo non puoi scartarlo a priori senza averlo provato.
-
-Cercherò di essere più preciso cercando di rispondere meglio a questa domanda.
-Per sapere se R può essere per te, devi capire *il perchè* nel 1995 in un laboratorio di Auckland nasce questo nuovo linguaggio di programmazione ( [History of R](http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html))
-
-R viene sviluppato da due statistici, [Robert Gentleman](https://en.wikipedia.org/wiki/Robert_Gentleman_(statistician)) e [Ross Ihaka](https://en.wikipedia.org/wiki/Ross_Ihaka), per favorire l'analisi dati, la statistica e la visualizzazione  ([maggiori info](https://www.orison.biz/blogs/ch3ckmat3/2015/06/r-vs-python-for-data-science/)).
-
-Quindi per essere chiari, R ha come principale obiettivo rendere l'analisi dati un processo ben definito, lineare e accessibile a tutti.
-
-Infatti come anticipavo all'inizio, la sua veloce diffusione è dovuta alla sua forza: la capacità di rendere semplice il processo di analisi dati. 
-
-Quindi se per il tuo lavoro e le tue ricerche ti serve risolvere i problemi utilizzando i dati allora R può essere il linguaggio che stavi cercando.
-
-Invece, se desideri imparare un linguaggio di programmazione più performante e più sofisticato potresti aver bisogno di un altro tipo di programma. Python per esempio, è un linguaggio ad alto livello, non molto complesso da imparare e con un set di librerie Data Science completo. La scelta rimane tua.
-
-Torniamo ad R. Se hai un problema con l'analisi dati c'è sicuramente in R un pachetto che te lo risolve.
-
-Oppure come disse in un articolo [articolo](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=3&) del New York times, l'allora chief economist di Google, Hal Varian:
-"The great beauty of R is that you can modify it to do all sorts of things, and you have a lot of prepackaged stuff that's already available, so you're standing on the shoulders of giants"
-
-Cosa sono i pachetti o librerie? 
-
-I pachetti sono come le app di uno smartphone. Le app vengono sviluppate per risolvere un determinato problema.
-
-Per potere utilizzare una *app* la devi prima scaricare sul tuo smartphone collegandoti allo store. Allo stesso modo,  un pacchetto di R, lo devi scaricare collegandoti allo store, nel caso di R lo store si chiama [CRAN](https://cran.r-project.org/). Questo passaggio è molto facile da eseguire. E' necessario utilizzare il comando seguente per scaricare il pachetto direttamente dal repository CRAN:
-
-```{r,eval=FALSE}
-install.packages("nome_pachetto")
-```
-
-Poi quando ti serviranno le funzionalità della *app* (libreria) la richiami con il comando:
-
-```{r,eval=F}
-library(nome_pachetto)
-```
-
-Esistono più di 12000 pachetti per cui se vorrai sfuttare appieno le potenzialità di R dovrai impararli ad usare subito questi due comandi. 
-
-R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il modello predittivo sviluppato. 
-Per poter navigare al meglio all'interno delle funzionalità di R potete utilizzare la pagina [CRAN TASK VIEW](https://cran.r-project.org/web/views/). Al suo interno troverete la lista delle principali funzionalità con le relative librerie.
-
-Se non sei ancora convito 
