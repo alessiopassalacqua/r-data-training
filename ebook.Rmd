@@ -1,0 +1,16 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+[Just Enough R](https://benwhalley.github.io/just-enough-r/)
+
+[An Introduction to Statistical and Data Sciences via R](http://moderndive.com/index.html)
+
+[Fundamentals of Data Visualization](http://serialmentor.com/dataviz/)
+
+[Top R language resources to improve your data skills](https://www.computerworld.com/article/2497464/business-intelligence/top-r-language-resources-to-improve-your-data-skills.html?nsdr=true&page=2)
+
+[Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/)

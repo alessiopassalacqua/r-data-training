@@ -1,18 +1,25 @@
-name: "R-Data-Training"
+name: R-Data-Training
 output_dir: '.'
 navbar:
-  title: "R-Data-Training"
+  title: R-Data-Training
   left:
-    - text: "Home"
-      href: index.html
-    - text: "WarmUp"
-      href: warmup.html
+  - text: Home
+    href: index.html
+  - text: WarmUp
+    href: warmup.html
+  - text: Library
+    href: library.html
+  - text: E-book
+    href: ebook.html
 output:
   html_document:
     theme: paper
     highlight: textmate
-    mathjax: null
+    mathjax: ~
     toc_depth: 3
     toc_float:
-      collapsed: false
+      collapsed: no
     css: css/rmarkdown.css
+    lib_dir: site_libs
+    self_contained: no
+
