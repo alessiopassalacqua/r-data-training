@@ -10,7 +10,7 @@ output:
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 
-In un articolo [articolo](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=3&) del New York times, l'allora chief economist di Google, Hal Varian disse di R:
+In questa intervista al [New York times](https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?_r=3&), l'allora chief economist di Google, Hal Varian disse di R:
 "The great beauty of R is that you can modify it to do all sorts of things, and you have a lot of prepackaged stuff that's already available, so....
 
 > you're standing on the shoulders of giants"
@@ -38,7 +38,7 @@ Devi sapere anche che R è:
 2.	insegnato nelle [migliore università](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/) di tutto il mondo come Stanford, Oxford, Harvard
 3.	il più completo software per l'analisi dati: dalla stastistica di base al deep learning
 4. Utlizzato dai giganti della [silicon valley](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
- come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), google, uber, twitter, facebook.
+ come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), [google, twitter, facebook](http://blog.revolutionanalytics.com/2013/05/companies-using-open-source-r-in-2013.html), [uber](http://blog.revolutionanalytics.com/2014/06/more-companies-using-r.html).
 
 
 ## Keep in touch

@@ -5,6 +5,8 @@ output:
     toc_float: true
 ---
 
+[Happy Git and GitHub for the useR](http://happygitwithr.com/)
+
 [Just Enough R](https://benwhalley.github.io/just-enough-r/)
 
 [An Introduction to Statistical and Data Sciences via R](http://moderndive.com/index.html)
@@ -14,3 +16,10 @@ output:
 [Top R language resources to improve your data skills](https://www.computerworld.com/article/2497464/business-intelligence/top-r-language-resources-to-improve-your-data-skills.html?nsdr=true&page=2)
 
 [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/)
+
+[A curated list of awesome R packages, frameworks and software](https://awesome-r.com/)
+
+
+[A gRadual intRoduction to Shiny](https://laderast.github.io/gradual_shiny/)
+
+[100 Free R Tutorials and Resources in University webpages](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/)

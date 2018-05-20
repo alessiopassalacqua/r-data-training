@@ -79,5 +79,9 @@ Esistono più di 12000 pachetti per cui se vorrai sfuttare appieno le potenziali
 R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c'è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il modello predittivo sviluppato. 
 Per poter navigare al meglio all'interno delle funzionalità di R potete utilizzare la pagina [CRAN TASK VIEW](https://cran.r-project.org/web/views/). Al suo interno troverete la lista delle principali funzionalità con le relative librerie.
 
+# Formula
+
+[Formulas in R Tutorial](https://www.datacamp.com/community/tutorials/r-formula-tutorial)
+
 
 

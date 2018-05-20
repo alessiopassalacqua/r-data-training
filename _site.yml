@@ -7,10 +7,12 @@ navbar:
     href: index.html
   - text: WarmUp
     href: warmup.html
-  - text: Library
+  - text: Collection
     href: library.html
   - text: E-book
     href: ebook.html
+  - text: Take a Rest
+    href: readings.html
 output:
   html_document:
     theme: paper

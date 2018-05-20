@@ -5,10 +5,8 @@ output:
     toc_float: true
 ---
 
-Cosa imparerai in questo tutorial:
+In questa pagina raccolto la mia libreria, i pachetti che uso maggiormente in R e quelli che ritengo più interessanti per il mio lavoro futuro.
 
-1. Come installare una libreria
-2. Le librerie che più utilzzo
 
 [Quick list of useful R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages?mobile_site=true)
 
@@ -16,6 +14,7 @@ Cosa imparerai in questo tutorial:
 
 [R resources (free courses, books, tutorials, & cheat sheets)](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/)
 
+[Top 20 R Libraries for Data Science in 2018 ](https://activewizards.com/blog/top-20-r-libraries-for-data-science-in-2018-infographic/)
 
 
 
@@ -30,22 +29,18 @@ R fornisce un intero [manuale](https://cran.r-project.org/doc/manuals/r-release/
 
 L'idea alla base di rio è quella di semplificare il processo di importazione dei dati in R ed esportazione dei dati da R. Questo processo è, probabilmente inutilmente, estremamente complesso per gli utenti R principianti. 
 
-[vignettes](https://cran.r-project.org/web/packages/rio/vignettes/rio.html)
+[rio - vignettes](https://cran.r-project.org/web/packages/rio/vignettes/rio.html)
 
 ## Connect to database
 
 
 > dplyr
 
-[Working on Data-Warehouse (SQL) with R](https://datascienceplus.com/working-on-data-warehouse-sql-with-r/)
-
-[Database Queries With R](https://rviews.rstudio.com/2017/10/18/database-queries-with-r/)
-
 [Introduction to dbplyr - vignettes](https://cran.r-project.org/web/packages/dbplyr/vignettes/dbplyr.html)
 
-[DATA MANIPULATION WITH DPLYR (WITH 50 EXAMPLES)](https://www.listendata.com/2016/08/dplyr-tutorial.html)
+> RPostgreSQL
 
-
+Database interface and 'PostgreSQL' driver for 'R'.
 
 # Trasformation
 
@@ -55,7 +50,6 @@ L'obiettivo del pacchetto forcats è quello di fornire una suite di strumenti ut
 
 [website](http://forcats.tidyverse.org/)
 
-[Manipulation de facteurs avec forcats](http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/)
 
 
 # Explorative data analysis
@@ -95,10 +89,25 @@ Tradotto con www.DeepL.com/Translator
 
 # Vizualization
 
-[A Compendium of Clean Graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D)
+
+
+
+
 
 > ggplot2
 
+[Top 50 ggplot2 Visualizations - The Master List (With Full R Code)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
+
+> tabplot
+
+[Visualization of large datasets with tabplot](https://cran.r-project.org/web/packages/tabplot/vignettes/tabplot-vignette.html)
+
+
+> plotly
+
+> patchwork
+
+L'obiettivo di [patchwork](https://github.com/thomasp85/patchwork/blob/master/README.md) è quello di rendere ridicolo per semplificare la combinazione di ggplots separati nella stessa grafica
 
 # Modeling
 
@@ -106,11 +115,13 @@ Tradotto con www.DeepL.com/Translator
 
 > mlr
 
+[Machine Learning in R: mlr Tutorial](https://mlr-org.github.io/mlr-tutorial/release/html/index.html)
+
 > iml
 
 I modelli di machine learning superano ripetutamente i modelli parametrici interpretabili, come il modello di regressione lineare. I guadagni in termini di prestazioni hanno un prezzo: I modelli funzionano come scatole nere non interpretabili.
 
-Fortunatamente, ci sono molti metodi che possono rendere interpretabili i modelli di apprendimento automatico. Il pacchetto R iml fornisce strumenti per l'analisi di qualsiasi modello di apprendimento della macchina a scatola nera:
+Fortunatamente, ci sono molti metodi che possono rendere interpretabili i modelli di apprendimento automatico. Il pacchetto R iml fornisce strumenti per l'analisi di qualsiasi modello machine-learning balckbox:
 
 Importanza della caratteristica: Quali erano le caratteristiche più importanti?
 
@@ -118,14 +129,28 @@ Effetti caratteristici: In che modo una funzione influenza la previsione? (Piazz
 
 Spiegazioni per le singole previsioni: In che modo i valori delle caratteristiche di un singolo punto dati hanno influenzato la sua previsione? (valore LIME e Shapley)
 
-Alberi surrogati: Possiamo approssimare il modello di scatola nera sottostante con un breve albero decisionale?
-
-Il pacchetto iml funziona per qualsiasi modello di apprendimento automatico di classificazione e regressione: foreste casuali, modelli lineari, reti neurali, xgboost, ecc.
-
 > lime
+
+> xgboostExplaine
+
+[xgboostExplainer](https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211) makes your XGBoost model as transparent and 'white-box' as a single decision tree
+
 
 [Interpretable Machine Learning with iml and mlr](https://mlr-org.github.io/interpretable-machine-learning-iml-and-mlr/)
 
+
+> shinyMlr
+
+[github](https://github.com/mlr-org/shinyMlr)
+
+Integration of the mlr package into shiny.
+With help of this package mlr can be accessed via a shiny interface.
+
+[video tutorial](https://www.youtube.com/watch?v=VZuRSQZdayY&list=PLcTJ-34ghaH2QGL73DWfQvIdacW01Nvtp)
+
+> bounceR
+
+The R package bounceR ([github](https://github.com/STATWORX/bounceR)) provides methods and tools for automated feature selection for Machine Learning models. The methods are fit for situation in which the data scientists faces an exceedingly high number of features.
 
 # Deep Learning
 
@@ -148,6 +173,11 @@ RWeka è un'interfaccia R a Weka. Weka è una raccolta di algoritmi di apprendim
 
 [Image Classification on Small Datasets with Keras](https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html)
 
+> rbokeh
+
+[rbokeh - R Interface for Bokeh](http://hafen.github.io/rbokeh/#background)
+Bokeh is a visualization library that provides a flexible and powerful declarative framework for creating web-based plots. Bokeh renders plots using HTML canvas and provides many mechanisms for interactivity.
+
 ## Deep Learning interface
 
 > h2o
@@ -167,14 +197,39 @@ R notebooks for the code samples of the book "Deep Learning with R"
 
 [deep-learning-with-r-notebooks](https://github.com/jjallaire/deep-learning-with-r-notebooks)
 
+# Big-Data
+
+> ff
+
+Il pacchetto ff fornisce strutture dati che sono memorizzate su disco ma si comportano (quasi) come se fossero in RAM mappando in modo trasparente solo una sezione (pagesize) nella memoria principale - l'effettivo consumo di memoria virtuale per oggetto ff.
+
+> bigml
+
+# Deploy
+
+> aurelius
+
+PFA struscture 
+
+[A Scalable Predictive API with PFA and AWS Lambda](https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/)
+
+# Time series
+
+> prophet
+
+[prohet](https://facebook.github.io/prophet/) Strumento per produrre previsioni di alta qualità per le serie temporali di dati che hanno una stagionalità multipla con crescita lineare o non lineare.
 
 # Reporting & Publishing results
 
 > shiny
 
+[An awesome R-shiny list!](https://grabear.github.io/awesome-rshiny/)
+
 > shinydashboard
 
 > rmarkdorwn
+
+[icon: web icons for rmarkdown](https://ropensci.org/technotes/2018/05/15/icon/)
 
 > ReporteRs
 
@@ -183,6 +238,7 @@ R notebooks for the code samples of the book "Deep Learning with R"
 
 Construct complex table with
 
+[vignettes](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)
 
 [website](https://davidgohel.github.io/ReporteRs/index.html)
 
@@ -199,9 +255,7 @@ Construct complex table with
 
 > qcc
 
-[]()
 
-[]()
 
 # DOE
 
@@ -219,9 +273,21 @@ Construct complex table with
 
 [Services and tools for building intelligent R applications in the cloud](http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html)
 
+[Working with APIs from R](https://stevenmortimer.com/presentations/working-with-apis-from-r/)
+
+[2017-11-18-API-Development-with-R-Part-I](http://jaehyeon-kim.github.io/2017/11/API-Development-with-R-Part-I.html)
+
+> googleComputeEngineR 
+
+provides an R interface to the Google Cloud Compute Engine API, for launching virtual machines.
+
+# IDE
+
+> Rcode
 
 # Altro
 
 > MonetDBLite
 
 MonetDBLite for R, a fully embedded version of MonetDB that installs like any other R package. The database runs within the R process itself (like its namesake SQLite), greatly improving efficiency of data transfers. The package is available for Linux, Mac OS X and Windows (64 bit). 
+

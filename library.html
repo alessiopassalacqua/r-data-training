@@ -283,10 +283,13 @@ div.tocify {
   <a href="warmup.html">WarmUp</a>
 </li>
 <li>
-  <a href="library.html">Library</a>
+  <a href="library.html">Collection</a>
 </li>
 <li>
   <a href="ebook.html">E-book</a>
+</li>
+<li>
+  <a href="readings.html">Take a Rest</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -304,14 +307,11 @@ div.tocify {
 </div>
 
 
-<p>Cosa imparerai in questo tutorial:</p>
-<ol style="list-style-type: decimal">
-<li>Come installare una libreria</li>
-<li>Le librerie che più utilzzo</li>
-</ol>
+<p>In questa pagina raccolto la mia libreria, i pachetti che uso maggiormente in R e quelli che ritengo più interessanti per il mio lavoro futuro.</p>
 <p><a href="https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages?mobile_site=true">Quick list of useful R packages</a></p>
 <p><a href="https://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html#tk.drr_mlt">Great R packages for data import, wrangling and visualization</a></p>
 <p><a href="https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/">R resources (free courses, books, tutorials, &amp; cheat sheets)</a></p>
+<p><a href="https://activewizards.com/blog/top-20-r-libraries-for-data-science-in-2018-infographic/">Top 20 R Libraries for Data Science in 2018</a></p>
 <div id="get-the-data" class="section level1">
 <h1>Get the data</h1>
 <p>R fornisce un intero <a href="https://cran.r-project.org/doc/manuals/r-release/R-data.html">manuale</a> che descrive il processo di importazione/esportazione dei dati.</p>
@@ -322,16 +322,17 @@ div.tocify {
 <p>rio</p>
 </blockquote>
 <p>L’idea alla base di rio è quella di semplificare il processo di importazione dei dati in R ed esportazione dei dati da R. Questo processo è, probabilmente inutilmente, estremamente complesso per gli utenti R principianti.</p>
-<p><a href="https://cran.r-project.org/web/packages/rio/vignettes/rio.html">vignettes</a></p>
+<p><a href="https://cran.r-project.org/web/packages/rio/vignettes/rio.html">rio - vignettes</a></p>
 <div id="connect-to-database" class="section level2">
 <h2>Connect to database</h2>
 <blockquote>
 <p>dplyr</p>
 </blockquote>
-<p><a href="https://datascienceplus.com/working-on-data-warehouse-sql-with-r/">Working on Data-Warehouse (SQL) with R</a></p>
-<p><a href="https://rviews.rstudio.com/2017/10/18/database-queries-with-r/">Database Queries With R</a></p>
 <p><a href="https://cran.r-project.org/web/packages/dbplyr/vignettes/dbplyr.html">Introduction to dbplyr - vignettes</a></p>
-<p><a href="https://www.listendata.com/2016/08/dplyr-tutorial.html">DATA MANIPULATION WITH DPLYR (WITH 50 EXAMPLES)</a></p>
+<blockquote>
+<p>RPostgreSQL</p>
+</blockquote>
+<p>Database interface and ‘PostgreSQL’ driver for ‘R’.</p>
 </div>
 </div>
 <div id="trasformation" class="section level1">
@@ -341,7 +342,6 @@ div.tocify {
 </blockquote>
 <p>L’obiettivo del pacchetto forcats è quello di fornire una suite di strumenti utili che risolvano i problemi più comuni con i fattori.</p>
 <p><a href="http://forcats.tidyverse.org/">website</a></p>
-<p><a href="http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/">Manipulation de facteurs avec forcats</a></p>
 </div>
 <div id="explorative-data-analysis" class="section level1">
 <h1>Explorative data analysis</h1>
@@ -377,10 +377,21 @@ div.tocify {
 </div>
 <div id="vizualization" class="section level1">
 <h1>Vizualization</h1>
-<p><a href="http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D">A Compendium of Clean Graphs in R</a></p>
 <blockquote>
 <p>ggplot2</p>
 </blockquote>
+<p><a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html">Top 50 ggplot2 Visualizations - The Master List (With Full R Code)</a></p>
+<blockquote>
+<p>tabplot</p>
+</blockquote>
+<p><a href="https://cran.r-project.org/web/packages/tabplot/vignettes/tabplot-vignette.html">Visualization of large datasets with tabplot</a></p>
+<blockquote>
+<p>plotly</p>
+</blockquote>
+<blockquote>
+<p>patchwork</p>
+</blockquote>
+<p>L’obiettivo di <a href="https://github.com/thomasp85/patchwork/blob/master/README.md">patchwork</a> è quello di rendere ridicolo per semplificare la combinazione di ggplots separati nella stessa grafica</p>
 </div>
 <div id="modeling" class="section level1">
 <h1>Modeling</h1>
@@ -390,20 +401,33 @@ div.tocify {
 <blockquote>
 <p>mlr</p>
 </blockquote>
+<p><a href="https://mlr-org.github.io/mlr-tutorial/release/html/index.html">Machine Learning in R: mlr Tutorial</a></p>
 <blockquote>
 <p>iml</p>
 </blockquote>
 <p>I modelli di machine learning superano ripetutamente i modelli parametrici interpretabili, come il modello di regressione lineare. I guadagni in termini di prestazioni hanno un prezzo: I modelli funzionano come scatole nere non interpretabili.</p>
-<p>Fortunatamente, ci sono molti metodi che possono rendere interpretabili i modelli di apprendimento automatico. Il pacchetto R iml fornisce strumenti per l’analisi di qualsiasi modello di apprendimento della macchina a scatola nera:</p>
+<p>Fortunatamente, ci sono molti metodi che possono rendere interpretabili i modelli di apprendimento automatico. Il pacchetto R iml fornisce strumenti per l’analisi di qualsiasi modello machine-learning balckbox:</p>
 <p>Importanza della caratteristica: Quali erano le caratteristiche più importanti?</p>
 <p>Effetti caratteristici: In che modo una funzione influenza la previsione? (Piazzole a dipendenza parziale e curve di aspettativa condizionali individuali)</p>
 <p>Spiegazioni per le singole previsioni: In che modo i valori delle caratteristiche di un singolo punto dati hanno influenzato la sua previsione? (valore LIME e Shapley)</p>
-<p>Alberi surrogati: Possiamo approssimare il modello di scatola nera sottostante con un breve albero decisionale?</p>
-<p>Il pacchetto iml funziona per qualsiasi modello di apprendimento automatico di classificazione e regressione: foreste casuali, modelli lineari, reti neurali, xgboost, ecc.</p>
 <blockquote>
 <p>lime</p>
 </blockquote>
+<blockquote>
+<p>xgboostExplaine</p>
+</blockquote>
+<p><a href="https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211">xgboostExplainer</a> makes your XGBoost model as transparent and ‘white-box’ as a single decision tree</p>
 <p><a href="https://mlr-org.github.io/interpretable-machine-learning-iml-and-mlr/">Interpretable Machine Learning with iml and mlr</a></p>
+<blockquote>
+<p>shinyMlr</p>
+</blockquote>
+<p><a href="https://github.com/mlr-org/shinyMlr">github</a></p>
+<p>Integration of the mlr package into shiny. With help of this package mlr can be accessed via a shiny interface.</p>
+<p><a href="https://www.youtube.com/watch?v=VZuRSQZdayY&amp;list=PLcTJ-34ghaH2QGL73DWfQvIdacW01Nvtp">video tutorial</a></p>
+<blockquote>
+<p>bounceR</p>
+</blockquote>
+<p>The R package bounceR (<a href="https://github.com/STATWORX/bounceR">github</a>) provides methods and tools for automated feature selection for Machine Learning models. The methods are fit for situation in which the data scientists faces an exceedingly high number of features.</p>
 </div>
 <div id="deep-learning" class="section level1">
 <h1>Deep Learning</h1>
@@ -420,6 +444,10 @@ div.tocify {
 <p>RWeka è un’interfaccia R a Weka. Weka è una raccolta di algoritmi di apprendimento automatico per attività di data mining scritti in Java, contenenti strumenti per la preelaborazione, classificazione, regressione, clustering, regole di associazione e visualizzazione dei dati.</p>
 <p><a href="https://cran.r-project.org/web/packages/RWeka/index.html">cran</a></p>
 <p><a href="https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html">Image Classification on Small Datasets with Keras</a></p>
+<blockquote>
+<p>rbokeh</p>
+</blockquote>
+<p><a href="http://hafen.github.io/rbokeh/#background">rbokeh - R Interface for Bokeh</a> Bokeh is a visualization library that provides a flexible and powerful declarative framework for creating web-based plots. Bokeh renders plots using HTML canvas and provides many mechanisms for interactivity.</p>
 <div id="deep-learning-interface" class="section level2">
 <h2>Deep Learning interface</h2>
 <blockquote>
@@ -438,17 +466,44 @@ div.tocify {
 <p><a href="https://github.com/jjallaire/deep-learning-with-r-notebooks">deep-learning-with-r-notebooks</a></p>
 </div>
 </div>
+<div id="big-data" class="section level1">
+<h1>Big-Data</h1>
+<blockquote>
+<p>ff</p>
+</blockquote>
+<p>Il pacchetto ff fornisce strutture dati che sono memorizzate su disco ma si comportano (quasi) come se fossero in RAM mappando in modo trasparente solo una sezione (pagesize) nella memoria principale - l’effettivo consumo di memoria virtuale per oggetto ff.</p>
+<blockquote>
+<p>bigml</p>
+</blockquote>
+</div>
+<div id="deploy" class="section level1">
+<h1>Deploy</h1>
+<blockquote>
+<p>aurelius</p>
+</blockquote>
+<p>PFA struscture</p>
+<p><a href="https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/">A Scalable Predictive API with PFA and AWS Lambda</a></p>
+</div>
+<div id="time-series" class="section level1">
+<h1>Time series</h1>
+<blockquote>
+<p>prophet</p>
+</blockquote>
+<p><a href="https://facebook.github.io/prophet/">prohet</a> Strumento per produrre previsioni di alta qualità per le serie temporali di dati che hanno una stagionalità multipla con crescita lineare o non lineare.</p>
+</div>
 <div id="reporting-publishing-results" class="section level1">
 <h1>Reporting &amp; Publishing results</h1>
 <blockquote>
 <p>shiny</p>
 </blockquote>
+<p><a href="https://grabear.github.io/awesome-rshiny/">An awesome R-shiny list!</a></p>
 <blockquote>
 <p>shinydashboard</p>
 </blockquote>
 <blockquote>
 <p>rmarkdorwn</p>
 </blockquote>
+<p><a href="https://ropensci.org/technotes/2018/05/15/icon/">icon: web icons for rmarkdown</a></p>
 <blockquote>
 <p>ReporteRs</p>
 </blockquote>
@@ -456,6 +511,7 @@ div.tocify {
 <p>kableExtra</p>
 </blockquote>
 <p>Construct complex table with</p>
+<p><a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">vignettes</a></p>
 <p><a href="https://davidgohel.github.io/ReporteRs/index.html">website</a></p>
 </div>
 <div id="six-sigma" class="section level1">
@@ -469,8 +525,6 @@ div.tocify {
 <blockquote>
 <p>qcc</p>
 </blockquote>
-<p><a href=""></a></p>
-<p><a href=""></a></p>
 </div>
 <div id="doe" class="section level1">
 <h1>DOE</h1>
@@ -486,6 +540,18 @@ div.tocify {
 </blockquote>
 <p><a href="https://tensorflow.rstudio.com/tools/cloudml/articles/getting_started.html">website</a></p>
 <p><a href="http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html">Services and tools for building intelligent R applications in the cloud</a></p>
+<p><a href="https://stevenmortimer.com/presentations/working-with-apis-from-r/">Working with APIs from R</a></p>
+<p><a href="http://jaehyeon-kim.github.io/2017/11/API-Development-with-R-Part-I.html">2017-11-18-API-Development-with-R-Part-I</a></p>
+<blockquote>
+<p>googleComputeEngineR</p>
+</blockquote>
+<p>provides an R interface to the Google Cloud Compute Engine API, for launching virtual machines.</p>
+</div>
+<div id="ide" class="section level1">
+<h1>IDE</h1>
+<blockquote>
+<p>Rcode</p>
+</blockquote>
 </div>
 <div id="altro" class="section level1">
 <h1>Altro</h1>

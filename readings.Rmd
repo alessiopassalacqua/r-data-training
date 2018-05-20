@@ -1,0 +1,49 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+
+
+
+
+| Topic   |      Readings      |  Library |
+|---------|:------------------:|---------:|
+| markwown |  [Getting Started with R Markdown](https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html) | `rmarkdown`|
+|time series |[Time Series of the World, Unite!](http://www.christophsax.com/2018/05/15/tsbox/) | `tsbox`|
+|build a package |[Building a Package that Lasts](https://github.com/ColinFay/erum2018) | `package`|
+| database| [Getting started with PostgreSQL in R](https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/) | `RPostgreSQL`|
+| database |[Data Manipulation with dpylyr (with 50 examples)](https://www.listendata.com/2016/08/dplyr-tutorial.html) | `dplyr`|
+|database |[Working on Data-Warehouse (SQL) with R](https://datascienceplus.com/working-on-data-warehouse-sql-with-r/) | `dplyr`|
+| database |[Database Queries With R](https://rviews.rstudio.com/2017/10/18/database-queries-with-r/)| `dplyr`|
+|trasformation |[Manipulation de facteurs avec forcats](http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/) | `forcats`|
+|visualization |[A Compendium of Clean Graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D) | `basic`|
+| regression |[Principal component regression in R](https://educationalresearchtechniques.com/2017/12/18/principal-component-regression-in-r/) | `pls`|
+|dashboard | [Shiny, R and HTML](https://www.sitepoint.com/shiny-r-and-html-merging-data-science-and-web-development/) | `shiny`|
+| API |[Google Analytics R Tutorial](http://www.ryanpraski.com/google-analytics-r-tutorial/) | `googleAnalyticsR`|
+|exercises |[R PRACTICE EXERCISES: LEVEL 1](http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/)  | `basic`|
+|manipolation |[dplyr tutorial](http://genomicsclass.github.io/book/pages/dplyr_tutorial.html) | `dply`|
+|visualization |[R graphics](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) | `ggplot2`|
+|machine learning | [machine learning with CARET package in R ](https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/)| `caret`|
+| | | `a`|
+| | | `a`|
+
+
+
+|   Focus on |      Course      |  Made by |
+|---------|:------------------:|---------:|
+|Data Science |[Intro to Data Science](https://www2.stat.duke.edu/courses/Spring18/Sta199/) | RStudio|
+|Data Science|[Data Science for Social Science](http://datascience.tntlab.org/schedule-materials/)|RICHARD N. LANDERS|
+|R|[Introduction to R](https://ramnathv.github.io/pycon2014-r/)|idocs|
+|R|[R course material](http://stcorp.nl/R_course/)|Paul Hiemstra|
+|R|[Introduction to R](http://uc-r.github.io/introduction)|UC|
+|R | [Intro to R](https://www.youtube.com/playlist?list=PLOU2XLYxmsIK9qQfztXeybpHvru-TrqAP)|google|
+|Data Science|[Statistical Computing with R](http://rstatistics.net/)|RStatistics.Net|
+|Biomedical|[Biomedical Data Science](http://genomicsclass.github.io/book/)|Rafael Irizarry and Michael Love|
+|Shiny|[Learn Shiny](https://shiny.rstudio.com/tutorial/)|RStudio|
+
+
+
+
