@@ -3,15 +3,15 @@ output_dir: '.'
 navbar:
   title: R-Data-Training
   left:
-  - text: Home
+  - text: "Home"
     href: index.html
-  - text: WarmUp
+  - text: "WarmUp"
     href: warmup.html
-  - text: Collection
+  - text: "Collection"
     href: library.html
-  - text: E-book
+  - text: "E-book"
     href: ebook.html
-  - text: Take a Rest
+  - text: "Take a Rest"
     href: readings.html
 output:
   html_document:
