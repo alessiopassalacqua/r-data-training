@@ -5,8 +5,7 @@ output:
     toc_float: true
 ---
 
-
-
+# Readings
 
 
 | Topic   |      Readings      |  Library |
@@ -19,17 +18,29 @@ output:
 |database |[Working on Data-Warehouse (SQL) with R](https://datascienceplus.com/working-on-data-warehouse-sql-with-r/) | `dplyr`|
 | database |[Database Queries With R](https://rviews.rstudio.com/2017/10/18/database-queries-with-r/)| `dplyr`|
 |trasformation |[Manipulation de facteurs avec forcats](http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/) | `forcats`|
-|visualization |[A Compendium of Clean Graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D) | `basic`|
+|visualization |[A Compendium of Clean Graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D) | `base`|
 | regression |[Principal component regression in R](https://educationalresearchtechniques.com/2017/12/18/principal-component-regression-in-r/) | `pls`|
 |dashboard | [Shiny, R and HTML](https://www.sitepoint.com/shiny-r-and-html-merging-data-science-and-web-development/) | `shiny`|
 | API |[Google Analytics R Tutorial](http://www.ryanpraski.com/google-analytics-r-tutorial/) | `googleAnalyticsR`|
-|exercises |[R PRACTICE EXERCISES: LEVEL 1](http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/)  | `basic`|
+|exercises |[R PRACTICE EXERCISES: LEVEL 1](http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/)  | `base`|
 |manipolation |[dplyr tutorial](http://genomicsclass.github.io/book/pages/dplyr_tutorial.html) | `dply`|
 |visualization |[R graphics](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) | `ggplot2`|
 |machine learning | [machine learning with CARET package in R ](https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/)| `caret`|
+|tutorial |[LeaRning Path on R](https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/) | `base`|
+|Tutorial |[Data Analysis with R](https://github.com/susanli2016/Data-Analysis-with-R) | `github`|
+|Analysis|[Exploring Survival on the Titanic](https://www.kaggle.com/mrisdal/exploring-survival-on-the-titanic) | `randomForest`|
+|Analysis |[Detailed Data Analysis & Ensemble Modeling](https://www.kaggle.com/tannercarbonati/detailed-data-analysis-ensemble-modeling) | `caret`|
+|Analysis|[Exploratory Analysis -  Instacart](https://www.kaggle.com/philippsp/exploratory-analysis-instacart) | `ggplot2`|
+|visualisation | [A Shiny application in a package R](https://rtask.thinkr.fr/blog/our-shiny-template-to-design-a-prod-ready-app/)| `shiny`|
+|Regression |[Going Deeper into Regression Analysis](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/) | `base`|
+|Machine Learning |[Tuning xgboost in R](https://insightr.wordpress.com/2018/05/17/tuning-xgboost-in-r-part-i/#more-809) | `xgboost`|
+|R platform |[Powered By R](http://stagraph.com/Post?Id=31&Title=Powered+By+R#r_online) | `--`|
+| | | `a`|
+| | | `a`|
 | | | `a`|
 | | | `a`|
 
+# Course
 
 
 |   Focus on |      Course      |  Made by |
@@ -41,9 +52,22 @@ output:
 |R|[Introduction to R](http://uc-r.github.io/introduction)|UC|
 |R | [Intro to R](https://www.youtube.com/playlist?list=PLOU2XLYxmsIK9qQfztXeybpHvru-TrqAP)|google|
 |Data Science|[Statistical Computing with R](http://rstatistics.net/)|RStatistics.Net|
-|Biomedical|[Biomedical Data Science](http://genomicsclass.github.io/book/)|Rafael Irizarry and Michael Love|
+|Biomedical|[Biomedical Data Science](http://genomicsclass.github.io/book/)|R. Irizarry and M. Love|
 |Shiny|[Learn Shiny](https://shiny.rstudio.com/tutorial/)|RStudio|
+|Data Science|[Data science in R](http://courses.had.co.nz/12-oscon/)|Hadley Wickham|
+|Programming|[R development master class](http://courses.had.co.nz/12-devtools/)|Hadley Wickham|
+|Data Science|[Big data summer institute](http://courses.had.co.nz/12-rice-bdsi/)|Hadley Wickham|
+|Programming|[Package development](http://courses.had.co.nz/11-csiro/)|Hadley Wickham|
+|Visualisation|[Data visualisation in R with ggplot2 and plyr](http://courses.had.co.nz/11-rice/)|Hadley Wickham| 
+|Data Science|[Introduction to data analysis](http://had.co.nz/stat405/)|Hadley Wickham|
+|R|[Introduction to R & RStudio](https://github.com/AmeliaMN/IntroToR)|McNamara|
+|Data Analysis|[Data Analysis and Visualization Using R](http://varianceexplained.org/RData/)|David Robinson|
 
 
+# Datasets
+
+* [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
+* [8 Fun Machine Learning Projects for Beginners](https://elitedatascience.com/machine-learning-projects-for-beginners?utm_content=buffere966c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlUa9rTKnSle%2FhXzYuGdA6Q%3D%3D)
+* [Datasets to Practice Your Data Mining](Datasets to Practice Your Data Mining)
 
 

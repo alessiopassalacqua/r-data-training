@@ -291,3 +291,7 @@ provides an R interface to the Google Cloud Compute Engine API, for launching vi
 
 MonetDBLite for R, a fully embedded version of MonetDB that installs like any other R package. The database runs within the R process itself (like its namesake SQLite), greatly improving efficiency of data transfers. The package is available for Linux, Mac OS X and Windows (64 bit). 
 
+
+> caretTuneGrid
+
+The caretTuneGrid is the RStudio addin for inserting tune parameters code for the caret package [githun](https://github.com/milosvil/caretTuneGrid).
