@@ -23,3 +23,7 @@ output:
 [A gRadual intRoduction to Shiny](https://laderast.github.io/gradual_shiny/)
 
 [100 Free R Tutorials and Resources in University webpages](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/)
+
+[Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/)
+
+[Passion Driven Statistics](https://alanarnholt.github.io/PDS-Bookdown2/)

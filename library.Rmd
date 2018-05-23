@@ -5,7 +5,7 @@ output:
     toc_float: true
 ---
 
-In questa pagina raccolto la mia libreria, i pachetti che uso maggiormente in R e quelli che ritengo più interessanti per il mio lavoro futuro.
+In questa pagina raccolto la mia libreria, i pachetti che uso maggiormente in R e quelli che ritengo più interessant.
 
 
 [Quick list of useful R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages?mobile_site=true)
@@ -284,6 +284,10 @@ provides an R interface to the Google Cloud Compute Engine API, for launching vi
 # IDE
 
 > Rcode
+
+
+> R Analyticflow
+
 
 # Altro
 

@@ -35,10 +35,15 @@ output:
 |Regression |[Going Deeper into Regression Analysis](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/) | `base`|
 |Machine Learning |[Tuning xgboost in R](https://insightr.wordpress.com/2018/05/17/tuning-xgboost-in-r-part-i/#more-809) | `xgboost`|
 |R platform |[Powered By R](http://stagraph.com/Post?Id=31&Title=Powered+By+R#r_online) | `--`|
+|journalism |[high quality resources for doing data journalism with R](https://rddj.info/?utm_content=bufferc7064&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#publication-quality-graphics) | `--`|
+|database |Databases using r | `a`|
+|Classification |[Predicting Binary Outcomes with R, gbm, glmnet... ](https://amunategui.github.io/binary-outcome-modeling/) | `caret`|
+|Github |[Build a Jekyll blog in minutes, without touching the command line] | `--`|
 | | | `a`|
 | | | `a`|
 | | | `a`|
 | | | `a`|
+
 
 # Course
 
@@ -70,4 +75,7 @@ output:
 * [8 Fun Machine Learning Projects for Beginners](https://elitedatascience.com/machine-learning-projects-for-beginners?utm_content=buffere966c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlUa9rTKnSle%2FhXzYuGdA6Q%3D%3D)
 * [Datasets to Practice Your Data Mining](Datasets to Practice Your Data Mining)
 
+## Datasets for smart factory
+
+* [Combined Cycle Power Plant Data Set](https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
 

@@ -27,6 +27,11 @@ Come tutti i linguaggi di programmazione è opportuno lavorare su un’interfacc
 
 ## Oggetti e Funzioni
 
+Per comprendere la programmazione in R, questi due concetti potrebbero esserti di supporto:
+
+* Tutto ciò che esiste è un oggetto.
+* Tutto ciò che accade è una chiamata di funzione.
+
 Per sfruttare al meglio il linguaggio R, è necessaria una solida comprensione dei tipi di dati di base e delle strutture dei dati e di come operare su di essi.
 
 E' molto importante capire perché questi sono considerati oggetti che vengono manipolate attraverso una funzione.
@@ -34,8 +39,7 @@ E' molto importante capire perché questi sono considerati oggetti che vengono m
 Tutto è una funzione, dal calcolo della media da un algoritmo di deeplearning
 
 
-Tutto ciò che esiste è un oggetto.
-Tutto ciò che accade è una chiamata di funzione.
+
 
 ## Le strutture di dati
 

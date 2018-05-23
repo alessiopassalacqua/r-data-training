@@ -40,6 +40,9 @@ Devi sapere anche che R è:
 4. Utlizzato dai giganti della [silicon valley](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
  come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), [google, twitter, facebook](http://blog.revolutionanalytics.com/2013/05/companies-using-open-source-r-in-2013.html), [uber](http://blog.revolutionanalytics.com/2014/06/more-companies-using-r.html).
 
+Se vuoi sapere di più leggi questo articolo:
+
+[11 Reasons Why You Should Learn R](https://stepupanalytics.com/11-reasons-why-you-should-learn-r/)
 
 ## Keep in touch
 
