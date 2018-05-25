@@ -38,9 +38,9 @@ output:
 |journalism |[high quality resources for doing data journalism with R](https://rddj.info/?utm_content=bufferc7064&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#publication-quality-graphics) | `--`|
 |database |Databases using r | `a`|
 |Classification |[Predicting Binary Outcomes with R, gbm, glmnet... ](https://amunategui.github.io/binary-outcome-modeling/) | `caret`|
-|Github |[Build a Jekyll blog in minutes, without touching the command line] | `--`|
-| | | `a`|
-| | | `a`|
+|Github |[Build a Jekyll blog in minutes, without touching the command line](https://github.com/barryclark/jekyll-now) | `--`|
+| Machine Learning|[Time-dependent ROC for Survival Prediction Models in R](https://datascienceplus.com/time-dependent-roc-for-survival-prediction-models-in-r/) | `survival`|
+|Clustering |[A package for visualizing, adjusting, and comparing dendrograms ](https://www.r-statistics.com/2015/08/dendextend-a-package-for-visualizing-adjusting-and-comparing-dendrograms-from-the-journal-bioinformatics/) | `dendextend`|
 | | | `a`|
 | | | `a`|
 
