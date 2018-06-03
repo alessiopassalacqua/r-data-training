@@ -8,13 +8,13 @@ output:
 # Readings
 
 
-| Topic   |      Readings      |  Library |
+| Tecnica   |      algoritmo      |  Library |
 |---------|:------------------:|---------:|
 | markwown |  [Getting Started with R Markdown](https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html) | `rmarkdown`|
 |time series |[Time Series of the World, Unite!](http://www.christophsax.com/2018/05/15/tsbox/) | `tsbox`|
 |build a package |[Building a Package that Lasts](https://github.com/ColinFay/erum2018) | `package`|
 | database| [Getting started with PostgreSQL in R](https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/) | `RPostgreSQL`|
-| database |[Data Manipulation with dpylyr (with 50 examples)](https://www.listendata.com/2016/08/dplyr-tutorial.html) | `dplyr`|
+| database |[Data Manipulation with dpylyr](https://www.listendata.com/2016/08/dplyr-tutorial.html) | `dplyr`|
 |database |[Working on Data-Warehouse (SQL) with R](https://datascienceplus.com/working-on-data-warehouse-sql-with-r/) | `dplyr`|
 | database |[Database Queries With R](https://rviews.rstudio.com/2017/10/18/database-queries-with-r/)| `dplyr`|
 |trasformation |[Manipulation de facteurs avec forcats](http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/) | `forcats`|
@@ -23,7 +23,8 @@ output:
 |dashboard | [Shiny, R and HTML](https://www.sitepoint.com/shiny-r-and-html-merging-data-science-and-web-development/) | `shiny`|
 | API |[Google Analytics R Tutorial](http://www.ryanpraski.com/google-analytics-r-tutorial/) | `googleAnalyticsR`|
 |exercises |[R PRACTICE EXERCISES: LEVEL 1](http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/)  | `base`|
-|manipolation |[dplyr tutorial](http://genomicsclass.github.io/book/pages/dplyr_tutorial.html) | `dply`|
+|Manipolation |[dplyr tutorial](http://genomicsclass.github.io/book/pages/dplyr_tutorial.html) | `dplyr`|
+|Manipolation |[dplyr In a Nutshell](https://github.com/trinker/dplyr_in_a_nutshell) | `dplyr`|
 |visualization |[R graphics](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) | `ggplot2`|
 |machine learning | [machine learning with CARET package in R ](https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/)| `caret`|
 |tutorial |[LeaRning Path on R](https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/) | `base`|
@@ -34,15 +35,25 @@ output:
 |visualisation | [A Shiny application in a package R](https://rtask.thinkr.fr/blog/our-shiny-template-to-design-a-prod-ready-app/)| `shiny`|
 |Regression |[Going Deeper into Regression Analysis](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/) | `base`|
 |Machine Learning |[Tuning xgboost in R](https://insightr.wordpress.com/2018/05/17/tuning-xgboost-in-r-part-i/#more-809) | `xgboost`|
-|R platform |[Powered By R](http://stagraph.com/Post?Id=31&Title=Powered+By+R#r_online) | `--`|
-|journalism |[high quality resources for doing data journalism with R](https://rddj.info/?utm_content=bufferc7064&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#publication-quality-graphics) | `--`|
-|database |Databases using r | `a`|
-|Classification |[Predicting Binary Outcomes with R, gbm, glmnet... ](https://amunategui.github.io/binary-outcome-modeling/) | `caret`|
-|Github |[Build a Jekyll blog in minutes, without touching the command line](https://github.com/barryclark/jekyll-now) | `--`|
-| Machine Learning|[Time-dependent ROC for Survival Prediction Models in R](https://datascienceplus.com/time-dependent-roc-for-survival-prediction-models-in-r/) | `survival`|
-|Clustering |[A package for visualizing, adjusting, and comparing dendrograms ](https://www.r-statistics.com/2015/08/dendextend-a-package-for-visualizing-adjusting-and-comparing-dendrograms-from-the-journal-bioinformatics/) | `dendextend`|
+|R platform |[Powered By R](http://stagraph.com/Post?Id=31&Title=Powered+By+R#r_online) | `---`|
+|journalism |[high quality resources for doing data journalism with R](https://rddj.info/?utm_content=bufferc7064&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#publication-quality-graphics) | `---`|
+|database |Databases using r | `---`|
+|Classification |[Predicting Binary Outcomes with R, gbm, glmnet ](https://amunategui.github.io/binary-outcome-modeling/) | `caret`|
+|Github |[Build a Jekyll blog in minutes](https://github.com/barryclark/jekyll-now) | `---`|
+|Machine Learning|[Survival Prediction Models in R](https://datascienceplus.com/time-dependent-roc-for-survival-prediction-models-in-r/) | `survival`|
+|Clustering|[A package for visualizing dendrograms](https://www.r-statistics.com/2015/08/dendextend-a-package-for-visualizing-adjusting-and-comparing-dendrograms-from-the-journal-bioinformatics/) | `dendextend`|
+|Clustering |[Difference Between K-Means And Hierarchical](https://stepupanalytics.com/difference-between-k-means-clustering-and-hierarchical-clustering/) | `kmeans`|
+|Interface|[Big Data Platforms](http://www.rdatamining.com/big-data/big-data-platforms) | `---`|
+|Dashboard |[User authentication in R Shiny](https://appsilondatascience.com/blog/rstats/2018/05/30/user-authentication-in-r-shiny.html) | `shiny`|
+|Deep Learning |[Pre-trained model on R](https://tsmatz.wordpress.com/2017/05/25/image-classification-and-matching-with-r-microsoftml-featurizeimage/) | `MicrosoftML`|
+|Deep Learning|[Using Pre-Trained Models](https://tensorflow.rstudio.com/keras/articles/applications.htm) | `a`|
+|Publishing |[bookdown cheatsheet](http://www.pzhao.org/en/post/bookdown-cheatsheet/) | `bookdown`|
+|Classification |[How to handle Imbalanced Classification ](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/) | `---`|
 | | | `a`|
 | | | `a`|
+
+
+
 
 
 # Course
@@ -51,6 +62,7 @@ output:
 |   Focus on |      Course      |  Made by |
 |---------|:------------------:|---------:|
 |Data Science |[Intro to Data Science](https://www2.stat.duke.edu/courses/Spring18/Sta199/) | RStudio|
+|Data Science|[Data Science course in a box](https://github.com/rstudio-education/datascience-box)|RStudio|
 |Data Science|[Data Science for Social Science](http://datascience.tntlab.org/schedule-materials/)|RICHARD N. LANDERS|
 |R|[Introduction to R](https://ramnathv.github.io/pycon2014-r/)|idocs|
 |R|[R course material](http://stcorp.nl/R_course/)|Paul Hiemstra|
@@ -67,6 +79,11 @@ output:
 |Data Science|[Introduction to data analysis](http://had.co.nz/stat405/)|Hadley Wickham|
 |R|[Introduction to R & RStudio](https://github.com/AmeliaMN/IntroToR)|McNamara|
 |Data Analysis|[Data Analysis and Visualization Using R](http://varianceexplained.org/RData/)|David Robinson|
+|R|[Data wrangling, exploration, and analysis with R](http://stat545.com/)|UBC|
+|Data Science|[Statistics and R](http://rafalab.github.io/pages/harvardx.html)|Harvard|
+|Bioconductor|[Bioconductor for Genomic Data Science](https://kasperdanielhansen.github.io/genbioconductor/)|K. D. Hansen|
+
+
 
 
 # Datasets
@@ -74,8 +91,19 @@ output:
 * [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 * [8 Fun Machine Learning Projects for Beginners](https://elitedatascience.com/machine-learning-projects-for-beginners?utm_content=buffere966c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlUa9rTKnSle%2FhXzYuGdA6Q%3D%3D)
 * [Datasets to Practice Your Data Mining](Datasets to Practice Your Data Mining)
+* [Generate random data sets](https://github.com/trinker/wakefield)
+* [Data Science Projects](https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/)
 
 ## Datasets for smart factory
 
 * [Combined Cycle Power Plant Data Set](https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
 
+# RPubs must read
+
+[Learning R on iris](https://rpubs.com/moeransm/intro-iris)
+[Missing Value Treatment](http://rstudio-pubs-static.s3.amazonaws.com/233370_56612580566d4c46a10ff2f70fa858a4.html)
+
+# Kaggle kernel
+
+[Happiness 2017 (Visualization + Prediction)
+](https://www.kaggle.com/javadzabihi/happiness-2017-visualization-prediction/notebook?utm_medium=social&utm_source=facebook.com&utm_campaign=Weekly-Kernel-Awards)

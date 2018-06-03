@@ -111,6 +111,10 @@ L'obiettivo di [patchwork](https://github.com/thomasp85/patchwork/blob/master/RE
 
 # Modeling
 
+> Metrics
+
+An R package for common supervised machine learning metrics [github repo](https://github.com/mfrasco/Metrics)
+
 > caret
 
 > mlr
@@ -152,11 +156,17 @@ With help of this package mlr can be accessed via a shiny interface.
 
 The R package bounceR ([github](https://github.com/STATWORX/bounceR)) provides methods and tools for automated feature selection for Machine Learning models. The methods are fit for situation in which the data scientists faces an exceedingly high number of features.
 
+> recipes
+
 # Deep Learning
 
 [Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/)
 
+# Time series
 
+> tsfknn
+
+The package allows, with only a function, to specify the KNN model and to generate the forecasts. The user can choose among different multi-step ahead strategies and among different functions to aggregate the targets of the nearest neighbors. [Time Series Forecasting with KNN in R - vignettes](https://cran.r-project.org/web/packages/tsfknn/vignettes/tsfknn.html)
 
 # R Interface
 
@@ -181,6 +191,8 @@ Bokeh is a visualization library that provides a flexible and powerful declarati
 ## Deep Learning interface
 
 > h2o
+
+[h2o package website](http://docs.h2o.ai/h2o/latest-stable/h2o-r/docs/index.html)
 
 [The one function call you need to know as a data scientist: h2o.automl](https://longhowlam.wordpress.com/2017/08/30/the-one-function-call-you-need-to-know-as-a-data-scientist-h2o-automl/)
 
@@ -226,6 +238,8 @@ PFA struscture
 [An awesome R-shiny list!](https://grabear.github.io/awesome-rshiny/)
 
 > shinydashboard
+
+> shinyproxy
 
 > rmarkdorwn
 

@@ -27,3 +27,13 @@ output:
 [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/)
 
 [Passion Driven Statistics](https://alanarnholt.github.io/PDS-Bookdown2/)
+
+[Introduction to Data Science](https://rafalab.github.io/dsbook/)
+
+[Top 6 Free E-Books To Learn R At Beginner And Advanced Levels](https://analyticsindiamag.com/top-6-free-e-books-to-learn-r-at-beginner-and-advanced-levels/)
+
+[plotly for R](https://plotly-book.cpsievert.me/index.html)
+
+[Writing R extensions](https://colinfay.me/writing-r-extensions/index.html)
+
+[Foundations of Data Science](http://www.cs.cornell.edu/jeh/book.pdf)
