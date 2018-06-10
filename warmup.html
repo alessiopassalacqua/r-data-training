@@ -308,17 +308,53 @@ div.tocify {
 
 
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
-<div id="installazione-di-r-e-rstudio" class="section level2">
-<h2>Installazione di R e RStudio</h2>
-<p>Per installare l’ultima versione di R bisogna andare sulla pagina [CRAN] (<a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a>) e seguire le istruzioni per il download. Al termine del quale eseguire il file di installazione e seguire le istruzioni.</p>
-<p>Istruzioni più dettagliate li potete trovare in questa presentazione che ho preparato e accessibile al seguente link.</p>
+<div id="installazione-di-r" class="section level1">
+<h1>Installazione di R</h1>
+<p>Per installare l’ultima versione di R bisogna andare sulla pagina <a href="https://cran.r-project.org/">CRAN</a>:</p>
+<ul>
+<li>cliccare <em>Download R for Windows</em></li>
+<li>cliccare <em>Base</em></li>
+<li>cliccare <em>Download R 3.x.x for Windows</em> al cui seguito avrà inizio il download.</li>
+<li>Procedere con l’installazione dell’applicazione, selezionare la lingua di utilizzo e seguire le istruzioni.</li>
+</ul>
+</div>
+<div id="installazione-di-rstudio" class="section level1">
+<h1>Installazione di RStudio</h1>
 <p>Come tutti i linguaggi di programmazione è opportuno lavorare su un’interfaccia IDE, cioè un’applicazione grafica con una serie di strumenti che ci possano aiutare nello sviluppare ed eseguire il codice. RStudio è un ambiente di sviluppo integrato (IDE) per R. E’ un software open-source che gira su Linux, Mac OS X e Windows e può essere scaricato dal sito di <a href="http://www.rstudio.com">RStudio</a></p>
+<ul>
+<li>Cliccare il pulsante <em>Download RStudio Desktop</em></li>
+<li>Procedere con l’installazione.</li>
+</ul>
+<p>Completata l’installazione, accedere ad RStudio che rileverà R in automatico.</p>
+<p>L’ambiente di lavoro di RStudio è costituito da quattro finestre le cui funzioni principali sono:</p>
+<ol style="list-style-type: decimal">
+<li>Code Editor (editor di testo per scrivere ed eseguire lo script);</li>
+<li>R Console (riga di comando, esegue i comandi in modalità batch e mostra output);</li>
+<li>Workspace (informazioni riguardo gli oggetti creati, cronologia dei comandi);</li>
+<li>Plot (mostra gli output grafici, help)</li>
+</ol>
+<div class="figure">
+<img src="figure/rstudio.png" />
+
 </div>
-<div id="avviare-un-progetto-di-rstudio" class="section level2">
-<h2>Avviare un progetto di RStudio</h2>
+<p>Prima di procedere con una nuova attività di analisi, è consigliabile aprire uno nuovo script. Dall’interfaccia di RStudio cliccare su <code>File</code> e selezionare <code>R Script</code>. Successivamente procedere con il salvataggio del file.</p>
+<div class="figure">
+<img src="figure/script.png" />
+
 </div>
-<div id="oggetti-e-funzioni" class="section level2">
-<h2>Oggetti e Funzioni</h2>
+<p>Per eseguire il codice scritto nello script:</p>
+<ol style="list-style-type: decimal">
+<li>utilizzare il comando <code>Run</code> per eseguire la riga su cui è posizionato il cursore</li>
+<li>utilizzare il comando <code>Source</code> per eseguire tutto il codice contenuto nello script</li>
+</ol>
+<div class="figure">
+<img src="figure/run-script.png" />
+
+</div>
+<p>Per utilizzare R da linea di comando è necessario digitare il codice direttamente nella console.</p>
+</div>
+<div id="oggetti-e-funzioni" class="section level1">
+<h1>Oggetti e Funzioni</h1>
 <p>Per comprendere la programmazione in R, questi due concetti potrebbero esserti di supporto:</p>
 <ul>
 <li>Tutto ciò che esiste è un oggetto.</li>
@@ -328,38 +364,147 @@ div.tocify {
 <p>E’ molto importante capire perché questi sono considerati oggetti che vengono manipolate attraverso una funzione.</p>
 <p>Tutto è una funzione, dal calcolo della media da un algoritmo di deeplearning</p>
 </div>
-<div id="le-strutture-di-dati" class="section level2">
-<h2>Le strutture di dati</h2>
-<p>I dati sono conetuti in oggetti</p>
-</div>
-<div id="i-comandi-di-base" class="section level2">
-<h2>I comandi di base</h2>
-<p>c, help, #</p>
-</div>
-<div id="tipi-di-dati" class="section level2">
-<h2>Tipi di dati</h2>
+<div id="comandi-di-base" class="section level1">
+<h1>Comandi di base</h1>
+<p>Il simbolo <code>#</code> serve a commentare e qualunqua cosa scritta alla sua destra non verrà eseguita:</p>
+<pre class="r"><code># commento</code></pre>
+<p>La linea di comando può essere utilizzata come una vera e propria calcolatrice, come è illustrato dal seguente codice:</p>
+<pre class="r"><code>21+1+18</code></pre>
+<pre><code>## [1] 40</code></pre>
+<pre class="r"><code>sqrt(14)-21/3</code></pre>
+<pre><code>## [1] -3.258343</code></pre>
+<p>Le operazioni matematiche di base sono</p>
 <ul>
-<li>Carattere</li>
-<li>Numerico</li>
-<li>Intero</li>
-<li>Logico</li>
-<li>Complesso</li>
+<li><code>+</code> addizione</li>
+<li><code>-</code> sottrazione</li>
+<li><code>*</code> moltiplicazione</li>
+<li><code>/</code> divisione</li>
+<li><code>^</code> elevamento a potenza</li>
+</ul>
+<p>Per assegnare un valore ad una variabile si usano i simboli <code>&lt;-</code> . Tale operazione permette di memorizzare l’informazione richiesta in un nuovo oggetto nell’ambiente di lavoro (workspace).</p>
+<pre class="r"><code>a &lt;- 12
+a</code></pre>
+<pre><code>## [1] 12</code></pre>
+<p>Informazioni sull’ambiente di lavoro possono essere ottenute nel riquadro di RStudio in alto a destra.</p>
+<p>Gli oggetti insieme le funzioni sono le strutture basilari della programmazione in R.</p>
+<ul>
+<li>Tutto ciò che esiste in memoria è un oggetto.</li>
+<li>Tutto ciò che accade è una funzione.</li>
+</ul>
+<p>Un oggetto può essere di diverso tipo, i più comuni sono i vettori.</p>
+<div id="le-funzioni" class="section level2">
+<h2>Le funzioni</h2>
+<p>Le funzioni hanno una scrittura di questo tipo <code>fun(arg1,arg2...)</code> dove:</p>
+<ul>
+<li><code>fun()</code> è il nome della funzione</li>
+<li><code>arg1,arg2,...</code> sono gli argomenti che vengono passati alla funzione</li>
+</ul>
+<p>Il risultato può essere salvato in un oggetto tramite l’operatore assegnazione.</p>
+<p>In R è possibile chiedere aiuto con <code>help</code> on con <code>?</code> seguito dal nome della funzione. In basso a destra, nel riquadro <em>Plot</em> si aprirà una finestra con un help relativo alla funzione. E’ fondamentale imparare a leggere il manuale perchè permette di navigare attraverso le funzioni esistenti per sfruttarne efficacemente le potenzialità. Nell’esempio la funzione <code>c()</code>, che è utilizzata per la creazione di nuovi oggetti come verrà illlustrato nel successivo paragrafo.</p>
+<pre class="r"><code>help(c) 
+?c()</code></pre>
+</div>
+<div id="vettori-e-data-frames" class="section level2">
+<h2>Vettori e Data Frames</h2>
+<p>I vettori sono le strutture di dati più basilari in R.</p>
+<p>Con la funzione <code>c()</code>, <em>combine</em> , creiamo un vettore elencando gli elementi separati da una virgola</p>
+<pre class="r"><code>vec1 &lt;- c(18,2,3)
+vec1</code></pre>
+<pre><code>## [1] 18  2  3</code></pre>
+<pre class="r"><code>vec2 &lt;- c(7.2,55,29)
+vec2</code></pre>
+<pre><code>## [1]  7.2 55.0 29.0</code></pre>
+<pre class="r"><code>vec3 &lt;- c(&quot;Lorem&quot;,&quot;Ipsum&quot;,&quot;Dolor&quot;)
+vec3</code></pre>
+<pre><code>## [1] &quot;Lorem&quot; &quot;Ipsum&quot; &quot;Dolor&quot;</code></pre>
+<p><em>Nota bene</em>: I vettori sono essenzialmente una raccolta ordinata di valori dello stesso tipo di dati atomici. Quindi, cosa succede quando viene creato un vettore con dati di tipo diverso? Gli elementi del vettori vengono trasformati per dare una versione consistente del vettore. Nel prossimo esempio la funzione <code>class()</code> è utilizzata per conoscere la classe del vettore.</p>
+<pre class="r"><code>y1 &lt;- c(1.7, &quot;a&quot;)   ## character
+class(y1)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>y2 &lt;- c(TRUE, 2)    ## numeric
+class(y2)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r"><code>y3 &lt;- c(&quot;a&quot;, TRUE)  ## character
+class(y3)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<p>La struttura più utilizzata per elaborare i dati in R è il dataframe, è ideale perchè lavora con dati strutturati e può contenere tutti i tipi di dati. Un dataframe è una lista di vettori (solitamente, gli attributi), che devono avere tutti la stessa lunghezza (numero di casi, istanze), ma possono essere di tipo diverso. Per creare un dataframe utilizziamo la funzione <code>data.frame()</code> e elenchiamo i vettori che comporranno il dataset finale</p>
+<pre class="r"><code>df &lt;- data.frame(vec1,vec2,vec3)</code></pre>
+<p>Tutte le variabili (scalari, vettori, matrici, dataframes) creati in R sono oggetti.</p>
+<div class="figure">
+<img src="figure/datastructure.png" />
+
+</div>
+</div>
+<div id="accesso-ai-dati" class="section level2">
+<h2>Accesso ai dati</h2>
+<p>Ci sono diversi modi per accedere agli elementi di un vettore o dataframe, il più comune sfrutta le parentesi quadre e utilizza uno o più indici per indicare la posizione di un elemento:</p>
+<pre class="r"><code>vec1[2] # ritorna il secondo elemento del vettore</code></pre>
+<pre><code>## [1] 2</code></pre>
+<pre class="r"><code>df[2,1] # ritorna l&#39;elemento della seconda riga e prima colonna</code></pre>
+<pre><code>## [1] 2</code></pre>
+<p>Oppure, nel caso di dataframe, utilizzando il nome della colonne all’interno delle parentisi quadre</p>
+<pre class="r"><code>df[1,&quot;vec1&quot;] # ritorna l&#39;elemento della prima riga e della colonna di nome &quot;vec1&quot;</code></pre>
+<pre><code>## [1] 18</code></pre>
+<p>Per selezionare una colonna all’interno del dataframe si può utilizzare il simbolo <code>$</code> dopo il nome del dataset. A seguito del simbolo <code>$</code> specificare il nome dell’attributo. Il risultato di questa operazione è quello di creare il vettore relativo all’attributo.</p>
+<pre class="r"><code>df$col1</code></pre>
+<pre><code>## NULL</code></pre>
+<p>Tale modalità è utilizzata anche per estrarre informazioni all’interno degli oggetti che sono risultati di funzioni comeplessi, come gli oggetti creati dalle funzioni che producono modelli. Tale discussione è lasciata alle sezioni successive.</p>
+</div>
+<div id="variabile-categorica" class="section level2">
+<h2>Variabile categorica</h2>
+<p>Le variabili categoriche sono variabili che assumono un numero limitato di valori diversi. La funzione <code>as.factor()</code> viene utilizzata per creare una variabile categorica (factor).</p>
+<pre class="r"><code># vettore carattere
+dat &lt;- c(&quot;bianco&quot;,&quot;nero&quot;,&quot;nero&quot;,&quot;nero&quot;,&quot;bianco&quot;,&quot;grigio&quot;)
+class(dat)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code># vettore categorico
+fdat &lt;- as.factor(dat)
+class(fdat)</code></pre>
+<pre><code>## [1] &quot;factor&quot;</code></pre>
+</div>
+<div id="funzioni-utili" class="section level2">
+<h2>Funzioni utili</h2>
+<p>Elenco di funzioni utili:</p>
+<ul>
+<li><code>length(object)</code> numero di elementi in un vettore</li>
+<li><code>str(object)</code> mostra la struttura di un oggetto/variabile</li>
+<li><code>head(variabile)</code> mostra i primi 6 elementi di una variabile</li>
+<li><code>tail(variabile)</code> mostra gli ultimi 6 elementi di una variabile</li>
+<li><code>class(object)</code> classe di un oggetto</li>
+<li><p><code>names(object)</code> nome degli attributi</p></li>
+<li><code>c(object,object,...)</code> concatena gli oggetti in un vettore<br />
+</li>
+<li><code>cbind(object, object, ...)</code> concatena gli oggetti per colonna</li>
+<li><p><code>rbind(object, object, ...)</code> concatena gli oggetti per riga</p></li>
 </ul>
 </div>
-<div id="come-installare-una-libreria" class="section level1">
-<h1>Come installare una libreria</h1>
-<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
-<p>Cosa sono i pachetti o librerie?</p>
-<p>I pachetti sono come le app di uno smartphone. Le app vengono sviluppate per risolvere un determinato problema.</p>
-<p>Per potere utilizzare una <em>app</em> la devi prima scaricare sul tuo smartphone collegandoti allo store. Allo stesso modo, un pacchetto di R, lo devi scaricare collegandoti allo store. Nel caso di R lo store si chiama <a href="https://cran.r-project.org/">CRAN</a>. Questo passaggio è molto facile da eseguire. E’ necessario utilizzare il comando seguente per scaricare il pachetto direttamente dal repository CRAN:</p>
-<pre class="r"><code>install.packages(&quot;nome_pachetto&quot;)</code></pre>
-<p>Poi quando ti serviranno le funzionalità della <em>app</em> (libreria) la richiami con il comando:</p>
-<pre class="r"><code>library(nome_pachetto)</code></pre>
-<p>Esistono più di 12000 pachetti per cui se vorrai sfuttare appieno le potenzialità di R dovrai impararli ad usare subito questi due comandi.</p>
-<p>R ha sicuramenti dei limiti, ma le sue potenzialità sono illimitate. Grazie al continuo sviluppo c’è una funzione per tutto. Dai big data, al deep learning o come mettere in produzione il modello predittivo sviluppato. Per poter navigare al meglio all’interno delle funzionalità di R potete utilizzare la pagina <a href="https://cran.r-project.org/web/views/">CRAN TASK VIEW</a>. Al suo interno troverete la lista delle principali funzionalità con le relative librerie.</p>
+<div id="installazione-e-caricamento-di-una-libreria" class="section level2">
+<h2>Installazione e caricamento di una libreria</h2>
+<p>Un pacchetto, in R è un insieme di funzionalità pre-costruite. Le funzioni possono calcolare una funzione matematica, ad esempio somma o creare un grafico. Di fatto, ciò che rende R una piattaforma statistica formidabile è la straordinaria ricchezza di pacchetti disponibili (ben oltre 12000 al momento della scrittura). In R, i pachetti vengono installati tramite la funzione <code>install.packages(&quot;nomepachetto&quot;)</code></p>
+<pre class="r"><code>install.packages(&quot;ggplot2&quot;)</code></pre>
+<p>Una volta installato il pachetto è possibile chiamare le funzioni della libreria tramite il comando <code>library(&quot;nomepachetto&quot;)</code></p>
+<pre class="r"><code>library(&quot;ggplot2&quot;)</code></pre>
+<p>Solo a seguito di questo comando le funzione del pachetto sono disponibili perchè vengono caricathe nell’ambiente di lavoro (workspace)</p>
+</div>
+<div id="importare-i-dati-in-r" class="section level2">
+<h2>Importare i dati in R</h2>
+<p>R ha numerose funzioni che permettono di connettersi a sorgenti di vario tipo e leggere i dati dai formati più comuni. R fornisce un intero <a href="https://cran.r-project.org/doc/manuals/r-release/R-data.html">manuale</a> che descrive il processo di importazione/esportazione dei dati.</p>
+<p>R può importare dati contenuti in file CSV in maniera molto flessibile.</p>
+<p>Il modo più semplice e pratico per importare i dati è utilizzare la finestra in alto a sinistra <code>Environmnet</code> e cliccare su <code>Import Dataset</code>, poi utilizzare l’opzione <code>From Text(readr)</code>.</p>
+<div class="figure">
+<img src="figure/import.png" />
+
+</div>
+<p>Oppure utilizzando la funzione <code>read.csv()</code> e specificando il percorso del file all’interno della funzione.</p>
+<pre class="r"><code>dat &lt;- read.csv(&quot;C:/dataset/iris.csv&quot;)</code></pre>
+</div>
 </div>
 <div id="formula" class="section level1">
 <h1>Formula</h1>
+<p>Nella sintassi in R esiste un’espressione particolare che viene utilizzata in certi grafici (esempio in <code>ggplot2</code>) e in alcune funzioni che creano modelli predittivi (esempio nella funzione <code>lm()</code>). Tale sintassi prende il nome di <code>formula</code> e utilizza il simbolo tilde <code>~</code>.</p>
+<pre class="r"><code>y ~ x + z</code></pre>
+<pre><code>## y ~ x + z</code></pre>
+<p>La variabile sul lato sinistro della tilde è chiamata “variabile dipendente”, mentre le variabili sul lato destro sono chiamate “variabili indipendenti” e sono unite dal segno +. Tale espressione utilizzata all’interno di alcuni funzioni esprime una relazione tra le variabili. si possono avere maggiori informazioni a riguardo grazie il manuale creato da Datacamp:</p>
 <p><a href="https://www.datacamp.com/community/tutorials/r-formula-tutorial">Formulas in R Tutorial</a></p>
 </div>
 
