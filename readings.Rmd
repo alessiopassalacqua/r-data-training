@@ -49,10 +49,28 @@ output:
 |Deep Learning|[Using Pre-Trained Models](https://tensorflow.rstudio.com/keras/articles/applications.htm) | `a`|
 |Publishing |[bookdown cheatsheet](http://www.pzhao.org/en/post/bookdown-cheatsheet/) | `bookdown`|
 |Classification |[How to handle Imbalanced Classification ](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/) | `---`|
-| | | `a`|
-| | | `a`|
+|Clustering| [R Clustering](https://data-flair.training/blogs/r-clustering-tutorial/)| `kmeans`|
+|Classification |[K NEAREST NEIGHBOR](https://www.listendata.com/2017/12/k-nearest-neighbor-step-by-step-tutorial.html) | `caret`|
+|Manipulation |[introduction to apply](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/) | `base`|
+|Visualization |[Principal Component Methods in R](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/118-principal-component-analysis-in-r-prcomp-vs-princomp/#compute-pca-in-r-using-prcomp) | `factoextra`|
+|Deep Learning |[Deep Learning with Keras and Shiny](http://jasdumas.com/2018-02-20-deep-learning-img-classifier/) | `keras`|
+|Deploy |[Using R with Amazon](https://aws.amazon.com/it/blogs/machine-learning/using-r-with-amazon-sagemaker/) | `---`|
+|Deep Learning |[I_LOVE_IKEA_SHINY_APP](https://github.com/longhowlam/I_LOVE_IKEA_SHINY_APP) | `keras`|
+|Visualization|[Top 50 ggplot2 Visualizations](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)|`ggplot2`|
+|Deep Learning|[Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/)|`---`|
+|Deep Learning|[Image Classification with Keras](https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html)| `keras`|
+|Deep Learning|[The one function call you need to know as a data scientist: h2o.automl](https://longhowlam.wordpress.com/2017/08/30/the-one-function-call-you-need-to-know-as-a-data-scientist-h2o-automl/)|`h2o`|
+|Deep Learning|[Deep Learning with R](https://github.com/jjallaire/deep-learning-with-r-notebooks)|`keras`|
+|Deploy|[A Scalable Predictive API with PFA](https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/)|`aurelius`|
+|Reporting|[An awesome R-shiny list!](https://grabear.github.io/awesome-rshiny/)|`shiny`|
+|Quality|[Six Sigma DMAIC Series in R – Part 1](https://datascienceplus.com/six-sigma-dmaic-series-in-r-part-1/)|`DMAIC`|
+||||
 
+[Services and tools for building intelligent R applications in the cloud](http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html)
 
+[Working with APIs from R](https://stevenmortimer.com/presentations/working-with-apis-from-r/)
+
+[2017-11-18-API-Development-with-R-Part-I](http://jaehyeon-kim.github.io/2017/11/API-Development-with-R-Part-I.html)
 
 
 
@@ -100,8 +118,15 @@ output:
 
 # RPubs must read
 
-[Learning R on iris](https://rpubs.com/moeransm/intro-iris)
-[Missing Value Treatment](http://rstudio-pubs-static.s3.amazonaws.com/233370_56612580566d4c46a10ff2f70fa858a4.html)
+## Basic
+
+* [Learning R on iris](https://rpubs.com/moeransm/intro-iris)
+* [Missing Value Treatment](http://rstudio-pubs-static.s3.amazonaws.com/233370_56612580566d4c46a10ff2f70fa858a4.html)
+* [Cluster Analysis with R](https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html)
+
+## Advanced
+
+[Classifications in R](http://www.rpubs.com/arifulmondal/scoring)
 
 # Kaggle kernel
 

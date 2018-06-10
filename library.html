@@ -307,178 +307,201 @@ div.tocify {
 </div>
 
 
-<p>In questa pagina raccolto la mia libreria, i pachetti che uso maggiormente in R e quelli che ritengo più interessanti.</p>
+<p>In this page my package collection ispired by the following posts:</p>
 <p><a href="https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages?mobile_site=true">Quick list of useful R packages</a></p>
 <p><a href="https://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html#tk.drr_mlt">Great R packages for data import, wrangling and visualization</a></p>
 <p><a href="https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/">R resources (free courses, books, tutorials, &amp; cheat sheets)</a></p>
 <p><a href="https://activewizards.com/blog/top-20-r-libraries-for-data-science-in-2018-infographic/">Top 20 R Libraries for Data Science in 2018</a></p>
+<p><a href="http://jasdumas.com/ds-resources/">Data Science Links</a></p>
 <div id="get-the-data" class="section level1">
 <h1>Get the data</h1>
-<p>R fornisce un intero <a href="https://cran.r-project.org/doc/manuals/r-release/R-data.html">manuale</a> che descrive il processo di importazione/esportazione dei dati.</p>
+<p>This <a href="https://cran.r-project.org/doc/manuals/r-release/R-data.html">manual</a> describes the import and export facilities available either in R itself or via packages which are available from CRAN or elsewhere.</p>
 <blockquote>
 <p>readr</p>
 </blockquote>
+<p>the goal of <code>readr</code> is to provide a fast and friendly way to read rectangular data. <a href="https://cran.r-project.org/web/packages/readr/vignettes/readr.html">readr - vignettes</a></p>
 <blockquote>
 <p>rio</p>
 </blockquote>
-<p>L’idea alla base di rio è quella di semplificare il processo di importazione dei dati in R ed esportazione dei dati da R. Questo processo è, probabilmente inutilmente, estremamente complesso per gli utenti R principianti.</p>
+<p>The idea behind rio is to simplify the process of importing data into R and exporting data from R.</p>
 <p><a href="https://cran.r-project.org/web/packages/rio/vignettes/rio.html">rio - vignettes</a></p>
-<div id="connect-to-database" class="section level2">
-<h2>Connect to database</h2>
 <blockquote>
 <p>dplyr</p>
 </blockquote>
-<p><a href="https://cran.r-project.org/web/packages/dbplyr/vignettes/dbplyr.html">Introduction to dbplyr - vignettes</a></p>
+<p><code>dplyr</code> is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges</p>
+<p><a href="https://dplyr.tidyverse.org/">dbplyr - website</a></p>
+<p><a href="https://cran.r-project.org/web/packages/dbplyr/vignettes/dbplyr.html">dbplyr - vignettes</a></p>
 <blockquote>
-<p>RPostgreSQL</p>
+<p>MonetDBLite</p>
 </blockquote>
-<p>Database interface and ‘PostgreSQL’ driver for ‘R’.</p>
+<p>MonetDBLite for R, a fully embedded version of MonetDB that installs like any other R package.</p>
 </div>
-</div>
-<div id="trasformation" class="section level1">
-<h1>Trasformation</h1>
+<div id="data-trasformation" class="section level1">
+<h1>Data Trasformation</h1>
 <blockquote>
 <p>forcats</p>
 </blockquote>
-<p>L’obiettivo del pacchetto forcats è quello di fornire una suite di strumenti utili che risolvano i problemi più comuni con i fattori.</p>
-<p><a href="http://forcats.tidyverse.org/">website</a></p>
+<p>The goal of the forcats package is to provide a suite of useful tools that solve common problems with factors.</p>
+<p><a href="http://forcats.tidyverse.org/">forcats - website</a></p>
 </div>
 <div id="explorative-data-analysis" class="section level1">
 <h1>Explorative data analysis</h1>
 <blockquote>
-<p>GGally</p>
-</blockquote>
-<p>ggpairs</p>
-<blockquote>
-<p>ggpubr</p>
-</blockquote>
-<p>The ‘ggpubr’ package provides some easy-to-use functions for creating and customizing ‘ggplot2’- based publication ready plots.</p>
-<p><a href="http://www.sthda.com/english/rpkgs/ggpubr/index.html">ggpubr: ‘ggplot2’ Based Publication Ready Plots</a></p>
-<blockquote>
 <p>SmartEDA</p>
 </blockquote>
-<p>Summarize and Explore the Data <a href="https://cran.r-project.org/web/packages/SmartEDA/vignettes/Report_r1.html">vignettes</a></p>
-<p>SmartEDA include diverse funzioni personalizzate per eseguire un’analisi esplorativa iniziale su qualsiasi dato di input per descrivare la struttura e le relazioni presenti nei dati. Il risultato generato può essere ottenuto sia in forma sommaria che grafica. La forma grafica o i grafici possono essere esportati anche come report</p>
+<p>Summarize and Explore the Data</p>
+<p><a href="https://cran.r-project.org/web/packages/SmartEDA/vignettes/Report_r1.html">SmartEDA - vignettes</a></p>
 <blockquote>
 <p>FunModeling</p>
 </blockquote>
+<p><code>funModeling</code>: data cleaning, importance variable analysis and model perfomance</p>
+<p><a href="funModeling">funModeling - github</a></p>
 <blockquote>
 <p>DataExplorer</p>
 </blockquote>
-<p>Processo di esplorazione dei dati per l’analisi dei dati e la creazione di modelli, in modo che gli utenti possano concentrarsi sulla comprensione dei dati e sull’estrazione di informazioni. Il pacchetto esegue automaticamente la scansione di ogni variabile ed esegue il profilo dati. Le tecniche grafiche tipiche saranno eseguite sia per le caratteristiche discrete che per quelle continue.</p>
-<p>Tradotto con www.DeepL.com/Translator</p>
-<p><a href="https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html">Introduction to DataExplorer - vignettes</a></p>
+<p>Data exploration process for data analysis and model building, so that users could focus on understanding data and extracting insights. The package automatically scans through each variable and does data profiling.</p>
+<p><a href="https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html">DataExplorer - vignettes</a></p>
 </div>
 <div id="dimension-reduction-pca" class="section level1">
 <h1>Dimension Reduction (PCA)</h1>
 <blockquote>
 <p>FactoMineR</p>
 </blockquote>
+<p><code>FactoMineR</code> is an R package dedicated to multivariate Exploratory Data Analysis.</p>
+<p><a href="http://factominer.free.fr/">FactoMineR - website</a></p>
+</div>
+<div id="clustering" class="section level1">
+<h1>Clustering</h1>
+<blockquote>
+<p>fpc</p>
+</blockquote>
+<p>Various methods for clustering and cluster validation.</p>
+<blockquote>
+<p>gower</p>
+</blockquote>
+<p>Gower’s distance can be used to measure how different two records are.</p>
+<p><a href="https://cran.r-project.org/web/packages/gower/vignettes/intro.html">gower - vignettes</a></p>
 </div>
 <div id="vizualization" class="section level1">
 <h1>Vizualization</h1>
 <blockquote>
 <p>ggplot2</p>
 </blockquote>
-<p><a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html">Top 50 ggplot2 Visualizations - The Master List (With Full R Code)</a></p>
+<p><code>ggplot2</code> is a system for declaratively creating graphics, based on The Grammar of Graphics.</p>
+<p><a href="http://ggplot2.tidyverse.org/">ggplot2 - website</a></p>
+<blockquote>
+<p>GGally</p>
+</blockquote>
+<p><code>GGally</code> extends ggplot2 by adding several functions to reduce the complexity of combining geoms with transformed data.</p>
+<p><a href="https://ggobi.github.io/ggally/">GGally - website</a></p>
+<blockquote>
+<p>ggpubr</p>
+</blockquote>
+<p>The <code>ggpubr</code> package provides some easy-to-use functions for creating and customizing ‘ggplot2’- based publication ready plots.</p>
+<p><a href="http://www.sthda.com/english/rpkgs/ggpubr/index.html">ggpubr - sthda website</a></p>
 <blockquote>
 <p>tabplot</p>
 </blockquote>
-<p><a href="https://cran.r-project.org/web/packages/tabplot/vignettes/tabplot-vignette.html">Visualization of large datasets with tabplot</a></p>
+<p>The tableplot is a powerful visualization method to explore and analyse large multivariate datasets</p>
+<p><a href="https://cran.r-project.org/web/packages/tabplot/vignettes/tabplot-vignette.html">tabplot - vignettes</a></p>
+<blockquote>
+<p>ggstatsplot</p>
+</blockquote>
+<p>creates graphics with details from statistical tests <a href="https://github.com/IndrajeetPatil/ggstatsplot">ggstatsplot - github</a></p>
 <blockquote>
 <p>plotly</p>
 </blockquote>
+<p>An R package for creating interactive web graphics.</p>
+<p><a href="https://github.com/ropensci/plotly">plotly - github</a></p>
 <blockquote>
 <p>patchwork</p>
 </blockquote>
-<p>L’obiettivo di <a href="https://github.com/thomasp85/patchwork/blob/master/README.md">patchwork</a> è quello di rendere ridicolo per semplificare la combinazione di ggplots separati nella stessa grafica</p>
-</div>
-<div id="modeling" class="section level1">
-<h1>Modeling</h1>
+<p>The goal of <code>patchwork</code> is to make it ridiculously simple to combine separate ggplots into the same graphic. <a href="https://github.com/thomasp85/patchwork/blob/master/README.md">patchwork - github</a></p>
 <blockquote>
-<p>Metrics</p>
+<p>factoextra</p>
 </blockquote>
-<p>An R package for common supervised machine learning metrics <a href="https://github.com/mfrasco/Metrics">github repo</a></p>
+<p><code>factoextra</code> is an R package making easy to extract and visualize the output of exploratory multivariate data analyses</p>
+<p><a href="http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization">factoextra - sthda website</a></p>
+</div>
+<div id="machine-learning" class="section level1">
+<h1>Machine Learning</h1>
 <blockquote>
 <p>caret</p>
 </blockquote>
+<p>The <code>caret</code> package (short for Classification And REgression Training) contains functions to streamline the model training process for complex regression and classification problems. <a href="https://cran.r-project.org/web/packages/caret/vignettes/caret.html">caret - vignettes</a></p>
 <blockquote>
 <p>mlr</p>
 </blockquote>
-<p><a href="https://mlr-org.github.io/mlr-tutorial/release/html/index.html">Machine Learning in R: mlr Tutorial</a></p>
+<p><code>mlr</code> is a framework for machine learning experiments in R. <a href="https://mlr-org.github.io/mlr-tutorial/release/html/index.html">mlr - website</a> <a href="https://mlr-org.github.io/">mlr - blog</a></p>
+<blockquote>
+<p>Metrics</p>
+</blockquote>
+<p>An R package for common supervised machine learning metrics <a href="https://github.com/mfrasco/Metrics">Metrics - github</a></p>
 <blockquote>
 <p>iml</p>
 </blockquote>
-<p>I modelli di machine learning superano ripetutamente i modelli parametrici interpretabili, come il modello di regressione lineare. I guadagni in termini di prestazioni hanno un prezzo: I modelli funzionano come scatole nere non interpretabili.</p>
-<p>Fortunatamente, ci sono molti metodi che possono rendere interpretabili i modelli di apprendimento automatico. Il pacchetto R iml fornisce strumenti per l’analisi di qualsiasi modello machine-learning balckbox:</p>
-<p>Importanza della caratteristica: Quali erano le caratteristiche più importanti?</p>
-<p>Effetti caratteristici: In che modo una funzione influenza la previsione? (Piazzole a dipendenza parziale e curve di aspettativa condizionali individuali)</p>
-<p>Spiegazioni per le singole previsioni: In che modo i valori delle caratteristiche di un singolo punto dati hanno influenzato la sua previsione? (valore LIME e Shapley)</p>
+<p>The <code>iml</code> package provides tools for analysing any black box machine learning model. <a href="https://cran.r-project.org/web/packages/iml/vignettes/intro.html">iml - vignettes</a></p>
 <blockquote>
 <p>lime</p>
 </blockquote>
+<p>The purpose of <code>lime</code> is to explain the predictions of black box classifiers <a href="https://cran.r-project.org/web/packages/lime/vignettes/Understanding_lime.html">lime - vignettes</a> <a href="https://github.com/thomasp85/lime">lime - github</a></p>
 <blockquote>
 <p>xgboostExplaine</p>
 </blockquote>
-<p><a href="https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211">xgboostExplainer</a> makes your XGBoost model as transparent and ‘white-box’ as a single decision tree</p>
-<p><a href="https://mlr-org.github.io/interpretable-machine-learning-iml-and-mlr/">Interpretable Machine Learning with iml and mlr</a></p>
+<p>An R package that makes xgboost models fully interpretable <a href="https://medium.com/applied-data-science/new-r-package-the-xgboost-explainer-51dd7d1aa211">xgboostExplainer - tutorial</a></p>
 <blockquote>
 <p>shinyMlr</p>
 </blockquote>
-<p><a href="https://github.com/mlr-org/shinyMlr">github</a></p>
 <p>Integration of the mlr package into shiny. With help of this package mlr can be accessed via a shiny interface.</p>
-<p><a href="https://www.youtube.com/watch?v=VZuRSQZdayY&amp;list=PLcTJ-34ghaH2QGL73DWfQvIdacW01Nvtp">video tutorial</a></p>
+<p><a href="https://github.com/mlr-org/shinyMlr">shinyMlr - github</a> <a href="https://www.youtube.com/watch?v=VZuRSQZdayY&amp;list=PLcTJ-34ghaH2QGL73DWfQvIdacW01Nvtp">shinyMlr - video tutorial</a></p>
 <blockquote>
 <p>bounceR</p>
 </blockquote>
-<p>The R package bounceR (<a href="https://github.com/STATWORX/bounceR">github</a>) provides methods and tools for automated feature selection for Machine Learning models. The methods are fit for situation in which the data scientists faces an exceedingly high number of features.</p>
+<p><code>bounceR</code> provides methods and tools for automated feature selection for Machine Learning models. The methods are fit for situation in which the data scientists faces an exceedingly high number of features.</p>
+<p><a href="https://github.com/STATWORX/bounceR">bounceR - github</a> )</p>
 <blockquote>
 <p>recipes</p>
 </blockquote>
-</div>
-<div id="deep-learning" class="section level1">
-<h1>Deep Learning</h1>
-<p><a href="http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/">Deep Learning in R</a></p>
+<p><code>recipes</code> is an alternative method for creating and preprocessing design matrices that can be used for modeling or visualization. <a href="https://github.com/topepo/recipes">recipes - github</a></p>
 </div>
 <div id="time-series" class="section level1">
 <h1>Time series</h1>
 <blockquote>
 <p>tsfknn</p>
 </blockquote>
-<p>The package allows, with only a function, to specify the KNN model and to generate the forecasts. The user can choose among different multi-step ahead strategies and among different functions to aggregate the targets of the nearest neighbors. <a href="https://cran.r-project.org/web/packages/tsfknn/vignettes/tsfknn.html">Time Series Forecasting with KNN in R - vignettes</a></p>
+<p>The package allows, with only a function, to specify the KNN model and to generate the forecasts. <a href="https://cran.r-project.org/web/packages/tsfknn/vignettes/tsfknn.html">tsfknn - vignettes</a></p>
+<blockquote>
+<p>prophet</p>
+</blockquote>
+<p>Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. <a href="https://facebook.github.io/prophet/">prohet - website</a></p>
 </div>
 <div id="r-interface" class="section level1">
 <h1>R Interface</h1>
 <blockquote>
-<p>sparkrl</p>
+<p>sparkryl</p>
 </blockquote>
+<p><code>sparklyr</code> is an R interface for Apache Spark</p>
+<p><a href="http://spark.rstudio.com/">sparklyr - website</a></p>
 <blockquote>
 <p>RWeka</p>
 </blockquote>
-<p>RWeka è un’interfaccia R a Weka. Weka è una raccolta di algoritmi di apprendimento automatico per attività di data mining scritti in Java, contenenti strumenti per la preelaborazione, classificazione, regressione, clustering, regole di associazione e visualizzazione dei dati.</p>
-<p><a href="https://cran.r-project.org/web/packages/RWeka/index.html">cran</a></p>
-<p><a href="https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html">Image Classification on Small Datasets with Keras</a></p>
+<p>An R interface to Weka. Weka is a collection of machine learning algorithms for data mining tasks written in Java.</p>
 <blockquote>
 <p>rbokeh</p>
 </blockquote>
-<p><a href="http://hafen.github.io/rbokeh/#background">rbokeh - R Interface for Bokeh</a> Bokeh is a visualization library that provides a flexible and powerful declarative framework for creating web-based plots. Bokeh renders plots using HTML canvas and provides many mechanisms for interactivity.</p>
+<p>rbokeh is an R Interface for Bokeh. Bokeh is a visualization library that provides a flexible and powerful declarative framework for creating web-based plots <a href="http://hafen.github.io/rbokeh/#background">rbokeh - vignettes</a></p>
 <div id="deep-learning-interface" class="section level2">
 <h2>Deep Learning interface</h2>
 <blockquote>
 <p>h2o</p>
 </blockquote>
-<p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-r/docs/index.html">h2o package website</a></p>
-<p><a href="https://longhowlam.wordpress.com/2017/08/30/the-one-function-call-you-need-to-know-as-a-data-scientist-h2o-automl/">The one function call you need to know as a data scientist: h2o.automl</a></p>
-<p><a href="https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/deeplearning">Classification and Regression with H2O Deep Learning - github</a></p>
+<p>R scripting functionality for ‘H2O’, the open source math engine for big data that computes parallel distributed machine learning algorithms such as generalized linear models, gradient boosting machines, random forests, and neural networks (deep learning) within various cluster environments.</p>
+<p><a href="http://docs.h2o.ai/h2o/latest-stable/h2o-r/docs/index.html">h2o - website</a></p>
+<p><a href="https://github.com/h2oai/h2o-tutorials/tree/master/tutorials/deeplearning">h2o - tutorial</a></p>
 <blockquote>
 <p>Keras</p>
 </blockquote>
-<p><a href="https://tensorflow.rstudio.com/keras/">website</a></p>
-<blockquote>
-
-</blockquote>
-<p>R notebooks for the code samples of the book “Deep Learning with R”</p>
-<p><a href="https://github.com/jjallaire/deep-learning-with-r-notebooks">deep-learning-with-r-notebooks</a></p>
+<p>R interface to Keras <a href="https://tensorflow.rstudio.com/keras/">keras - website</a></p>
 </div>
 </div>
 <div id="big-data" class="section level1">
@@ -486,84 +509,86 @@ div.tocify {
 <blockquote>
 <p>ff</p>
 </blockquote>
-<p>Il pacchetto ff fornisce strutture dati che sono memorizzate su disco ma si comportano (quasi) come se fossero in RAM mappando in modo trasparente solo una sezione (pagesize) nella memoria principale - l’effettivo consumo di memoria virtuale per oggetto ff.</p>
-<blockquote>
-<p>bigml</p>
-</blockquote>
+<p>The ff package provides data structures that are stored on disk but behave (almost) as if they were in RAM. <a href="http://ff.r-forge.r-project.org/">ff - website</a></p>
 </div>
 <div id="deploy" class="section level1">
 <h1>Deploy</h1>
 <blockquote>
 <p>aurelius</p>
 </blockquote>
-<p>PFA struscture</p>
-<p><a href="https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/">A Scalable Predictive API with PFA and AWS Lambda</a></p>
-</div>
-<div id="time-series-1" class="section level1">
-<h1>Time series</h1>
-<blockquote>
-<p>prophet</p>
-</blockquote>
-<p><a href="https://facebook.github.io/prophet/">prohet</a> Strumento per produrre previsioni di alta qualità per le serie temporali di dati che hanno una stagionalità multipla con crescita lineare o non lineare.</p>
+<p>Provides tools for converting R objects and syntax into the Portable Format for Analytics (PFA).</p>
+<p><a href="https://cran.r-project.org/web/packages/aurelius/vignettes/basic-usage.html">aurelius - vignettes</a></p>
 </div>
 <div id="reporting-publishing-results" class="section level1">
 <h1>Reporting &amp; Publishing results</h1>
 <blockquote>
 <p>shiny</p>
 </blockquote>
-<p><a href="https://grabear.github.io/awesome-rshiny/">An awesome R-shiny list!</a></p>
+<p><code>shiny</code> makes it easy to build interactive web apps straight from R <a href="https://shiny.rstudio.com/">shiny - website</a></p>
 <blockquote>
 <p>shinydashboard</p>
 </blockquote>
+<p><code>shinydashboard</code> makes it easy to use Shiny to create dashboards <a href="https://rstudio.github.io/shinydashboard/">shinydashboard - website</a></p>
 <blockquote>
 <p>shinyproxy</p>
 </blockquote>
+<p>ShinyProxy is your favourite way to deploy Shiny apps in an enterprise context. <a href="https://www.shinyproxy.io/#what-is-shinyproxy">shinyproxy - website</a></p>
+<blockquote>
+<p>shinyLP</p>
+</blockquote>
+<p>A R package for Bootstrap Components to make Landing Home Pages for Shiny <a href="https://github.com/jasdumas/shinyLP">shinyLP - github</a></p>
 <blockquote>
 <p>rmarkdorwn</p>
 </blockquote>
-<p><a href="https://ropensci.org/technotes/2018/05/15/icon/">icon: web icons for rmarkdown</a></p>
+<p>Convert R Markdown documents into a variety of formats.</p>
+<p><a href="https://rmarkdown.rstudio.com/">rmarkdown - website</a></p>
 <blockquote>
-<p>ReporteRs</p>
+<p>icon</p>
 </blockquote>
+<p>web icons for rmarkdown</p>
+<p><a href="https://ropensci.org/technotes/2018/05/15/icon/">icon - website</a></p>
+<blockquote>
+<p>officer</p>
+</blockquote>
+<p>Access and manipulate ‘Microsoft Word’ and ‘Microsoft PowerPoint’ documents from R. <a href="https://cran.r-project.org/web/packages/officer/vignettes/officer_reader.html">officer - vignettes</a></p>
 <blockquote>
 <p>kableExtra</p>
 </blockquote>
-<p>Construct complex table with</p>
-<p><a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">vignettes</a></p>
-<p><a href="https://davidgohel.github.io/ReporteRs/index.html">website</a></p>
+<p>The goal of kableExtra is to help you build common complex tables and manipulate table styles.</p>
+<p><a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">kableExtra - website</a></p>
+<blockquote>
+<p>slidex</p>
+</blockquote>
+<p>slidex is aimed at making the process of converting Microsoft PowerPoint slides to beautiful HTML xaringan slides as seamless as possible, maintaining tables,figures, links, and bulleted lists. <a href="https://github.com/datalorax/slidex">slidex - github</a></p>
 </div>
-<div id="six-sigma" class="section level1">
-<h1>Six-Sigma</h1>
+<div id="quality-control" class="section level1">
+<h1>Quality Control</h1>
 <blockquote>
 <p>SixSigma</p>
 </blockquote>
-<p><a href="https://datascienceplus.com/six-sigma-dmaic-series-in-r-part-1/">Six Sigma DMAIC Series in R – Part 1</a></p>
-<p><a href="http://www.sixsigmawithr.com/">Six Sigma with R - ebook</a></p>
-<p><a href="http://www.qualitycontrolwithr.com/">Quality Control with R</a></p>
+<p>Functions and utilities to perform Statistical Analyses in the Six Sigma way.</p>
+<p><a href="http://www.sixsigmawithr.com/">SixSigma with R - ebook website</a> <a href="http://www.qualitycontrolwithr.com/">Quality Control with R - ebook</a></p>
 <blockquote>
 <p>qcc</p>
 </blockquote>
-</div>
-<div id="doe" class="section level1">
-<h1>DOE</h1>
+<p>qcc is a contributed R package for statistical quality control charts</p>
+<p><a href="https://cran.r-project.org/web/packages/qcc/vignettes/qcc_a_quick_tour.html">qcc - vignettes</a></p>
 </div>
 <div id="r-api" class="section level1">
 <h1>R API</h1>
 <blockquote>
 <p>dockerfiler</p>
 </blockquote>
-<p>{dockerfiler} is a package that comes with a simple, object oriented API for Dockerfile creation, straight from your R session. Now on CRAN. <a href="http://colinfay.me/dockerfiler-cran/">tutorial</a></p>
+<p>dockerfiler is a package that comes with a simple, object oriented API for Dockerfile creation, straight from your R session.</p>
+<p><a href="http://colinfay.me/dockerfiler-cran/">tutorial</a></p>
 <blockquote>
 <p>cloudML</p>
 </blockquote>
-<p><a href="https://tensorflow.rstudio.com/tools/cloudml/articles/getting_started.html">website</a></p>
-<p><a href="http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html">Services and tools for building intelligent R applications in the cloud</a></p>
-<p><a href="https://stevenmortimer.com/presentations/working-with-apis-from-r/">Working with APIs from R</a></p>
-<p><a href="http://jaehyeon-kim.github.io/2017/11/API-Development-with-R-Part-I.html">2017-11-18-API-Development-with-R-Part-I</a></p>
+<p>cloudml provides an R interface to Google Cloud Machine Learning Engine <a href="https://tensorflow.rstudio.com/tools/cloudml/articles/getting_started.html">cloudML - website</a></p>
 <blockquote>
 <p>googleComputeEngineR</p>
 </blockquote>
-<p>provides an R interface to the Google Cloud Compute Engine API, for launching virtual machines.</p>
+<p>provides an R interface to the Google Cloud Compute Engine API, for launching virtual machines. <a href="https://github.com/cloudyr/googleComputeEngineR">googleComputeEngineR - github</a></p>
 </div>
 <div id="ide" class="section level1">
 <h1>IDE</h1>
@@ -574,16 +599,17 @@ div.tocify {
 <p>R Analyticflow</p>
 </blockquote>
 </div>
-<div id="altro" class="section level1">
-<h1>Altro</h1>
-<blockquote>
-<p>MonetDBLite</p>
-</blockquote>
-<p>MonetDBLite for R, a fully embedded version of MonetDB that installs like any other R package. The database runs within the R process itself (like its namesake SQLite), greatly improving efficiency of data transfers. The package is available for Linux, Mac OS X and Windows (64 bit).</p>
+<div id="rstudio-addin" class="section level1">
+<h1>RStudio Addin</h1>
 <blockquote>
 <p>caretTuneGrid</p>
 </blockquote>
-<p>The caretTuneGrid is the RStudio addin for inserting tune parameters code for the caret package <a href="https://github.com/milosvil/caretTuneGrid">githun</a>.</p>
+<p>The caretTuneGrid is the RStudio addin for inserting tune parameters code for the caret package.</p>
+<p><a href="https://github.com/milosvil/caretTuneGrid">caretTuneGrid - github</a>.</p>
+<blockquote>
+<p>esquisse</p>
+</blockquote>
+<p>RStudio add-in to make plots with ggplot2 <a href="https://github.com/dreamRs/esquisse">esquisse - github</a></p>
 </div>
 
 
