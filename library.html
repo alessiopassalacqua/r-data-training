@@ -94,6 +94,9 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
 }
@@ -272,7 +275,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">R-Data-Training</a>
+      <a class="navbar-brand" href="index.html">R Data Training</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -280,16 +283,16 @@ div.tocify {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="warmup.html">WarmUp</a>
+  <a href="warmup.html">Let's start</a>
 </li>
 <li>
-  <a href="library.html">Collection</a>
+  <a href="library.html">Library</a>
 </li>
 <li>
-  <a href="ebook.html">E-book</a>
+  <a href="ebook.html">E-book &amp; Course</a>
 </li>
 <li>
-  <a href="readings.html">Take a Rest</a>
+  <a href="readings.html">Readings</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -307,12 +310,14 @@ div.tocify {
 </div>
 
 
-<p>In this page my package collection ispired by the following posts:</p>
-<p><a href="https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages?mobile_site=true">Quick list of useful R packages</a></p>
-<p><a href="https://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html#tk.drr_mlt">Great R packages for data import, wrangling and visualization</a></p>
-<p><a href="https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/">R resources (free courses, books, tutorials, &amp; cheat sheets)</a></p>
-<p><a href="https://activewizards.com/blog/top-20-r-libraries-for-data-science-in-2018-infographic/">Top 20 R Libraries for Data Science in 2018</a></p>
-<p><a href="http://jasdumas.com/ds-resources/">Data Science Links</a></p>
+<p>In this page, I reported my package collection ispired by the following posts:</p>
+<ul>
+<li><a href="https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages?mobile_site=true">Quick list of useful R packages</a></li>
+<li><a href="https://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html#tk.drr_mlt">Great R packages for data import, wrangling and visualization</a></li>
+<li><a href="https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/">R resources (free courses, books, tutorials, &amp; cheat sheets)</a></li>
+<li><a href="https://activewizards.com/blog/top-20-r-libraries-for-data-science-in-2018-infographic/">Top 20 R Libraries for Data Science in 2018</a></li>
+<li><a href="http://jasdumas.com/ds-resources/">Data Science Links</a></li>
+</ul>
 <div id="get-the-data" class="section level1">
 <h1>Get the data</h1>
 <p>This <a href="https://cran.r-project.org/doc/manuals/r-release/R-data.html">manual</a> describes the import and export facilities available either in R itself or via packages which are available from CRAN or elsewhere.</p>
@@ -361,6 +366,11 @@ div.tocify {
 </blockquote>
 <p>Data exploration process for data analysis and model building, so that users could focus on understanding data and extracting insights. The package automatically scans through each variable and does data profiling.</p>
 <p><a href="https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html">DataExplorer - vignettes</a></p>
+<blockquote>
+<p>naniar</p>
+</blockquote>
+<p><code>naniar</code> provides data structures and functions that facilitate the plotting of missing values and examination of imputations.</p>
+<p><a href="http://naniar.njtierney.com/articles/naniar-visualisation.html">naniar - website</a> <a href="https://github.com/njtierney/naniar">naniar - github</a></p>
 </div>
 <div id="dimension-reduction-pca" class="section level1">
 <h1>Dimension Reduction (PCA)</h1>
@@ -382,8 +392,8 @@ div.tocify {
 <p>Gower’s distance can be used to measure how different two records are.</p>
 <p><a href="https://cran.r-project.org/web/packages/gower/vignettes/intro.html">gower - vignettes</a></p>
 </div>
-<div id="vizualization" class="section level1">
-<h1>Vizualization</h1>
+<div id="visualization" class="section level1">
+<h1>Visualization</h1>
 <blockquote>
 <p>ggplot2</p>
 </blockquote>
@@ -422,6 +432,11 @@ div.tocify {
 </blockquote>
 <p><code>factoextra</code> is an R package making easy to extract and visualize the output of exploratory multivariate data analyses</p>
 <p><a href="http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization">factoextra - sthda website</a></p>
+<blockquote>
+<p>ggiraphExtra</p>
+</blockquote>
+<p><code>ggiraphExtra</code> contains many useful functions for exploratoty plots.</p>
+<p><a href="http://rpubs.com/cardiomoon/231820">ggiraphExtra - vignettes</a></p>
 </div>
 <div id="machine-learning" class="section level1">
 <h1>Machine Learning</h1>
@@ -519,8 +534,8 @@ div.tocify {
 <p>Provides tools for converting R objects and syntax into the Portable Format for Analytics (PFA).</p>
 <p><a href="https://cran.r-project.org/web/packages/aurelius/vignettes/basic-usage.html">aurelius - vignettes</a></p>
 </div>
-<div id="reporting-publishing-results" class="section level1">
-<h1>Reporting &amp; Publishing results</h1>
+<div id="shiny" class="section level1">
+<h1>Shiny</h1>
 <blockquote>
 <p>shiny</p>
 </blockquote>
@@ -537,6 +552,17 @@ div.tocify {
 <p>shinyLP</p>
 </blockquote>
 <p>A R package for Bootstrap Components to make Landing Home Pages for Shiny <a href="https://github.com/jasdumas/shinyLP">shinyLP - github</a></p>
+<blockquote>
+<p>shinytemplate</p>
+</blockquote>
+<p>RStudio Project Templates for Shinyapps <a href="https://github.com/ThinkR-open/shinytemplate">shinytemplate - github</a></p>
+<blockquote>
+<p>shinymodule</p>
+</blockquote>
+<p>A Shiny module is a piece of a Shiny app. <a href="https://shiny.rstudio.com/articles/modules.html">shinymodules - shiny website</a></p>
+</div>
+<div id="reporting-publishing-results" class="section level1">
+<h1>Reporting &amp; Publishing results</h1>
 <blockquote>
 <p>rmarkdorwn</p>
 </blockquote>
@@ -609,7 +635,17 @@ div.tocify {
 <blockquote>
 <p>esquisse</p>
 </blockquote>
-<p>RStudio add-in to make plots with ggplot2 <a href="https://github.com/dreamRs/esquisse">esquisse - github</a></p>
+<p>RStudio add-in to make plots with ggplot2</p>
+<p><a href="https://github.com/dreamRs/esquisse">esquisse - github</a></p>
+<blockquote>
+<p>editData</p>
+</blockquote>
+<p>RStudio addin for editing a ‘data.frame’ or a ‘tibble’</p>
+<p><a href="https://cran.r-project.org/web/packages/editData/vignettes/editData.html">Editing A ‘data.frame’</a></p>
+<blockquote>
+<p>Rcade</p>
+</blockquote>
+<p>The goal of Rcade is to provide access to games in order to waste some times in RStudio. You can play 2048, Tetris, Mario, Pacman, Spider Solitaire and others.</p>
 </div>
 
 

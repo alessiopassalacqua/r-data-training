@@ -5,17 +5,13 @@ output:
     toc_float: true
 ---
 
-In this page my package collection ispired by the following posts:
+In this page, I reported my package collection ispired by the following posts:
 
-[Quick list of useful R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages?mobile_site=true)
-
-[Great R packages for data import, wrangling and visualization](https://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html#tk.drr_mlt)
-
-[R resources (free courses, books, tutorials, & cheat sheets)](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/)
-
-[Top 20 R Libraries for Data Science in 2018 ](https://activewizards.com/blog/top-20-r-libraries-for-data-science-in-2018-infographic/)
-
-[Data Science Links](http://jasdumas.com/ds-resources/)
+* [Quick list of useful R packages](https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages?mobile_site=true)
+* [Great R packages for data import, wrangling and visualization](https://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html#tk.drr_mlt)
+* [R resources (free courses, books, tutorials, & cheat sheets)](https://paulvanderlaken.com/2017/08/10/r-resources-cheatsheets-tutorials-books/)
+* [Top 20 R Libraries for Data Science in 2018 ](https://activewizards.com/blog/top-20-r-libraries-for-data-science-in-2018-infographic/)
+* [Data Science Links](http://jasdumas.com/ds-resources/)
 
 # Get the data
 
@@ -78,6 +74,13 @@ Data exploration process for data analysis and model building, so that users cou
 [DataExplorer - vignettes](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html)
 
 
+> naniar
+
+`naniar` provides data structures and functions that facilitate the plotting of missing values and examination of imputations.
+
+[naniar - website](http://naniar.njtierney.com/articles/naniar-visualisation.html)
+[naniar - github](https://github.com/njtierney/naniar)
+
 
 # Dimension Reduction (PCA)
 
@@ -101,7 +104,7 @@ Gower’s distance can be used to measure how different two records are.
 
 [gower - vignettes](https://cran.r-project.org/web/packages/gower/vignettes/intro.html)
 
-# Vizualization
+# Visualization
 
 > ggplot2
 
@@ -149,6 +152,12 @@ The goal of `patchwork` is to make it ridiculously simple to combine separate gg
 `factoextra` is an R package making easy to extract and visualize the output of exploratory multivariate data analyses
 
 [factoextra - sthda website](http://www.sthda.com/english/wiki/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization)
+
+> ggiraphExtra
+
+`ggiraphExtra` contains many useful functions for exploratoty plots.
+
+[ggiraphExtra - vignettes](http://rpubs.com/cardiomoon/231820)
 
 # Machine Learning
 
@@ -274,8 +283,7 @@ Provides tools for converting R objects and syntax into the Portable Format for 
 [aurelius - vignettes](https://cran.r-project.org/web/packages/aurelius/vignettes/basic-usage.html)
 
 
-
-# Reporting & Publishing results
+# Shiny
 
 > shiny
 
@@ -296,6 +304,18 @@ ShinyProxy is your favourite way to deploy Shiny apps in an enterprise context.
 
 A R package for Bootstrap Components to make Landing Home Pages for Shiny
 [shinyLP - github](https://github.com/jasdumas/shinyLP)
+
+> shinytemplate
+
+RStudio Project Templates for Shinyapps
+[shinytemplate - github](https://github.com/ThinkR-open/shinytemplate)
+
+> shinymodule
+
+A Shiny module is a piece of a Shiny app.
+[shinymodules - shiny website](https://shiny.rstudio.com/articles/modules.html)
+
+# Reporting & Publishing results
 
 > rmarkdorwn
 
@@ -381,4 +401,16 @@ The caretTuneGrid is the RStudio addin for inserting tune parameters code for th
 
 > esquisse
 
-RStudio add-in to make plots with ggplot2 [esquisse - github](https://github.com/dreamRs/esquisse)
+RStudio add-in to make plots with ggplot2 
+
+[esquisse - github](https://github.com/dreamRs/esquisse)
+
+> editData
+
+RStudio addin for editing a ‘data.frame’ or a ‘tibble’
+
+[Editing A ‘data.frame’](https://cran.r-project.org/web/packages/editData/vignettes/editData.html)
+
+> Rcade
+
+The goal of Rcade is to provide access to games in order to waste some times in RStudio. You can play 2048, Tetris, Mario, Pacman, Spider Solitaire and others.

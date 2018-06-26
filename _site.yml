@@ -1,17 +1,17 @@
 name: R-Data-Training
 output_dir: '.'
 navbar:
-  title: R-Data-Training
+  title: R Data Training
   left:
   - text: "Home"
     href: index.html
-  - text: "WarmUp"
+  - text: "Let's start"
     href: warmup.html
-  - text: "Collection"
+  - text: "Library"
     href: library.html
-  - text: "E-book"
+  - text: "E-book & Course"
     href: ebook.html
-  - text: "Take a Rest"
+  - text: "Readings"
     href: readings.html
 output:
   html_document:

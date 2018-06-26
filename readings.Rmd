@@ -7,101 +7,154 @@ output:
 
 # Readings
 
+## Data Munging
 
-| Tecnica   |      algoritmo      |  Library |
-|---------|:------------------:|---------:|
-| markwown |  [Getting Started with R Markdown](https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html) | `rmarkdown`|
-|time series |[Time Series of the World, Unite!](http://www.christophsax.com/2018/05/15/tsbox/) | `tsbox`|
-|build a package |[Building a Package that Lasts](https://github.com/ColinFay/erum2018) | `package`|
-| database| [Getting started with PostgreSQL in R](https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/) | `RPostgreSQL`|
-| database |[Data Manipulation with dpylyr](https://www.listendata.com/2016/08/dplyr-tutorial.html) | `dplyr`|
-|database |[Working on Data-Warehouse (SQL) with R](https://datascienceplus.com/working-on-data-warehouse-sql-with-r/) | `dplyr`|
-| database |[Database Queries With R](https://rviews.rstudio.com/2017/10/18/database-queries-with-r/)| `dplyr`|
-|trasformation |[Manipulation de facteurs avec forcats](http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/) | `forcats`|
-|visualization |[A Compendium of Clean Graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D) | `base`|
-| regression |[Principal component regression in R](https://educationalresearchtechniques.com/2017/12/18/principal-component-regression-in-r/) | `pls`|
-|dashboard | [Shiny, R and HTML](https://www.sitepoint.com/shiny-r-and-html-merging-data-science-and-web-development/) | `shiny`|
-| API |[Google Analytics R Tutorial](http://www.ryanpraski.com/google-analytics-r-tutorial/) | `googleAnalyticsR`|
-|exercises |[R PRACTICE EXERCISES: LEVEL 1](http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/)  | `base`|
-|Manipolation |[dplyr tutorial](http://genomicsclass.github.io/book/pages/dplyr_tutorial.html) | `dplyr`|
-|Manipolation |[dplyr In a Nutshell](https://github.com/trinker/dplyr_in_a_nutshell) | `dplyr`|
-|visualization |[R graphics](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) | `ggplot2`|
-|machine learning | [machine learning with CARET package in R ](https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/)| `caret`|
-|tutorial |[LeaRning Path on R](https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/) | `base`|
-|Tutorial |[Data Analysis with R](https://github.com/susanli2016/Data-Analysis-with-R) | `github`|
-|Analysis|[Exploring Survival on the Titanic](https://www.kaggle.com/mrisdal/exploring-survival-on-the-titanic) | `randomForest`|
-|Analysis |[Detailed Data Analysis & Ensemble Modeling](https://www.kaggle.com/tannercarbonati/detailed-data-analysis-ensemble-modeling) | `caret`|
-|Analysis|[Exploratory Analysis -  Instacart](https://www.kaggle.com/philippsp/exploratory-analysis-instacart) | `ggplot2`|
-|visualisation | [A Shiny application in a package R](https://rtask.thinkr.fr/blog/our-shiny-template-to-design-a-prod-ready-app/)| `shiny`|
-|Regression |[Going Deeper into Regression Analysis](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/) | `base`|
-|Machine Learning |[Tuning xgboost in R](https://insightr.wordpress.com/2018/05/17/tuning-xgboost-in-r-part-i/#more-809) | `xgboost`|
-|R platform |[Powered By R](http://stagraph.com/Post?Id=31&Title=Powered+By+R#r_online) | `---`|
-|journalism |[high quality resources for doing data journalism with R](https://rddj.info/?utm_content=bufferc7064&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#publication-quality-graphics) | `---`|
-|database |Databases using r | `---`|
-|Classification |[Predicting Binary Outcomes with R, gbm, glmnet ](https://amunategui.github.io/binary-outcome-modeling/) | `caret`|
-|Github |[Build a Jekyll blog in minutes](https://github.com/barryclark/jekyll-now) | `---`|
-|Machine Learning|[Survival Prediction Models in R](https://datascienceplus.com/time-dependent-roc-for-survival-prediction-models-in-r/) | `survival`|
-|Clustering|[A package for visualizing dendrograms](https://www.r-statistics.com/2015/08/dendextend-a-package-for-visualizing-adjusting-and-comparing-dendrograms-from-the-journal-bioinformatics/) | `dendextend`|
-|Clustering |[Difference Between K-Means And Hierarchical](https://stepupanalytics.com/difference-between-k-means-clustering-and-hierarchical-clustering/) | `kmeans`|
-|Interface|[Big Data Platforms](http://www.rdatamining.com/big-data/big-data-platforms) | `---`|
-|Dashboard |[User authentication in R Shiny](https://appsilondatascience.com/blog/rstats/2018/05/30/user-authentication-in-r-shiny.html) | `shiny`|
-|Deep Learning |[Pre-trained model on R](https://tsmatz.wordpress.com/2017/05/25/image-classification-and-matching-with-r-microsoftml-featurizeimage/) | `MicrosoftML`|
-|Deep Learning|[Using Pre-Trained Models](https://tensorflow.rstudio.com/keras/articles/applications.htm) | `a`|
-|Publishing |[bookdown cheatsheet](http://www.pzhao.org/en/post/bookdown-cheatsheet/) | `bookdown`|
-|Classification |[How to handle Imbalanced Classification ](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/) | `---`|
-|Clustering| [R Clustering](https://data-flair.training/blogs/r-clustering-tutorial/)| `kmeans`|
-|Classification |[K NEAREST NEIGHBOR](https://www.listendata.com/2017/12/k-nearest-neighbor-step-by-step-tutorial.html) | `caret`|
-|Manipulation |[introduction to apply](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/) | `base`|
-|Visualization |[Principal Component Methods in R](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/118-principal-component-analysis-in-r-prcomp-vs-princomp/#compute-pca-in-r-using-prcomp) | `factoextra`|
-|Deep Learning |[Deep Learning with Keras and Shiny](http://jasdumas.com/2018-02-20-deep-learning-img-classifier/) | `keras`|
-|Deploy |[Using R with Amazon](https://aws.amazon.com/it/blogs/machine-learning/using-r-with-amazon-sagemaker/) | `---`|
-|Deep Learning |[I_LOVE_IKEA_SHINY_APP](https://github.com/longhowlam/I_LOVE_IKEA_SHINY_APP) | `keras`|
-|Visualization|[Top 50 ggplot2 Visualizations](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)|`ggplot2`|
-|Deep Learning|[Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/)|`---`|
-|Deep Learning|[Image Classification with Keras](https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html)| `keras`|
-|Deep Learning|[The one function call you need to know as a data scientist: h2o.automl](https://longhowlam.wordpress.com/2017/08/30/the-one-function-call-you-need-to-know-as-a-data-scientist-h2o-automl/)|`h2o`|
-|Deep Learning|[Deep Learning with R](https://github.com/jjallaire/deep-learning-with-r-notebooks)|`keras`|
-|Deploy|[A Scalable Predictive API with PFA](https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/)|`aurelius`|
-|Reporting|[An awesome R-shiny list!](https://grabear.github.io/awesome-rshiny/)|`shiny`|
-|Quality|[Six Sigma DMAIC Series in R – Part 1](https://datascienceplus.com/six-sigma-dmaic-series-in-r-part-1/)|`DMAIC`|
-||||
-
-[Services and tools for building intelligent R applications in the cloud](http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html)
-
-[Working with APIs from R](https://stevenmortimer.com/presentations/working-with-apis-from-r/)
-
-[2017-11-18-API-Development-with-R-Part-I](http://jaehyeon-kim.github.io/2017/11/API-Development-with-R-Part-I.html)
+* [Data Manipulation with dpylyr](https://www.listendata.com/2016/08/dplyr-tutorial.html) -- `dplyr`
+* [Working on Data-Warehouse (SQL) with R](https://datascienceplus.com/working-on-data-warehouse-sql-with-r/) -- `dplyr`
+* [Database Queries With R](https://rviews.rstudio.com/2017/10/18/database-queries-with-r/) -- `dplyr`
+* [Manipulation de facteurs avec forcats](http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/) -- `forcats`
+* [Getting started with PostgreSQL in R](https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/) -- `RPostgreSQL` 
+* [dplyr tutorial](http://genomicsclass.github.io/book/pages/dplyr_tutorial.html) -- `dplyr`
+* [dplyr In a Nutshell](https://github.com/trinker/dplyr_in_a_nutshell) -- `dplyr`
+* [Ontroduction to apply](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/) 
 
 
-
-# Course
-
-
-|   Focus on |      Course      |  Made by |
-|---------|:------------------:|---------:|
-|Data Science |[Intro to Data Science](https://www2.stat.duke.edu/courses/Spring18/Sta199/) | RStudio|
-|Data Science|[Data Science course in a box](https://github.com/rstudio-education/datascience-box)|RStudio|
-|Data Science|[Data Science for Social Science](http://datascience.tntlab.org/schedule-materials/)|RICHARD N. LANDERS|
-|R|[Introduction to R](https://ramnathv.github.io/pycon2014-r/)|idocs|
-|R|[R course material](http://stcorp.nl/R_course/)|Paul Hiemstra|
-|R|[Introduction to R](http://uc-r.github.io/introduction)|UC|
-|R | [Intro to R](https://www.youtube.com/playlist?list=PLOU2XLYxmsIK9qQfztXeybpHvru-TrqAP)|google|
-|Data Science|[Statistical Computing with R](http://rstatistics.net/)|RStatistics.Net|
-|Biomedical|[Biomedical Data Science](http://genomicsclass.github.io/book/)|R. Irizarry and M. Love|
-|Shiny|[Learn Shiny](https://shiny.rstudio.com/tutorial/)|RStudio|
-|Data Science|[Data science in R](http://courses.had.co.nz/12-oscon/)|Hadley Wickham|
-|Programming|[R development master class](http://courses.had.co.nz/12-devtools/)|Hadley Wickham|
-|Data Science|[Big data summer institute](http://courses.had.co.nz/12-rice-bdsi/)|Hadley Wickham|
-|Programming|[Package development](http://courses.had.co.nz/11-csiro/)|Hadley Wickham|
-|Visualisation|[Data visualisation in R with ggplot2 and plyr](http://courses.had.co.nz/11-rice/)|Hadley Wickham| 
-|Data Science|[Introduction to data analysis](http://had.co.nz/stat405/)|Hadley Wickham|
-|R|[Introduction to R & RStudio](https://github.com/AmeliaMN/IntroToR)|McNamara|
-|Data Analysis|[Data Analysis and Visualization Using R](http://varianceexplained.org/RData/)|David Robinson|
-|R|[Data wrangling, exploration, and analysis with R](http://stat545.com/)|UBC|
-|Data Science|[Statistics and R](http://rafalab.github.io/pages/harvardx.html)|Harvard|
-|Bioconductor|[Bioconductor for Genomic Data Science](https://kasperdanielhansen.github.io/genbioconductor/)|K. D. Hansen|
+## Explorative Data Aanalysis
 
 
+* [Six Sigma DMAIC Series in R – Part 1](https://datascienceplus.com/six-sigma-dmaic-series-in-r-part-1/) -- `DMAIC`
+
+
+## Visualization
+
+* [A Compendium of Clean Graphs in R](http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D)
+* [R graphics](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) -- `ggplot2`
+* [high quality resources for doing data journalism with R](https://rddj.info/?utm_content=bufferc7064&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#publication-quality-graphics) 
+* [Top 50 ggplot2 Visualizations](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html) -- `ggplot2`
+
+
+## Unsupervised Learning
+
+* [A package for visualizing dendrograms](https://www.r-statistics.com/2015/08/dendextend-a-package-for-visualizing-adjusting-and-comparing-dendrograms-from-the-journal-bioinformatics/) --  `dendextend`
+* [Difference Between K-Means And Hierarchical](https://stepupanalytics.com/difference-between-k-means-clustering-and-hierarchical-clustering/) -- `kmeans`
+* [R Clustering](https://data-flair.training/blogs/r-clustering-tutorial/) -- `kmeans`
+* [Principal Component Methods in R](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/118-principal-component-analysis-in-r-prcomp-vs-princomp/#compute-pca-in-r-using-prcomp) -- `factoextra`
+
+
+## Machine Learning
+
+* [Principal component regression in R](https://educationalresearchtechniques.com/2017/12/18/principal-component-regression-in-r/) -- `pls`
+* [machine learning with CARET package in R ](https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/) --  `caret`
+* [Going Deeper into Regression Analysis](https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/) 
+* [Tuning xgboost in R](https://insightr.wordpress.com/2018/05/17/tuning-xgboost-in-r-part-i/#more-809) -- `xgboost`
+* [Predicting Binary Outcomes with R, gbm, glmnet ](https://amunategui.github.io/binary-outcome-modeling/) -- `caret`
+* [Survival Prediction Models in R](https://datascienceplus.com/time-dependent-roc-for-survival-prediction-models-in-r/) -- `survival`
+* [How to handle Imbalanced Classification ](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/) 
+* [Caret Package – A Practical](https://www.machinelearningplus.com/machine-learning/caret-package/) -- `caret`
+* [Visualizing ML Models with LIME](http://uc-r.github.io/lime) -- `lime`|
+* [Playing with dimensions](https://github.com/pablo14/post_cluster_tsne/blob/master/post.Rmd) -- `Rtsne` 
+* [Top 10 Algorithms for Newbies](https://towardsdatascience.com/a-tour-of-the-top-10-algorithms-for-machine-learning-newbies-dde4edffae11)
+* [Automated Feature Selection](https://www.statworx.com/de/blog/data-science/bouncer-0-1-2-automated-feature-selection/) -- `bounceR`
+* [K NEAREST NEIGHBOR](https://www.listendata.com/2017/12/k-nearest-neighbor-step-by-step-tutorial.html) -- `caret`
+* [The one function call you need to know as a data scientist: h2o.automl](https://longhowlam.wordpress.com/2017/08/30/the-one-function-call-you-need-to-know-as-a-data-scientist-h2o-automl/) -- `h2o`
+
+## Deep Learning
+
+* [Pre-trained model on R](https://tsmatz.wordpress.com/2017/05/25/image-classification-and-matching-with-r-microsoftml-featurizeimage/) -- `MicrosoftML`
+* [Using Pre-Trained Models](https://tensorflow.rstudio.com/keras/articles/applications.html)
+* [Deep Learning in R](http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/)
+* [Deep Learning with Keras and Shiny](http://jasdumas.com/2018-02-20-deep-learning-img-classifier/) -- `keras`
+* [I_LOVE_IKEA_SHINY_APP](https://github.com/longhowlam/I_LOVE_IKEA_SHINY_APP) -- `keras`
+* [Image Classification with Keras](https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html) -- `keras`
+* [Deep Learning with R](https://github.com/jjallaire/deep-learning-with-r-notebooks) -- `keras`
+* [Image classification with keras](https://shirinsplayground.netlify.com/2018/06/keras_fruits/) --`keras`
+* [Explaining Keras image classification models with lime](https://shirinsplayground.netlify.com/2018/06/keras_fruits_lime/) -- `keras`
+* [Kaggle #1 Winning Approach for Image Classification Challenge](https://medium.com/@shridhar743/kaggle-1-winning-approach-for-image-classification-challenge-9c1188157a86)
+* [Example code Keras in R - VGG16 Base - Kaggle Kernel](https://www.kaggle.com/dkoops/keras-r-vgg16-base) -- `keras`
+* [Advanced GaRdening with Convolutional NNs -- Kaggle kernel](https://www.kaggle.com/bonovandoo/advanced-gardening-with-convolutional-nns) -- `mxnet`
+
+
+## Time series analysis
+
+* [Time Series of the World, Unite!](http://www.christophsax.com/2018/05/15/tsbox/) -- `tsbox`
+* [Shiny, R and HTML](https://www.sitepoint.com/shiny-r-and-html-merging-data-science-and-web-development/) -- `shiny`
+
+## Reporting
+
+* [Getting Started with R Markdown](https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html) -- `rmarkdown`
+* [Build a Jekyll blog in minutes](https://github.com/barryclark/jekyll-now)
+* [Job automation in R](https://www.worksmarter.pl/en/post/job-automation-r-1/) -- `rmarkdown`
+* [bookdown cheatsheet](http://www.pzhao.org/en/post/bookdown-cheatsheet/) -- `bookdown`
+
+
+## Shiny
+
+* [An awesome R-shiny list!](https://grabear.github.io/awesome-rshiny/) -- `shiny`
+* [A Shiny application in a package R](https://rtask.thinkr.fr/blog/our-shiny-template-to-design-a-prod-ready-app/) -- `shiny`
+* [User authentication in R Shiny](https://appsilondatascience.com/blog/rstats/2018/05/30/user-authentication-in-r-shiny.html) -- `shiny`
+* [Create dashboards with semantic.dashboard](https://appsilondatascience.com/blog/rstats/2018/06/11/dashboard-tutorial.html) -- `semantic.dashboard`
+
+
+## Deploy
+
+* [Building a Package that Lasts](https://github.com/ColinFay/erum2018) -- `package`
+* [A Scalable Predictive API with PFA](https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/) -- `aurelius`
+* [Using R with Amazon](https://aws.amazon.com/it/blogs/machine-learning/using-r-with-amazon-sagemaker/) 
+
+## API & IDE
+
+* [Google Analytics R Tutorial](http://www.ryanpraski.com/google-analytics-r-tutorial/) -- `googleAnalyticsR`
+* [Big Data Platforms](http://www.rdatamining.com/big-data/big-data-platforms)
+* [Powered By R](http://stagraph.com/Post?Id=31&Title=Powered+By+R#r_online)
+* [Services and tools for building intelligent R applications in the cloud](http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html)
+* [Working with APIs from R](https://stevenmortimer.com/presentations/working-with-apis-from-r/)
+* [API Development with R Part-I](http://jaehyeon-kim.github.io/2017/11/API-Development-with-R-Part-I.html) -- `plumber` , `rApache`
+
+## Teaching R
+
+* [R PRACTICE EXERCISES: LEVEL 1](http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/) 
+* [LeaRning Path on R](https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/)
+
+
+
+
+
+
+
+# RPubs must read
+
+## Basic
+
+* [Learning R on iris](https://rpubs.com/moeransm/intro-iris)
+* [Missing Value Treatment](http://rstudio-pubs-static.s3.amazonaws.com/233370_56612580566d4c46a10ff2f70fa858a4.html)
+* [Cluster Analysis with R](https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html)
+* [Classification with Decision Trees](http://rpubs.com/kjmazidi/195428)
+* [kNN Using caret R package](https://rpubs.com/njvijay/16444)
+* [Pie Chart Revisited](http://rpubs.com/cardiomoon/398623)
+* [Naive Bayes Classifier: theory and R example](https://rpubs.com/riazakhan94/naive_bayes_classifier_e1071)
+
+## Advanced
+
+* [Classifications in R](http://www.rpubs.com/arifulmondal/scoring)
+* [Market basket analysis](https://rpubs.com/sbushmanov/180410)
+* [Fraud Detection with Machine Learning](https://rpubs.com/kieroneil/321413)
+
+# Kaggle kernel
+
+* [Happiness 2017 (Visualization + Prediction)
+](https://www.kaggle.com/javadzabihi/happiness-2017-visualization-prediction/notebook?utm_medium=social&utm_source=facebook.com&utm_campaign=Weekly-Kernel-Awards)
+* [Stack Overflow 2018 survey: age, gender, sexuality](https://www.kaggle.com/heesoo37/stack-overflow-2018-survey-age-gender-sexuality?utm_medium=social&utm_source=linkedin.com&utm_campaign=Weekly-Kernel-Awards)
+* [Breast Cancer or Not (with 15 ML)](https://www.kaggle.com/mirichoi0218/classification-breast-cancer-or-not-with-15-ml)
+* [Exploring Survival on the Titanic](https://www.kaggle.com/mrisdal/exploring-survival-on-the-titanic) 
+* [Detailed Data Analysis & Ensemble Modeling](https://www.kaggle.com/tannercarbonati/detailed-data-analysis-ensemble-modeling) -- `caret`
+* [Exploratory Analysis -  Instacart](https://www.kaggle.com/philippsp/exploratory-analysis-instacart) -- `ggplot2`
+
+
+## Github repository
+
+* [Data Analysis with R](https://github.com/susanli2016/Data-Analysis-with-R)
+* [Presentations from H2O meetups & conferences by the H2O.ai team](https://github.com/h2oai/h2o-meetups)
+* [H2O for Internet of Things + Deep Water project](https://github.com/h2oai/h2o-meetups/tree/master/2016_10_10_Data_Science_Milan)
 
 
 # Datasets
@@ -111,24 +164,8 @@ output:
 * [Datasets to Practice Your Data Mining](Datasets to Practice Your Data Mining)
 * [Generate random data sets](https://github.com/trinker/wakefield)
 * [Data Science Projects](https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/)
+* [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 
 ## Datasets for smart factory
 
 * [Combined Cycle Power Plant Data Set](https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant)
-
-# RPubs must read
-
-## Basic
-
-* [Learning R on iris](https://rpubs.com/moeransm/intro-iris)
-* [Missing Value Treatment](http://rstudio-pubs-static.s3.amazonaws.com/233370_56612580566d4c46a10ff2f70fa858a4.html)
-* [Cluster Analysis with R](https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html)
-
-## Advanced
-
-[Classifications in R](http://www.rpubs.com/arifulmondal/scoring)
-
-# Kaggle kernel
-
-[Happiness 2017 (Visualization + Prediction)
-](https://www.kaggle.com/javadzabihi/happiness-2017-visualization-prediction/notebook?utm_medium=social&utm_source=facebook.com&utm_campaign=Weekly-Kernel-Awards)

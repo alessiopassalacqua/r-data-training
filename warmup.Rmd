@@ -40,16 +40,20 @@ L’ambiente di lavoro di RStudio è costituito da quattro finestre le cui funzi
 
 ![](figure/rstudio.png)
 
+<br>
+
 Prima di procedere con una nuova attività di analisi, è consigliabile aprire uno nuovo script. Dall'interfaccia di RStudio cliccare su `File` e selezionare `R Script`. Successivamente procedere con il salvataggio del file.
 
 ![](figure/script.png)
+<br>
 
-Per eseguire il codice scritto nello script:
+Per eseguire il codice riportato nello script:
 
-1. utilizzare il comando `Run` per eseguire la riga su cui è posizionato il cursore
-2. utilizzare il comando `Source` per eseguire tutto il codice contenuto nello script
+1. utilizzare il comando `Run` se si vuole eseguire la riga su cui è posizionato il cursore
+2. utilizzare il comando `Source` se si vuole eseguire tutto il codice contenuto nello script
 
 ![](figure/run-script.png)
+<br>
 
 Per utilizzare R da linea di comando è necessario digitare il codice direttamente nella console.
 
@@ -60,13 +64,17 @@ Per utilizzare R da linea di comando è necessario digitare il codice direttamen
 Per comprendere la programmazione in R, questi due concetti potrebbero esserti di supporto:
 
 * Tutto ciò che esiste è un oggetto.
-* Tutto ciò che accade è una chiamata di funzione.
+* Tutto ciò che accade è una chiamata ad una funzione.
 
-Per sfruttare al meglio il linguaggio R, è necessaria una solida comprensione dei tipi di dati di base e delle strutture dei dati e di come operare su di essi.
+Gli oggetti sono i nostri *mattoncini* lego mentre le funzioni le *istruzioni*.
 
-E' molto importante capire perché questi sono considerati oggetti che vengono manipolate attraverso una funzione.
+Attraverso le *istruzioni* manipoliamo i nostri *mattoncini*, così le funzioni ci permettono di manipolare gli oggetti. Gli oggetti sono come contitori che contengono l'informazione. Un oggetto può contenere un set di dati o i dati di un modello.
+Per muovere e modificare questi oggetti abbiamo bisogno delle funzioni. Tutto è una funzione, dal calcolo della media da un algoritmo di deeplearning. Per esempio la media è una funzione che agisce su una serie di dati resituendo un numero. La funzione di deep learning agisce su un dataset restituendo un modello.   
 
-Tutto è una funzione, dal calcolo della media da un algoritmo di deeplearning
+Questi due concetti, oggetto e funzione, sono essenziali e saranno  ripresi nel proseguo di questo tutorial.
+
+
+
 
 
 # Comandi di base
@@ -124,6 +132,8 @@ help(c)
 
 
 ## Vettori e Data Frames
+Pper sfruttare al meglio il linguaggio R, è necessaria una solida comprensione dei tipi e delle strutture di dati e di come operare su di essi.
+
 I vettori sono le strutture di dati più basilari in R. 
 
 Con la funzione `c()`, *combine* , creiamo un vettore elencando gli elementi  separati da una virgola
@@ -179,7 +189,7 @@ df[1,"vec1"] # ritorna l'elemento della prima riga e della colonna di nome "vec1
 Per selezionare una colonna all'interno del dataframe si può utilizzare il simbolo `$` dopo il nome del dataset. A seguito del simbolo `$` specificare il nome dell'attributo. Il risultato di questa operazione è quello di creare il vettore relativo all'attributo.
 
 ```{r}
-df$col1
+df$vec1
 ```
 
 Tale modalità è utilizzata anche per estrarre informazioni all'interno degli oggetti che sono risultati di funzioni comeplessi, come gli oggetti creati dalle funzioni che producono modelli. Tale discussione è lasciata alle sezioni successive.
@@ -217,7 +227,7 @@ Elenco di funzioni utili:
 ## Installazione e caricamento di una libreria
 
 
-Un pacchetto, in R è un insieme di funzionalità pre-costruite. Le funzioni possono calcolare una funzione matematica, ad esempio somma o creare un grafico. Di fatto, ciò che rende R una piattaforma statistica formidabile è la straordinaria ricchezza di pacchetti disponibili (ben oltre 12000 al momento della scrittura). In R, i pachetti vengono installati tramite la funzione `install.packages("nomepachetto")`
+Un pacchetto in R è un insieme di funzionalità pre-costruite. Le funzioni possono calcolare una funzione matematica, ad esempio somma o creare un grafico. Di fatto, ciò che rende R una piattaforma statistica formidabile è la straordinaria ricchezza di pacchetti disponibili (ben oltre 12000 al momento della scrittura). In R, i pachetti vengono installati tramite la funzione `install.packages("nomepachetto")`
 
 ```{r,eval=F}
 install.packages("ggplot2")
@@ -251,7 +261,7 @@ dat <- read.csv("C:/dataset/iris.csv")
 
 # Formula
 
-Nella sintassi in R esiste un'espressione particolare che viene utilizzata in certi grafici (esempio in `ggplot2`) e in alcune funzioni che creano modelli predittivi (esempio nella funzione `lm()`).
+Nella sintassi di R esiste un'espressione particolare che viene utilizzata in certi grafici (esempio in `ggplot2`) e in alcune funzioni che creano modelli predittivi (esempio nella funzione `lm()`).
 Tale sintassi prende il nome di `formula` e utilizza il simbolo tilde `~`.
 
 ```{r}
@@ -260,7 +270,7 @@ y ~ x + z
 
 
 La variabile sul lato sinistro della tilde è chiamata "variabile dipendente", mentre le variabili sul lato destro sono chiamate "variabili indipendenti" e sono unite dal segno +. Tale espressione utilizzata all'interno di alcuni funzioni esprime una relazione tra le variabili.
-si possono avere maggiori informazioni a riguardo grazie il manuale creato da Datacamp:
+Si possono avere maggiori informazioni a riguardo grazie il manuale creato da Datacamp:
 
 [Formulas in R Tutorial](https://www.datacamp.com/community/tutorials/r-formula-tutorial)
 

@@ -94,6 +94,9 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
 }
@@ -272,7 +275,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">R-Data-Training</a>
+      <a class="navbar-brand" href="index.html">R Data Training</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -280,16 +283,16 @@ div.tocify {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="warmup.html">WarmUp</a>
+  <a href="warmup.html">Let's start</a>
 </li>
 <li>
-  <a href="library.html">Collection</a>
+  <a href="library.html">Library</a>
 </li>
 <li>
-  <a href="ebook.html">E-book</a>
+  <a href="ebook.html">E-book &amp; Course</a>
 </li>
 <li>
-  <a href="readings.html">Take a Rest</a>
+  <a href="readings.html">Readings</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -309,433 +312,128 @@ div.tocify {
 
 <div id="readings" class="section level1">
 <h1>Readings</h1>
-<table style="width:58%;">
-<colgroup>
-<col width="13%" />
-<col width="29%" />
-<col width="15%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tecnica</th>
-<th align="center">algoritmo</th>
-<th align="right">Library</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>markwown</td>
-<td align="center"><a href="https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html">Getting Started with R Markdown</a></td>
-<td align="right"><code>rmarkdown</code></td>
-</tr>
-<tr class="even">
-<td>time series</td>
-<td align="center"><a href="http://www.christophsax.com/2018/05/15/tsbox/">Time Series of the World, Unite!</a></td>
-<td align="right"><code>tsbox</code></td>
-</tr>
-<tr class="odd">
-<td>build a package</td>
-<td align="center"><a href="https://github.com/ColinFay/erum2018">Building a Package that Lasts</a></td>
-<td align="right"><code>package</code></td>
-</tr>
-<tr class="even">
-<td>database</td>
-<td align="center"><a href="https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/">Getting started with PostgreSQL in R</a></td>
-<td align="right"><code>RPostgreSQL</code></td>
-</tr>
-<tr class="odd">
-<td>database</td>
-<td align="center"><a href="https://www.listendata.com/2016/08/dplyr-tutorial.html">Data Manipulation with dpylyr</a></td>
-<td align="right"><code>dplyr</code></td>
-</tr>
-<tr class="even">
-<td>database</td>
-<td align="center"><a href="https://datascienceplus.com/working-on-data-warehouse-sql-with-r/">Working on Data-Warehouse (SQL) with R</a></td>
-<td align="right"><code>dplyr</code></td>
-</tr>
-<tr class="odd">
-<td>database</td>
-<td align="center"><a href="https://rviews.rstudio.com/2017/10/18/database-queries-with-r/">Database Queries With R</a></td>
-<td align="right"><code>dplyr</code></td>
-</tr>
-<tr class="even">
-<td>trasformation</td>
-<td align="center"><a href="http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/">Manipulation de facteurs avec forcats</a></td>
-<td align="right"><code>forcats</code></td>
-</tr>
-<tr class="odd">
-<td>visualization</td>
-<td align="center"><a href="http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D">A Compendium of Clean Graphs in R</a></td>
-<td align="right"><code>base</code></td>
-</tr>
-<tr class="even">
-<td>regression</td>
-<td align="center"><a href="https://educationalresearchtechniques.com/2017/12/18/principal-component-regression-in-r/">Principal component regression in R</a></td>
-<td align="right"><code>pls</code></td>
-</tr>
-<tr class="odd">
-<td>dashboard</td>
-<td align="center"><a href="https://www.sitepoint.com/shiny-r-and-html-merging-data-science-and-web-development/">Shiny, R and HTML</a></td>
-<td align="right"><code>shiny</code></td>
-</tr>
-<tr class="even">
-<td>API</td>
-<td align="center"><a href="http://www.ryanpraski.com/google-analytics-r-tutorial/">Google Analytics R Tutorial</a></td>
-<td align="right"><code>googleAnalyticsR</code></td>
-</tr>
-<tr class="odd">
-<td>exercises</td>
-<td align="center"><a href="http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/">R PRACTICE EXERCISES: LEVEL 1</a></td>
-<td align="right"><code>base</code></td>
-</tr>
-<tr class="even">
-<td>Manipolation</td>
-<td align="center"><a href="http://genomicsclass.github.io/book/pages/dplyr_tutorial.html">dplyr tutorial</a></td>
-<td align="right"><code>dplyr</code></td>
-</tr>
-<tr class="odd">
-<td>Manipolation</td>
-<td align="center"><a href="https://github.com/trinker/dplyr_in_a_nutshell">dplyr In a Nutshell</a></td>
-<td align="right"><code>dplyr</code></td>
-</tr>
-<tr class="even">
-<td>visualization</td>
-<td align="center"><a href="http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html">R graphics</a></td>
-<td align="right"><code>ggplot2</code></td>
-</tr>
-<tr class="odd">
-<td>machine learning</td>
-<td align="center"><a href="https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/">machine learning with CARET package in R</a></td>
-<td align="right"><code>caret</code></td>
-</tr>
-<tr class="even">
-<td>tutorial</td>
-<td align="center"><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/">LeaRning Path on R</a></td>
-<td align="right"><code>base</code></td>
-</tr>
-<tr class="odd">
-<td>Tutorial</td>
-<td align="center"><a href="https://github.com/susanli2016/Data-Analysis-with-R">Data Analysis with R</a></td>
-<td align="right"><code>github</code></td>
-</tr>
-<tr class="even">
-<td>Analysis</td>
-<td align="center"><a href="https://www.kaggle.com/mrisdal/exploring-survival-on-the-titanic">Exploring Survival on the Titanic</a></td>
-<td align="right"><code>randomForest</code></td>
-</tr>
-<tr class="odd">
-<td>Analysis</td>
-<td align="center"><a href="https://www.kaggle.com/tannercarbonati/detailed-data-analysis-ensemble-modeling">Detailed Data Analysis &amp; Ensemble Modeling</a></td>
-<td align="right"><code>caret</code></td>
-</tr>
-<tr class="even">
-<td>Analysis</td>
-<td align="center"><a href="https://www.kaggle.com/philippsp/exploratory-analysis-instacart">Exploratory Analysis - Instacart</a></td>
-<td align="right"><code>ggplot2</code></td>
-</tr>
-<tr class="odd">
-<td>visualisation</td>
-<td align="center"><a href="https://rtask.thinkr.fr/blog/our-shiny-template-to-design-a-prod-ready-app/">A Shiny application in a package R</a></td>
-<td align="right"><code>shiny</code></td>
-</tr>
-<tr class="even">
-<td>Regression</td>
-<td align="center"><a href="https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/">Going Deeper into Regression Analysis</a></td>
-<td align="right"><code>base</code></td>
-</tr>
-<tr class="odd">
-<td>Machine Learning</td>
-<td align="center"><a href="https://insightr.wordpress.com/2018/05/17/tuning-xgboost-in-r-part-i/#more-809">Tuning xgboost in R</a></td>
-<td align="right"><code>xgboost</code></td>
-</tr>
-<tr class="even">
-<td>R platform</td>
-<td align="center"><a href="http://stagraph.com/Post?Id=31&amp;Title=Powered+By+R#r_online">Powered By R</a></td>
-<td align="right"><code>---</code></td>
-</tr>
-<tr class="odd">
-<td>journalism</td>
-<td align="center"><a href="https://rddj.info/?utm_content=bufferc7064&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#publication-quality-graphics">high quality resources for doing data journalism with R</a></td>
-<td align="right"><code>---</code></td>
-</tr>
-<tr class="even">
-<td>database</td>
-<td align="center">Databases using r</td>
-<td align="right"><code>---</code></td>
-</tr>
-<tr class="odd">
-<td>Classification</td>
-<td align="center"><a href="https://amunategui.github.io/binary-outcome-modeling/">Predicting Binary Outcomes with R, gbm, glmnet</a></td>
-<td align="right"><code>caret</code></td>
-</tr>
-<tr class="even">
-<td>Github</td>
-<td align="center"><a href="https://github.com/barryclark/jekyll-now">Build a Jekyll blog in minutes</a></td>
-<td align="right"><code>---</code></td>
-</tr>
-<tr class="odd">
-<td>Machine Learning</td>
-<td align="center"><a href="https://datascienceplus.com/time-dependent-roc-for-survival-prediction-models-in-r/">Survival Prediction Models in R</a></td>
-<td align="right"><code>survival</code></td>
-</tr>
-<tr class="even">
-<td>Clustering</td>
-<td align="center"><a href="https://www.r-statistics.com/2015/08/dendextend-a-package-for-visualizing-adjusting-and-comparing-dendrograms-from-the-journal-bioinformatics/">A package for visualizing dendrograms</a></td>
-<td align="right"><code>dendextend</code></td>
-</tr>
-<tr class="odd">
-<td>Clustering</td>
-<td align="center"><a href="https://stepupanalytics.com/difference-between-k-means-clustering-and-hierarchical-clustering/">Difference Between K-Means And Hierarchical</a></td>
-<td align="right"><code>kmeans</code></td>
-</tr>
-<tr class="even">
-<td>Interface</td>
-<td align="center"><a href="http://www.rdatamining.com/big-data/big-data-platforms">Big Data Platforms</a></td>
-<td align="right"><code>---</code></td>
-</tr>
-<tr class="odd">
-<td>Dashboard</td>
-<td align="center"><a href="https://appsilondatascience.com/blog/rstats/2018/05/30/user-authentication-in-r-shiny.html">User authentication in R Shiny</a></td>
-<td align="right"><code>shiny</code></td>
-</tr>
-<tr class="even">
-<td>Deep Learning</td>
-<td align="center"><a href="https://tsmatz.wordpress.com/2017/05/25/image-classification-and-matching-with-r-microsoftml-featurizeimage/">Pre-trained model on R</a></td>
-<td align="right"><code>MicrosoftML</code></td>
-</tr>
-<tr class="odd">
-<td>Deep Learning</td>
-<td align="center"><a href="https://tensorflow.rstudio.com/keras/articles/applications.htm">Using Pre-Trained Models</a></td>
-<td align="right"><code>a</code></td>
-</tr>
-<tr class="even">
-<td>Publishing</td>
-<td align="center"><a href="http://www.pzhao.org/en/post/bookdown-cheatsheet/">bookdown cheatsheet</a></td>
-<td align="right"><code>bookdown</code></td>
-</tr>
-<tr class="odd">
-<td>Classification</td>
-<td align="center"><a href="https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/">How to handle Imbalanced Classification</a></td>
-<td align="right"><code>---</code></td>
-</tr>
-<tr class="even">
-<td>Clustering</td>
-<td align="center"><a href="https://data-flair.training/blogs/r-clustering-tutorial/">R Clustering</a></td>
-<td align="right"><code>kmeans</code></td>
-</tr>
-<tr class="odd">
-<td>Classification</td>
-<td align="center"><a href="https://www.listendata.com/2017/12/k-nearest-neighbor-step-by-step-tutorial.html">K NEAREST NEIGHBOR</a></td>
-<td align="right"><code>caret</code></td>
-</tr>
-<tr class="even">
-<td>Manipulation</td>
-<td align="center"><a href="https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/">introduction to apply</a></td>
-<td align="right"><code>base</code></td>
-</tr>
-<tr class="odd">
-<td>Visualization</td>
-<td align="center"><a href="http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/118-principal-component-analysis-in-r-prcomp-vs-princomp/#compute-pca-in-r-using-prcomp">Principal Component Methods in R</a></td>
-<td align="right"><code>factoextra</code></td>
-</tr>
-<tr class="even">
-<td>Deep Learning</td>
-<td align="center"><a href="http://jasdumas.com/2018-02-20-deep-learning-img-classifier/">Deep Learning with Keras and Shiny</a></td>
-<td align="right"><code>keras</code></td>
-</tr>
-<tr class="odd">
-<td>Deploy</td>
-<td align="center"><a href="https://aws.amazon.com/it/blogs/machine-learning/using-r-with-amazon-sagemaker/">Using R with Amazon</a></td>
-<td align="right"><code>---</code></td>
-</tr>
-<tr class="even">
-<td>Deep Learning</td>
-<td align="center"><a href="https://github.com/longhowlam/I_LOVE_IKEA_SHINY_APP">I_LOVE_IKEA_SHINY_APP</a></td>
-<td align="right"><code>keras</code></td>
-</tr>
-<tr class="odd">
-<td>Visualization</td>
-<td align="center"><a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html">Top 50 ggplot2 Visualizations</a></td>
-<td align="right"><code>ggplot2</code></td>
-</tr>
-<tr class="even">
-<td>Deep Learning</td>
-<td align="center"><a href="http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/">Deep Learning in R</a></td>
-<td align="right"><code>---</code></td>
-</tr>
-<tr class="odd">
-<td>Deep Learning</td>
-<td align="center"><a href="https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html">Image Classification with Keras</a></td>
-<td align="right"><code>keras</code></td>
-</tr>
-<tr class="even">
-<td>Deep Learning</td>
-<td align="center"><a href="https://longhowlam.wordpress.com/2017/08/30/the-one-function-call-you-need-to-know-as-a-data-scientist-h2o-automl/">The one function call you need to know as a data scientist: h2o.automl</a></td>
-<td align="right"><code>h2o</code></td>
-</tr>
-<tr class="odd">
-<td>Deep Learning</td>
-<td align="center"><a href="https://github.com/jjallaire/deep-learning-with-r-notebooks">Deep Learning with R</a></td>
-<td align="right"><code>keras</code></td>
-</tr>
-<tr class="even">
-<td>Deploy</td>
-<td align="center"><a href="https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/">A Scalable Predictive API with PFA</a></td>
-<td align="right"><code>aurelius</code></td>
-</tr>
-<tr class="odd">
-<td>Reporting</td>
-<td align="center"><a href="https://grabear.github.io/awesome-rshiny/">An awesome R-shiny list!</a></td>
-<td align="right"><code>shiny</code></td>
-</tr>
-<tr class="even">
-<td>Quality</td>
-<td align="center"><a href="https://datascienceplus.com/six-sigma-dmaic-series-in-r-part-1/">Six Sigma DMAIC Series in R – Part 1</a></td>
-<td align="right"><code>DMAIC</code></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td align="center"></td>
-<td align="right"></td>
-</tr>
-</tbody>
-</table>
-<p><a href="http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html">Services and tools for building intelligent R applications in the cloud</a></p>
-<p><a href="https://stevenmortimer.com/presentations/working-with-apis-from-r/">Working with APIs from R</a></p>
-<p><a href="http://jaehyeon-kim.github.io/2017/11/API-Development-with-R-Part-I.html">2017-11-18-API-Development-with-R-Part-I</a></p>
-</div>
-<div id="course" class="section level1">
-<h1>Course</h1>
-<table>
-<thead>
-<tr class="header">
-<th>Focus on</th>
-<th align="center">Course</th>
-<th align="right">Made by</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Data Science</td>
-<td align="center"><a href="https://www2.stat.duke.edu/courses/Spring18/Sta199/">Intro to Data Science</a></td>
-<td align="right">RStudio</td>
-</tr>
-<tr class="even">
-<td>Data Science</td>
-<td align="center"><a href="https://github.com/rstudio-education/datascience-box">Data Science course in a box</a></td>
-<td align="right">RStudio</td>
-</tr>
-<tr class="odd">
-<td>Data Science</td>
-<td align="center"><a href="http://datascience.tntlab.org/schedule-materials/">Data Science for Social Science</a></td>
-<td align="right">RICHARD N. LANDERS</td>
-</tr>
-<tr class="even">
-<td>R</td>
-<td align="center"><a href="https://ramnathv.github.io/pycon2014-r/">Introduction to R</a></td>
-<td align="right">idocs</td>
-</tr>
-<tr class="odd">
-<td>R</td>
-<td align="center"><a href="http://stcorp.nl/R_course/">R course material</a></td>
-<td align="right">Paul Hiemstra</td>
-</tr>
-<tr class="even">
-<td>R</td>
-<td align="center"><a href="http://uc-r.github.io/introduction">Introduction to R</a></td>
-<td align="right">UC</td>
-</tr>
-<tr class="odd">
-<td>R</td>
-<td align="center"><a href="https://www.youtube.com/playlist?list=PLOU2XLYxmsIK9qQfztXeybpHvru-TrqAP">Intro to R</a></td>
-<td align="right">google</td>
-</tr>
-<tr class="even">
-<td>Data Science</td>
-<td align="center"><a href="http://rstatistics.net/">Statistical Computing with R</a></td>
-<td align="right">RStatistics.Net</td>
-</tr>
-<tr class="odd">
-<td>Biomedical</td>
-<td align="center"><a href="http://genomicsclass.github.io/book/">Biomedical Data Science</a></td>
-<td align="right">R. Irizarry and M. Love</td>
-</tr>
-<tr class="even">
-<td>Shiny</td>
-<td align="center"><a href="https://shiny.rstudio.com/tutorial/">Learn Shiny</a></td>
-<td align="right">RStudio</td>
-</tr>
-<tr class="odd">
-<td>Data Science</td>
-<td align="center"><a href="http://courses.had.co.nz/12-oscon/">Data science in R</a></td>
-<td align="right">Hadley Wickham</td>
-</tr>
-<tr class="even">
-<td>Programming</td>
-<td align="center"><a href="http://courses.had.co.nz/12-devtools/">R development master class</a></td>
-<td align="right">Hadley Wickham</td>
-</tr>
-<tr class="odd">
-<td>Data Science</td>
-<td align="center"><a href="http://courses.had.co.nz/12-rice-bdsi/">Big data summer institute</a></td>
-<td align="right">Hadley Wickham</td>
-</tr>
-<tr class="even">
-<td>Programming</td>
-<td align="center"><a href="http://courses.had.co.nz/11-csiro/">Package development</a></td>
-<td align="right">Hadley Wickham</td>
-</tr>
-<tr class="odd">
-<td>Visualisation</td>
-<td align="center"><a href="http://courses.had.co.nz/11-rice/">Data visualisation in R with ggplot2 and plyr</a></td>
-<td align="right">Hadley Wickham</td>
-</tr>
-<tr class="even">
-<td>Data Science</td>
-<td align="center"><a href="http://had.co.nz/stat405/">Introduction to data analysis</a></td>
-<td align="right">Hadley Wickham</td>
-</tr>
-<tr class="odd">
-<td>R</td>
-<td align="center"><a href="https://github.com/AmeliaMN/IntroToR">Introduction to R &amp; RStudio</a></td>
-<td align="right">McNamara</td>
-</tr>
-<tr class="even">
-<td>Data Analysis</td>
-<td align="center"><a href="http://varianceexplained.org/RData/">Data Analysis and Visualization Using R</a></td>
-<td align="right">David Robinson</td>
-</tr>
-<tr class="odd">
-<td>R</td>
-<td align="center"><a href="http://stat545.com/">Data wrangling, exploration, and analysis with R</a></td>
-<td align="right">UBC</td>
-</tr>
-<tr class="even">
-<td>Data Science</td>
-<td align="center"><a href="http://rafalab.github.io/pages/harvardx.html">Statistics and R</a></td>
-<td align="right">Harvard</td>
-</tr>
-<tr class="odd">
-<td>Bioconductor</td>
-<td align="center"><a href="https://kasperdanielhansen.github.io/genbioconductor/">Bioconductor for Genomic Data Science</a></td>
-<td align="right">K. D. Hansen</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="datasets" class="section level1">
-<h1>Datasets</h1>
+<div id="data-munging" class="section level2">
+<h2>Data Munging</h2>
 <ul>
-<li><a href="https://github.com/awesomedata/awesome-public-datasets">Awesome Public Datasets</a></li>
-<li><a href="https://elitedatascience.com/machine-learning-projects-for-beginners?utm_content=buffere966c&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlUa9rTKnSle%2FhXzYuGdA6Q%3D%3D">8 Fun Machine Learning Projects for Beginners</a></li>
-<li><a href="Datasets%20to%20Practice%20Your%20Data%20Mining">Datasets to Practice Your Data Mining</a></li>
-<li><a href="https://github.com/trinker/wakefield">Generate random data sets</a></li>
-<li><a href="https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/">Data Science Projects</a></li>
+<li><a href="https://www.listendata.com/2016/08/dplyr-tutorial.html">Data Manipulation with dpylyr</a> – <code>dplyr</code></li>
+<li><a href="https://datascienceplus.com/working-on-data-warehouse-sql-with-r/">Working on Data-Warehouse (SQL) with R</a> – <code>dplyr</code></li>
+<li><a href="https://rviews.rstudio.com/2017/10/18/database-queries-with-r/">Database Queries With R</a> – <code>dplyr</code></li>
+<li><a href="http://perso.ens-lyon.fr/lise.vaudor/manipulation-de-facteurs-avec-forcats/">Manipulation de facteurs avec forcats</a> – <code>forcats</code></li>
+<li><a href="https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/">Getting started with PostgreSQL in R</a> – <code>RPostgreSQL</code></li>
+<li><a href="http://genomicsclass.github.io/book/pages/dplyr_tutorial.html">dplyr tutorial</a> – <code>dplyr</code></li>
+<li><a href="https://github.com/trinker/dplyr_in_a_nutshell">dplyr In a Nutshell</a> – <code>dplyr</code></li>
+<li><a href="https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/">Ontroduction to apply</a></li>
 </ul>
-<div id="datasets-for-smart-factory" class="section level2">
-<h2>Datasets for smart factory</h2>
+</div>
+<div id="explorative-data-aanalysis" class="section level2">
+<h2>Explorative Data Aanalysis</h2>
 <ul>
-<li><a href="https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant">Combined Cycle Power Plant Data Set</a></li>
+<li><a href="https://datascienceplus.com/six-sigma-dmaic-series-in-r-part-1/">Six Sigma DMAIC Series in R – Part 1</a> – <code>DMAIC</code></li>
+</ul>
+</div>
+<div id="visualization" class="section level2">
+<h2>Visualization</h2>
+<ul>
+<li><a href="http://shinyapps.org/apps/RGraphCompendium/index.php?licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-object&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B0F0dQBL5QtektJ0RziXCww%3D%3D">A Compendium of Clean Graphs in R</a></li>
+<li><a href="http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html">R graphics</a> – <code>ggplot2</code></li>
+<li><a href="https://rddj.info/?utm_content=bufferc7064&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#publication-quality-graphics">high quality resources for doing data journalism with R</a></li>
+<li><a href="http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html">Top 50 ggplot2 Visualizations</a> – <code>ggplot2</code></li>
+</ul>
+</div>
+<div id="unsupervised-learning" class="section level2">
+<h2>Unsupervised Learning</h2>
+<ul>
+<li><a href="https://www.r-statistics.com/2015/08/dendextend-a-package-for-visualizing-adjusting-and-comparing-dendrograms-from-the-journal-bioinformatics/">A package for visualizing dendrograms</a> – <code>dendextend</code></li>
+<li><a href="https://stepupanalytics.com/difference-between-k-means-clustering-and-hierarchical-clustering/">Difference Between K-Means And Hierarchical</a> – <code>kmeans</code></li>
+<li><a href="https://data-flair.training/blogs/r-clustering-tutorial/">R Clustering</a> – <code>kmeans</code></li>
+<li><a href="http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/118-principal-component-analysis-in-r-prcomp-vs-princomp/#compute-pca-in-r-using-prcomp">Principal Component Methods in R</a> – <code>factoextra</code></li>
+</ul>
+</div>
+<div id="machine-learning" class="section level2">
+<h2>Machine Learning</h2>
+<ul>
+<li><a href="https://educationalresearchtechniques.com/2017/12/18/principal-component-regression-in-r/">Principal component regression in R</a> – <code>pls</code></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2016/12/practical-guide-to-implement-machine-learning-with-caret-package-in-r-with-practice-problem/">machine learning with CARET package in R</a> – <code>caret</code></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2016/07/deeper-regression-analysis-assumptions-plots-solutions/">Going Deeper into Regression Analysis</a></li>
+<li><a href="https://insightr.wordpress.com/2018/05/17/tuning-xgboost-in-r-part-i/#more-809">Tuning xgboost in R</a> – <code>xgboost</code></li>
+<li><a href="https://amunategui.github.io/binary-outcome-modeling/">Predicting Binary Outcomes with R, gbm, glmnet</a> – <code>caret</code></li>
+<li><a href="https://datascienceplus.com/time-dependent-roc-for-survival-prediction-models-in-r/">Survival Prediction Models in R</a> – <code>survival</code></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/">How to handle Imbalanced Classification</a></li>
+<li><a href="https://www.machinelearningplus.com/machine-learning/caret-package/">Caret Package – A Practical</a> – <code>caret</code></li>
+<li><a href="http://uc-r.github.io/lime">Visualizing ML Models with LIME</a> – <code>lime</code>|</li>
+<li><a href="https://github.com/pablo14/post_cluster_tsne/blob/master/post.Rmd">Playing with dimensions</a> – <code>Rtsne</code></li>
+<li><a href="https://towardsdatascience.com/a-tour-of-the-top-10-algorithms-for-machine-learning-newbies-dde4edffae11">Top 10 Algorithms for Newbies</a></li>
+<li><a href="https://www.statworx.com/de/blog/data-science/bouncer-0-1-2-automated-feature-selection/">Automated Feature Selection</a> – <code>bounceR</code></li>
+<li><a href="https://www.listendata.com/2017/12/k-nearest-neighbor-step-by-step-tutorial.html">K NEAREST NEIGHBOR</a> – <code>caret</code></li>
+<li><a href="https://longhowlam.wordpress.com/2017/08/30/the-one-function-call-you-need-to-know-as-a-data-scientist-h2o-automl/">The one function call you need to know as a data scientist: h2o.automl</a> – <code>h2o</code></li>
+</ul>
+</div>
+<div id="deep-learning" class="section level2">
+<h2>Deep Learning</h2>
+<ul>
+<li><a href="https://tsmatz.wordpress.com/2017/05/25/image-classification-and-matching-with-r-microsoftml-featurizeimage/">Pre-trained model on R</a> – <code>MicrosoftML</code></li>
+<li><a href="https://tensorflow.rstudio.com/keras/articles/applications.html">Using Pre-Trained Models</a></li>
+<li><a href="http://www.rblog.uni-freiburg.de/2017/02/07/deep-learning-in-r/">Deep Learning in R</a></li>
+<li><a href="http://jasdumas.com/2018-02-20-deep-learning-img-classifier/">Deep Learning with Keras and Shiny</a> – <code>keras</code></li>
+<li><a href="https://github.com/longhowlam/I_LOVE_IKEA_SHINY_APP">I_LOVE_IKEA_SHINY_APP</a> – <code>keras</code></li>
+<li><a href="https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html">Image Classification with Keras</a> – <code>keras</code></li>
+<li><a href="https://github.com/jjallaire/deep-learning-with-r-notebooks">Deep Learning with R</a> – <code>keras</code></li>
+<li><a href="https://shirinsplayground.netlify.com/2018/06/keras_fruits/">Image classification with keras</a> –<code>keras</code></li>
+<li><a href="https://shirinsplayground.netlify.com/2018/06/keras_fruits_lime/">Explaining Keras image classification models with lime</a> – <code>keras</code></li>
+<li><a href="https://medium.com/@shridhar743/kaggle-1-winning-approach-for-image-classification-challenge-9c1188157a86">Kaggle #1 Winning Approach for Image Classification Challenge</a></li>
+<li><a href="https://www.kaggle.com/dkoops/keras-r-vgg16-base">Example code Keras in R - VGG16 Base - Kaggle Kernel</a> – <code>keras</code></li>
+<li><a href="https://www.kaggle.com/bonovandoo/advanced-gardening-with-convolutional-nns">Advanced GaRdening with Convolutional NNs – Kaggle kernel</a> – <code>mxnet</code></li>
+</ul>
+</div>
+<div id="time-series-analysis" class="section level2">
+<h2>Time series analysis</h2>
+<ul>
+<li><a href="http://www.christophsax.com/2018/05/15/tsbox/">Time Series of the World, Unite!</a> – <code>tsbox</code></li>
+<li><a href="https://www.sitepoint.com/shiny-r-and-html-merging-data-science-and-web-development/">Shiny, R and HTML</a> – <code>shiny</code></li>
+</ul>
+</div>
+<div id="reporting" class="section level2">
+<h2>Reporting</h2>
+<ul>
+<li><a href="https://ourcodingclub.github.io/2016/11/24/rmarkdown-1.html">Getting Started with R Markdown</a> – <code>rmarkdown</code></li>
+<li><a href="https://github.com/barryclark/jekyll-now">Build a Jekyll blog in minutes</a></li>
+<li><a href="https://www.worksmarter.pl/en/post/job-automation-r-1/">Job automation in R</a> – <code>rmarkdown</code></li>
+<li><a href="http://www.pzhao.org/en/post/bookdown-cheatsheet/">bookdown cheatsheet</a> – <code>bookdown</code></li>
+</ul>
+</div>
+<div id="shiny" class="section level2">
+<h2>Shiny</h2>
+<ul>
+<li><a href="https://grabear.github.io/awesome-rshiny/">An awesome R-shiny list!</a> – <code>shiny</code></li>
+<li><a href="https://rtask.thinkr.fr/blog/our-shiny-template-to-design-a-prod-ready-app/">A Shiny application in a package R</a> – <code>shiny</code></li>
+<li><a href="https://appsilondatascience.com/blog/rstats/2018/05/30/user-authentication-in-r-shiny.html">User authentication in R Shiny</a> – <code>shiny</code></li>
+<li><a href="https://appsilondatascience.com/blog/rstats/2018/06/11/dashboard-tutorial.html">Create dashboards with semantic.dashboard</a> – <code>semantic.dashboard</code></li>
+</ul>
+</div>
+<div id="deploy" class="section level2">
+<h2>Deploy</h2>
+<ul>
+<li><a href="https://github.com/ColinFay/erum2018">Building a Package that Lasts</a> – <code>package</code></li>
+<li><a href="https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/">A Scalable Predictive API with PFA</a> – <code>aurelius</code></li>
+<li><a href="https://aws.amazon.com/it/blogs/machine-learning/using-r-with-amazon-sagemaker/">Using R with Amazon</a></li>
+</ul>
+</div>
+<div id="api-ide" class="section level2">
+<h2>API &amp; IDE</h2>
+<ul>
+<li><a href="http://www.ryanpraski.com/google-analytics-r-tutorial/">Google Analytics R Tutorial</a> – <code>googleAnalyticsR</code></li>
+<li><a href="http://www.rdatamining.com/big-data/big-data-platforms">Big Data Platforms</a></li>
+<li><a href="http://stagraph.com/Post?Id=31&amp;Title=Powered+By+R#r_online">Powered By R</a></li>
+<li><a href="http://blog.revolutionanalytics.com/2018/01/r-cloud-tools.html">Services and tools for building intelligent R applications in the cloud</a></li>
+<li><a href="https://stevenmortimer.com/presentations/working-with-apis-from-r/">Working with APIs from R</a></li>
+<li><a href="http://jaehyeon-kim.github.io/2017/11/API-Development-with-R-Part-I.html">API Development with R Part-I</a> – <code>plumber</code> , <code>rApache</code></li>
+</ul>
+</div>
+<div id="teaching-r" class="section level2">
+<h2>Teaching R</h2>
+<ul>
+<li><a href="http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/">R PRACTICE EXERCISES: LEVEL 1</a></li>
+<li><a href="https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/">LeaRning Path on R</a></li>
 </ul>
 </div>
 </div>
@@ -747,16 +445,56 @@ div.tocify {
 <li><a href="https://rpubs.com/moeransm/intro-iris">Learning R on iris</a></li>
 <li><a href="http://rstudio-pubs-static.s3.amazonaws.com/233370_56612580566d4c46a10ff2f70fa858a4.html">Missing Value Treatment</a></li>
 <li><a href="https://rstudio-pubs-static.s3.amazonaws.com/33876_1d7794d9a86647ca90c4f182df93f0e8.html">Cluster Analysis with R</a></li>
+<li><a href="http://rpubs.com/kjmazidi/195428">Classification with Decision Trees</a></li>
+<li><a href="https://rpubs.com/njvijay/16444">kNN Using caret R package</a></li>
+<li><a href="http://rpubs.com/cardiomoon/398623">Pie Chart Revisited</a></li>
+<li><a href="https://rpubs.com/riazakhan94/naive_bayes_classifier_e1071">Naive Bayes Classifier: theory and R example</a></li>
 </ul>
 </div>
 <div id="advanced" class="section level2">
 <h2>Advanced</h2>
-<p><a href="http://www.rpubs.com/arifulmondal/scoring">Classifications in R</a></p>
+<ul>
+<li><a href="http://www.rpubs.com/arifulmondal/scoring">Classifications in R</a></li>
+<li><a href="https://rpubs.com/sbushmanov/180410">Market basket analysis</a></li>
+<li><a href="https://rpubs.com/kieroneil/321413">Fraud Detection with Machine Learning</a></li>
+</ul>
 </div>
 </div>
 <div id="kaggle-kernel" class="section level1">
 <h1>Kaggle kernel</h1>
-<p><a href="https://www.kaggle.com/javadzabihi/happiness-2017-visualization-prediction/notebook?utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=Weekly-Kernel-Awards">Happiness 2017 (Visualization + Prediction)</a></p>
+<ul>
+<li><a href="https://www.kaggle.com/javadzabihi/happiness-2017-visualization-prediction/notebook?utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=Weekly-Kernel-Awards">Happiness 2017 (Visualization + Prediction)</a></li>
+<li><a href="https://www.kaggle.com/heesoo37/stack-overflow-2018-survey-age-gender-sexuality?utm_medium=social&amp;utm_source=linkedin.com&amp;utm_campaign=Weekly-Kernel-Awards">Stack Overflow 2018 survey: age, gender, sexuality</a></li>
+<li><a href="https://www.kaggle.com/mirichoi0218/classification-breast-cancer-or-not-with-15-ml">Breast Cancer or Not (with 15 ML)</a></li>
+<li><a href="https://www.kaggle.com/mrisdal/exploring-survival-on-the-titanic">Exploring Survival on the Titanic</a></li>
+<li><a href="https://www.kaggle.com/tannercarbonati/detailed-data-analysis-ensemble-modeling">Detailed Data Analysis &amp; Ensemble Modeling</a> – <code>caret</code></li>
+<li><a href="https://www.kaggle.com/philippsp/exploratory-analysis-instacart">Exploratory Analysis - Instacart</a> – <code>ggplot2</code></li>
+</ul>
+<div id="github-repository" class="section level2">
+<h2>Github repository</h2>
+<ul>
+<li><a href="https://github.com/susanli2016/Data-Analysis-with-R">Data Analysis with R</a></li>
+<li><a href="https://github.com/h2oai/h2o-meetups">Presentations from H2O meetups &amp; conferences by the H2O.ai team</a></li>
+<li><a href="https://github.com/h2oai/h2o-meetups/tree/master/2016_10_10_Data_Science_Milan">H2O for Internet of Things + Deep Water project</a></li>
+</ul>
+</div>
+</div>
+<div id="datasets" class="section level1">
+<h1>Datasets</h1>
+<ul>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets">Awesome Public Datasets</a></li>
+<li><a href="https://elitedatascience.com/machine-learning-projects-for-beginners?utm_content=buffere966c&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer&amp;lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BlUa9rTKnSle%2FhXzYuGdA6Q%3D%3D">8 Fun Machine Learning Projects for Beginners</a></li>
+<li><a href="Datasets%20to%20Practice%20Your%20Data%20Mining">Datasets to Practice Your Data Mining</a></li>
+<li><a href="https://github.com/trinker/wakefield">Generate random data sets</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2018/05/24-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/">Data Science Projects</a></li>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets">Awesome Public Datasets</a></li>
+</ul>
+<div id="datasets-for-smart-factory" class="section level2">
+<h2>Datasets for smart factory</h2>
+<ul>
+<li><a href="https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant">Combined Cycle Power Plant Data Set</a></li>
+</ul>
+</div>
 </div>
 
 
