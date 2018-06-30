@@ -124,6 +124,11 @@ The `ggpubr` package provides some easy-to-use functions for creating and custom
 
 [ggpubr - sthda website](http://www.sthda.com/english/rpkgs/ggpubr/index.html)
 
+> ggrepel
+
+Repel overlapping text labels away from each other
+
+[ggrepel - vignettes](https://github.com/slowkow/ggrepel)
 
 > tabplot
 
@@ -414,3 +419,20 @@ RStudio addin for editing a ‘data.frame’ or a ‘tibble’
 > Rcade
 
 The goal of Rcade is to provide access to games in order to waste some times in RStudio. You can play 2048, Tetris, Mario, Pacman, Spider Solitaire and others.
+
+> taskscheduleR
+
+Schedule R scripts/processes with the Windows task scheduler. 
+
+[taskscheduleR - vignettes ](https://cran.r-project.org/web/packages/taskscheduleR/README.html)
+
+# R for FUN
+
+> hexSticker
+
+Create hexagon sticker in R
+
+
+
+
+

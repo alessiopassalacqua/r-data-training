@@ -44,6 +44,8 @@ output:
 
 [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 
+[Fundamentals of Data Visualization](http://serialmentor.com/dataviz/)
+
 # Course
 
 
