@@ -38,7 +38,8 @@ Devi sapere anche che R è:
 2.	insegnato nelle [migliore università](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/) di tutto il mondo come Stanford, Oxford, Harvard
 3.	il più completo software per l'analisi dati: dalla stastistica di base al deep learning
 4. Utlizzato dai giganti della [silicon valley](http://www.northeastern.edu/levelblog/2017/05/31/big-companies-using-r-data-analysis/)
- come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), [google, twitter, facebook](http://blog.revolutionanalytics.com/2013/05/companies-using-open-source-r-in-2013.html), [uber](http://blog.revolutionanalytics.com/2014/06/more-companies-using-r.html).
+ come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), [google, twitter, facebook](http://blog.revolutionanalytics.com/2013/05/companies-using-open-source-r-in-2013.html), [uber](http://blog.revolutionanalytics.com/2014/06/more-companies-using-r.html)
+ 5. Usato dai giornalisti di [Finantial Times,  e BBC](http://blog.revolutionanalytics.com/2018/06/ft-bbc-uses-r.html) per raccontare notizie tramite visualizzazioni efficaci.
 
 Se vuoi sapere di più ti consiglio questo articolo:
 

@@ -16,8 +16,12 @@ output:
 * [Getting started with PostgreSQL in R](https://datashenanigan.wordpress.com/2015/05/18/getting-started-with-postgresql-in-r/) -- `RPostgreSQL` 
 * [dplyr tutorial](http://genomicsclass.github.io/book/pages/dplyr_tutorial.html) -- `dplyr`
 * [dplyr In a Nutshell](https://github.com/trinker/dplyr_in_a_nutshell) -- `dplyr`
-* [Ontroduction to apply](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/) 
+* [Introduction to apply](https://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/) 
 
+
+## Data Preparation
+
+* [Feature Engineering using R](https://blogs.msdn.microsoft.com/microsoftrservertigerteam/2017/03/23/feature-engineering-using-r/)
 
 ## Explorative Data Aanalysis
 
@@ -32,6 +36,8 @@ output:
 * [R graphics](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) -- `ggplot2`
 * [high quality resources for doing data journalism with R](https://rddj.info/?utm_content=bufferc7064&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#publication-quality-graphics) 
 * [Top 50 ggplot2 Visualizations](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html) -- `ggplot2`
+* [from Data to Viz](https://www.data-to-viz.com/#dendrogram)
+* [Introduction to data visualization with R](https://talks.andrewheiss.com/utah-rug-dataviz/) -- `ggplot2` 
 
 
 ## Unsupervised Learning
@@ -63,7 +69,21 @@ output:
 * [Logistic Regression in R Tutorial](https://www.datacamp.com/community/tutorials/logistic-regression-R)
 * [Simple Guide to Logistic Regression in R](https://www.analyticsvidhya.com/blog/2015/11/beginners-guide-on-logistic-regression-in-r/)
 * [Code for Workshop: Introduction to Machine Learning with R](https://shirinsplayground.netlify.com/2018/06/intro_to_ml_workshop_heidelberg/)
+* [modelDown: a website generator for your predictive models](http://smarterpoland.pl/index.php/2018/06/modeldown-a-website-generator-for-your-predictive-models/) -- `modelDown`
+* [Metric Functions in a Classification Dataset](http://rpubs.com/prcuny/161764) -- `caret`
+* [caret machine learning repository])(https://github.com/tobigithub/caret-machine-learning/wiki) -- `caret`
 
+## Sparklyr
+
+* [Predicting food preferences with sparklyr](https://shiring.github.io/machine_learning/2017/02/19/food_spark)
+* [Machine learning and k-fold cross validation with sparklyr](https://eddjberry.netlify.com/post/2017-11-02-sparklyr/)
+* [R and Spark: How to Analyze Data Using RStudio’s Sparklyr and H2O’s Rsparkling Packages](https://databricks.com/session/r-and-spark-how-to-analyze-data-using-rstudios-sparklyr-and-h2os-rsparkling-packages)
+* [Manipulating Data with dplyr](https://beta.rstudioconnect.com/content/2025/dplyr.nb.html)
+* [taxiDemoH2O.Rmd](https://github.com/rstudio/sparkDemos/blob/master/prod/presentations/sparkSummitEast/taxiDemoH2O.Rmd) 
+* [Importing 30GB of data into R with sparklyr](http://www.brodrigues.co/blog/2018-02-16-importing_30gb_of_data/)
+* [Comparison of ML Classifiers Using Sparklyr](https://beta.rstudioconnect.com/content/1518/notebook-classification.html)
+* [Analyzing US flight map with sparklyr](https://rstudio-pubs-static.s3.amazonaws.com/244135_7fdd3eb63ef24e62be0e037e293ac95f.html)
+* [Data Science Toolchain with Spark and R](http://colorado.rstudio.com:3939/content/420/taxiDemo.nb.html)
 
 ## Deep Learning
 
@@ -88,6 +108,12 @@ output:
 * [Introduction to Time Series Analysis](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm)
 * [Forecasting time series using R](https://robjhyndman.com/talks/MelbourneRUG.pdf)
 * [Using R for Time Series Analysis](http://a-little-book-of-r-for-time-series.readthedocs.io/en/latest/src/timeseries.html)
+* [Exploring & Visualizing Time Series](https://uc-r.github.io/ts_exploration)
+* [Plot Time Series Data Using GGPlot](http://www.sthda.com/english/articles/32-r-graphics-essentials/128-plot-time-series-data-using-ggplot/)
+* [Preparing Datetime Data for Analysis with padr and dplyr](https://edwinth.github.io/blog/padr-examples/)
+* [Moving Averages](http://uc-r.github.io/ts_moving_averages)
+* [Introduction to Forecasting with ARIMA in R](https://www.datascience.com/blog/introduction-to-forecasting-with-arima-in-r-learn-data-science-tutorials)
+
 
 
 ## Reporting
@@ -96,7 +122,7 @@ output:
 * [Build a Jekyll blog in minutes](https://github.com/barryclark/jekyll-now)
 * [Job automation in R](https://www.worksmarter.pl/en/post/job-automation-r-1/) -- `rmarkdown`
 * [bookdown cheatsheet](http://www.pzhao.org/en/post/bookdown-cheatsheet/) -- `bookdown`
-
+* [A clean R Markdown template for your reports] -- `rmarkdown`
 
 ## Shiny
 
@@ -107,6 +133,11 @@ output:
 * [Shiny, R and HTML](https://www.sitepoint.com/shiny-r-and-html-merging-data-science-and-web-development/) -- `shiny`
 * [Shiny Database App (CRUD)](https://ipub.com/shiny-crud-app/)
 
+
+## Shiny Code
+
+* [Shiny Dashboard example](http://shiny.webpopix.org/dashboard/absorption/)
+* [Building a Shiny web application to visualize spatial and spatio-temporal data](https://paula-moraga.github.io/tutorial-shiny-spatial/)
 
 ## Deploy
 
@@ -128,8 +159,7 @@ output:
 * [R PRACTICE EXERCISES: LEVEL 1](http://rstatistics.net/r-lang-practice-exercises-level-1-beginners/) 
 * [LeaRning Path on R](https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/)
 * [Some datasets for teaching data science](https://simplystatistics.org/2018/01/22/the-dslabs-package-provides-datasets-for-teaching-data-science/)
-
-
+* [RTutor: Interactive R Problem Sets](https://github.com/skranz/RTutor)
 
 
 

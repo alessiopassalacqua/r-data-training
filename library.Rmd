@@ -220,6 +220,10 @@ With help of this package mlr can be accessed via a shiny interface.
 `recipes` is an alternative method for creating and preprocessing design matrices that can be used for modeling or visualization.
 [recipes - github](https://github.com/topepo/recipes)
 
+> modelDown
+
+`modelDown` generates a website with HTML summaries for predictive models 
+[modelDown - vignettes](modelDown generates a website with HTML summaries for predictive models)
 
 # Time series
 
@@ -320,6 +324,11 @@ RStudio Project Templates for Shinyapps
 A Shiny module is a piece of a Shiny app.
 [shinymodules - shiny website](https://shiny.rstudio.com/articles/modules.html)
 
+> dashboardthemes
+
+custom theme support for R Shinydashboard applications
+[ dashboardthemes - github](https://github.com/nik01010/dashboardthemes)
+
 # Reporting & Publishing results
 
 > rmarkdorwn
@@ -395,6 +404,12 @@ provides an R interface to the Google Cloud Compute Engine API, for launching vi
 
 > R Analyticflow
 
+# PRoductivity
+
+> packagefinder
+
+With 'packagefinder' you can search for multiple keywords in the name, title and description of the CRAN package, either case-sensitive or insensitive and define your own weighting scheme for the search results, if you like.
+[ packagefinder - CRAN](https://cloud.r-project.org/web/packages/packagefinder/index.html)
 
 # RStudio Addin
 
