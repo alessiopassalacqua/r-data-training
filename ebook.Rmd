@@ -5,7 +5,7 @@ output:
     toc_float: true
 ---
 
-# Ebook
+# Ebook 
 
 * [Happy Git and GitHub for the useR](http://happygitwithr.com/)
 
@@ -15,24 +15,15 @@ output:
 
 * [Fundamentals of Data Visualization](http://serialmentor.com/dataviz/)
 
-* [Top R language resources to improve your data skills](https://www.computerworld.com/article/2497464/business-intelligence/top-r-language-resources-to-improve-your-data-skills.html?nsdr=true&page=2)
-
 * [Feature Engineering and Selection: A Practical Approach for Predictive Models](http://www.feat.engineering/)
 
-* [A curated list of awesome R packages, frameworks and software](https://awesome-r.com/)
-
-
 * [A gRadual intRoduction to Shiny](https://laderast.github.io/gradual_shiny/)
-
-* [100 Free R Tutorials and Resources in University webpages](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/)
 
 * [Functional programming and unit testing for data munging with R](https://b-rodrigues.github.io/fput/)
 
 * [Passion Driven Statistics](https://alanarnholt.github.io/PDS-Bookdown2/)
 
 * [Introduction to Data Science](https://rafalab.github.io/dsbook/)
-
-[Top 6 Free E-Books To Learn R At Beginner And Advanced Levels](https://analyticsindiamag.com/top-6-free-e-books-to-learn-r-at-beginner-and-advanced-levels/)
 
 * [plotly for R](https://plotly-book.cpsievert.me/index.html)
 
@@ -48,6 +39,23 @@ output:
 
 * [Forecasting: Principles and Practice](https://otexts.org/fpp2/)
 
+
+
+# Ebook Collection
+
+
+
+* [Top R language resources to improve your data skills](https://www.computerworld.com/article/2497464/business-intelligence/top-r-language-resources-to-improve-your-data-skills.html?nsdr=true&page=2)
+
+* [A curated list of awesome R packages, frameworks and software](https://awesome-r.com/)
+
+
+* [100 Free R Tutorials and Resources in University webpages](https://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/)
+
+
+* [Top 6 Free E-Books To Learn R At Beginner And Advanced Levels](https://analyticsindiamag.com/top-6-free-e-books-to-learn-r-at-beginner-and-advanced-levels/)
+
+* [What are some good resources for learning R?](https://www.quora.com/What-are-some-good-resources-for-learning-R-1)
 
 # Course
 

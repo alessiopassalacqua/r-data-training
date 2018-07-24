@@ -113,6 +113,8 @@ output:
 * [Preparing Datetime Data for Analysis with padr and dplyr](https://edwinth.github.io/blog/padr-examples/)
 * [Moving Averages](http://uc-r.github.io/ts_moving_averages)
 * [Introduction to Forecasting with ARIMA in R](https://www.datascience.com/blog/introduction-to-forecasting-with-arima-in-r-learn-data-science-tutorials)
+* [Time Series Forecasting with Machine Learning: An example from Kaggle](https://redoakstrategic.com/time_series_forecasting_machine_learning/)
+* [How to add Trend Lines in R Using Plotly](https://www.displayr.com/how-to-add-trend-lines-in-r-using-plotly/?utm_medium=Feed&utm_source=Syndication)
 
 
 
@@ -145,6 +147,13 @@ output:
 * [A Scalable Predictive API with PFA](https://stevenmortimer.com/a-scalable-predictive-api-with-pfa-and-aws-lambda/) -- `aurelius`
 * [Using R with Amazon](https://aws.amazon.com/it/blogs/machine-learning/using-r-with-amazon-sagemaker/) 
 
+### AWS Tutorial
+
+* [Using sparklyr with an Apache Spark cluster](https://spark.rstudio.com/examples/yarn-cluster-emr/)
+* [Analytics at Scale: h2o, Apache Spark and R on AWS EMR](https://redoakstrategic.com/h2oaws/)
+* [H2O & RStudio Server on Amazon Web Services (AWS), the Easy Way!](http://amunategui.github.io/h2o-on-aws/)
+
+
 ## API & IDE
 
 * [Google Analytics R Tutorial](http://www.ryanpraski.com/google-analytics-r-tutorial/) -- `googleAnalyticsR`
@@ -160,7 +169,8 @@ output:
 * [LeaRning Path on R](https://www.analyticsvidhya.com/learning-paths-data-science-business-analytics-business-intelligence-big-data/learning-path-r-data-science/)
 * [Some datasets for teaching data science](https://simplystatistics.org/2018/01/22/the-dslabs-package-provides-datasets-for-teaching-data-science/)
 * [RTutor: Interactive R Problem Sets](https://github.com/skranz/RTutor)
-
+* [https://github.com/FavioVazquez/awesome-datascience](https://github.com/FavioVazquez/awesome-datascience)
+* [Programming Exercises for R](http://www.grappa.univ-lille3.fr/~mary/cours/stats/centrale/rexercises.pdf)
 
 
 
@@ -193,9 +203,10 @@ output:
 * [Exploring Survival on the Titanic](https://www.kaggle.com/mrisdal/exploring-survival-on-the-titanic) 
 * [Detailed Data Analysis & Ensemble Modeling](https://www.kaggle.com/tannercarbonati/detailed-data-analysis-ensemble-modeling) -- `caret`
 * [Exploratory Analysis -  Instacart](https://www.kaggle.com/philippsp/exploratory-analysis-instacart) -- `ggplot2`
+* [R/rmd kaggle Kernels ordered by votes](https://www.kaggle.com/kernels?group=everyone&language=R&pageSize=20&sortBy=votes)
 
 
-## Github repository
+# Github repository
 
 * [Data Analysis with R](https://github.com/susanli2016/Data-Analysis-with-R)
 * [Presentations from H2O meetups & conferences by the H2O.ai team](https://github.com/h2oai/h2o-meetups)

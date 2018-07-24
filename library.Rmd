@@ -281,6 +281,11 @@ R interface to Keras
 The ff package provides data structures that are stored on disk but behave (almost) as if they were in RAM.
 [ff - website](http://ff.r-forge.r-project.org/)
 
+> replyr
+
+The `replyr` package attempts to provide practical data manipulation affordances to make code perform similarly on local or remote (big) data.
+[replyr - github](https://github.com/WinVector/replyr)
+
 
 
 # Deploy
