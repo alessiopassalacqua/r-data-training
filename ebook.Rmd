@@ -39,6 +39,8 @@ output:
 
 * [Forecasting: Principles and Practice](https://otexts.org/fpp2/)
 
+* [Processing and Analyzing Financial Data with R](https://msperlin.github.io/pafdR/)
+
 
 
 # Ebook Collection
@@ -56,6 +58,11 @@ output:
 * [Top 6 Free E-Books To Learn R At Beginner And Advanced Levels](https://analyticsindiamag.com/top-6-free-e-books-to-learn-r-at-beginner-and-advanced-levels/)
 
 * [What are some good resources for learning R?](https://www.quora.com/What-are-some-good-resources-for-learning-R-1)
+
+
+# Curated list
+
+* [a curated list of R tutorials for Data Science, NLP and Machine Learning](https://github.com/ujjwalkarn/DataScienceR)
 
 # Course
 

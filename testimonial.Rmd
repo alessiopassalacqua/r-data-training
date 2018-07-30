@@ -1,0 +1,64 @@
+---
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+
+# Testimonianze
+
+## Corso Data Mining
+
+Ritengo che il corso di DATA MINING tenuto da Alessio rappresenti un ottimo percorso per chi vuole comprendere appieno questa affascinante disciplina. 
+Alessio ha saputo mediare tra la complessità degli argomenti e la chiarezza nell'esposizione, dimostrandosi sempre disponibile ad ulteriori approfondimenti.
+Punto forte del corso è stata l'applicazione pratica dei vari concetti teorici attraverso l'uso del linguaggio R e delle sue numerose librerie partendo da un livello base fino ad esercizi via via sempre più complessi
+
+Ing. Emidio Laterza - IT support engineer
+
+---
+
+Mi ritengo molto soddisfatta del corso di data mining sostenuto, in particolare perché ho avuto la possibilità di poter visionare nozioni puramente teoriche e di non immediata comprensione direttamente sul software R. Questo tipo di corso infatti, ti permette di avere una prima infarinatura del software R, un software molto potente e indispensabile per la figura del Data Analyst.
+
+Il docente è stato molto disponibile nel dare diverse interpretazioni dei diversi argomenti trattati ed è riuscito a far capire i concetti più difficili attraverso approfondimenti alla lavagna ed esempi pratici.
+
+Avevo già sostenuto un esame di data mining all’università, ma questo corso mi ha permesso di comprendere meglio i ragionamenti alla base di questa tematica e mi ha dato la possibilità di ampliare ulteriormente le mie conoscenze in questo settore permettendomi di vedere gli stessi concetti ad angolature diverse.
+
+Dr. Roberta Rizzo - Laureata in Statitisca economia e impresa
+
+
+## Corso Tecniche Statistiche Multivariate
+
+Il taglio del corso è stato molto pratico e incentrato sull’utilizzo di “R” come software per l’analisi dei dati. Sono stati inevitabili quanto utili i richiami teorici di statistica e il corso si è ben districato tra argomenti anche molto complessi offrendo una chiave di lettura pratica puntando alla “sostanza” di ciascun tema. Tutto è stato traslato alla fine in comandi di “R” attraverso esercizi ben strutturati e ben presentati.
+
+Nel complesso un ottimo corso per i tanti spunti di approfondimento su tematiche come la strutturazione, l’analisi e l’interpretazione dei dati e per gli aspetti pratico-applicativi della programmazione in R per l’analisi PCA, MSPC e modelli predittivi.
+
+Un corso che potrebbe essere definito “di base” per la programmazione in R, ma su “argomenti di statistica avanzata” e che è consigliabile anche alle figure aziendali che faranno poco uso di R perché getta le basi per un linguaggio comune e una comune sensibilità verso la data analysis.
+
+Ing. Sergio Ceschini – Responsabile dell’area System Engineering
+
+---
+
+Pur approfondendo alcuni temi di logica e programmazione in R, il corso è efficace nel trasmettere l’importanza di una corretta gestione ed analisi dei dati e l’utilizzo di tecniche statistiche multivariate per esplorare correlazioni, controllare e monitorare processi, gestire modelli e anomalie.
+
+Il corso è strutturato in una serie di capitoli teorici, ciascuno corredato da una sezione pratica. La parte teorica è completa e ben organizzata. E’ consigliabile consultarla anche successivamente al corso visto il gran numero di informazioni e link che approfondiscono ulteriormente le tematiche discusse in classe.
+
+La sezione pratica permette di utilizzare subito gli strumenti e i metodi introdotti teoricamente, grazie ad una gran numero di istruzioni ed esempi chiari e comprensibili. Inoltre, gli esempi forniti sono stati molto attinenti alla formazione del gruppo. Questo ci ha permesso di comprendere le tecniche proposte e di poterle impiegare immediatamente nel nostro ambiente lavorativo quotidiano.
+
+Personalmente, da neofita di R e con una conoscenza abbastanza limitata di C++ e Basic, il corso mi ha permesso di acquisire una discreta indipendenza già dalla prima lezione. In poche settimane abbiamo iniziato a gestire alcuni set di dati con R ed applicare analisi statistiche multivariate introdotte durante il corso con successo.”
+
+Ing. Andrea Azzolini – R&D Scientist
+
+## Corso Analisi Dati Fabbrica Intelligente
+
+Grazie ad Alessio per averci illustrato le potenzialità dei dati come risorsa preziosa per le aziende. Una bella occasione per capire come l’analisi approfondita del processo possa portare alla qualità totale.
+
+Alessandro Tronchin –  ICT Manager
+
+---
+
+Il data analyst Alessio Passalacqua ci ha regalato uno degli interventi più belli sul tema Big Data come trasformare i dati in innovazione. Abbiamo scoperto le metodologie di analisi dati più innovative e gli ultimi sviluppi nel campo del Machine Learning e della Data Driven Innovation.In pochi click siamo passati dall’ Industria 1.0 a quella 4.0 imparando come creare valore attraverso nuovi modelli di business.
+
+LMSpace – Centro di Formazione

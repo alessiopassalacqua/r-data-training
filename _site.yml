@@ -3,16 +3,14 @@ output_dir: '.'
 navbar:
   title: R Data Training
   left:
-  - text: "Home"
+  - text: "Why R"
     href: index.html
   - text: "Let's start"
     href: warmup.html
-  - text: "Library"
-    href: library.html
-  - text: "E-book & Course"
-    href: ebook.html
-  - text: "Readings"
-    href: readings.html
+  - text: "Training Courses"
+    href: course.html
+  - text: "Testimonial"
+    href: testimonial.html
 output:
   html_document:
     theme: paper

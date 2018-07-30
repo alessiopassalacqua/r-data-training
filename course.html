@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css\rmarkdown.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">R Data Training</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Why R</a>
+</li>
+<li>
+  <a href="warmup.html">Let's start</a>
+</li>
+<li>
+  <a href="course.html">Training Courses</a>
+</li>
+<li>
+  <a href="testimonial.html">Testimonial</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<div id="catalogo-corsi" class="section level1">
+<h1>CATALOGO CORSI</h1>
+<p>I corso proposti sono rivolti a tutte le figure professionali che necessitano strumenti efficaci per ricavare informazioni dai dati finalizzate alla conoscenza, alla decisione, al controllo, alla previsione di eventi e fenomeni.</p>
+<div id="data-science-with-r-basic-modulo-1" class="section level2">
+<h2>Data Science with R – basic (Modulo 1)</h2>
+<p>Durata: 2gg, 8h + 8h</p>
+<p>Programma</p>
+<ol style="list-style-type: decimal">
+<li>Introduzione “Data Science”</li>
+<li>Introduzione R &amp; RStudio</li>
+<li>Le strutture base dei dati, Data Frame</li>
+<li>Importare dati</li>
+<li>Statistica di base</li>
+<li>Manipolare i dati</li>
+<li>Visualizzazione dati</li>
+<li>Presentazione dei risultati</li>
+</ol>
+</div>
+<div id="data-science-with-r---advance-modulo-2" class="section level2">
+<h2>Data Science with R - advance (Modulo 2)</h2>
+<p>Il corso fornisce gli strumenti, i metodi e l’esperienza pratica per sviluppare accurati modelli previsionali, grazie ai quali si crea, all’interno dell’attività aziendale, un migliore processo decisionale e si rendono le tecnologie più intelligenti. I dati possono fornire conoscenze e possono risolvere problemi reali se analizzati con le metodologie di “data science”. Lo scopo del corso è quello di spiegare in modo pratico e intuitivo la statistica, la programmazione e le metodologie di machine learning.</p>
+<p>Durata: 2gg, 8h + 8h</p>
+<p>Programma:</p>
+<ol style="list-style-type: decimal">
+<li>Introduzione ai metodi di Machine Learning</li>
+<li>Tecniche di regressione</li>
+<li>Tecniche di classificazione</li>
+<li>Riduzione delle dimensioni</li>
+<li>Clustering</li>
+<li>Anomaly detection</li>
+</ol>
+<p>Il “livello avanzato” richiede la conoscenza di base del linguaggio di programmazione R e i concetti principali delle metodologie in ambito data science che possono essere ascquisite tramite la partecipazione al corso “Data Science with R – basic”</p>
+</div>
+<div id="data-science-for-smart-factory-modulo-3" class="section level2">
+<h2>Data Science for Smart Factory (Modulo 3)</h2>
+<p>Il principale campo di applicazione dove possono essere spese le competenze acquisite in questo corso è nell’ambito Industry 4.0: manutenzione predittiva, IOT analytics, anomaly detection, efficienza energetica, demand forecasting, ottimizzazione e controllo di processo. Le lezioni combinano elementi teorici essenziali con esempi ed applicazioni pratiche su dati reali, illustrative delle varie tecniche, sfruttando il software open source R.</p>
+<p>Durata: 3gg, 8h + 8h</p>
+<p>Il corso richiede la conoscenza delle metodologie di data sience e delle funzioni di machine learning che possono essere ascquisite tramite la partecipazione ai corsi “Data Science with R – basic” e “Data Science with R – advance”</p>
+<p>Gli esempi pratici e reali di applicazione delle tecniche di <strong>Data Science For Smart Factory</strong> saranno relativi a:</p>
+<ul>
+<li>gestione dei processi di controllo della qualità;</li>
+<li>controllo di processi produttivi e industriali;</li>
+<li>costruzione di modelli previsionali di supporto alle decisioni</li>
+</ul>
+<p>E’ indicato per:</p>
+<ul>
+<li>ricercatori di scienze applicate</li>
+<li>impiegati e fondatori di start-up innovative</li>
+<li>responsabili e tecnici di laboratorio nell’ambito R&amp;D</li>
+<li>responsabili e tecnici di produzione</li>
+<li>operatori del comparto energetico</li>
+</ul>
+</div>
+<div id="data-mining-with-r-modulo-4" class="section level2">
+<h2>Data Mining with R (Modulo 4)</h2>
+<p>Durata: 4gg, 8h*4</p>
+<p>Il corso Data Mining sarà affrontato attraverso un approccio sia teorico che pratico utilizzando il linguaggio di programmazione R. La prima parte del corso è introduttiva del processo di Data Mining e del software R. La parte teorica del corso sarà incentrata su 4 argomenti principali:</p>
+<ul>
+<li>Metodi di Pretrattamento dati;</li>
+<li>Metodi Associativi;</li>
+<li>Metodi di Classificazione;</li>
+<li>Metodi di Clustering.</li>
+</ul>
+<p>A seguito della trattazione teorica, gli allievi saranno guidati all’utilizzo pratico degli algoritmi attraverso dei pratici tutorial in cui saranno mostrati i comandi e le funzioni del linguaggio R relativi ai metodi coinvolti.</p>
+<p>Gli esempi pratici e reali di applicazione delle tecniche di data mining saranno relativi a:</p>
+<ul>
+<li>Modello di previsione di perdita dei clienti (Churn Analysis)</li>
+<li>Modello di previsione sull’acquisto di un prodotto</li>
+<li>Segmentazione della clientela di un supermercato (Customer Segmentation)</li>
+<li>Analisi del paniere (Basket Market Analysis)</li>
+<li>Filtro anti-spam (Spam email detection)</li>
+<li>Identificazione del rischio del prestito bancario (credit risk)</li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>
