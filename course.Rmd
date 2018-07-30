@@ -12,7 +12,7 @@ output:
 I corso proposti sono rivolti a tutte le figure professionali che necessitano strumenti efficaci per ricavare informazioni dai dati finalizzate alla conoscenza, alla decisione, al controllo, alla previsione di eventi e fenomeni.
 
 
-## Data Science with R – basic (Modulo 1) 
+## Data Science with R – basic 
 
 Durata: 2gg, 8h + 8h
 
@@ -28,7 +28,7 @@ Programma
 8.	Presentazione dei risultati
 
 
-## Data Science with R - advance (Modulo 2)
+## Data Science with R - advance 
 
 Il corso fornisce gli strumenti, i metodi e l'esperienza pratica per sviluppare accurati modelli previsionali, grazie ai quali si crea, all’interno dell’attività aziendale, un migliore processo decisionale e si rendono le tecnologie più intelligenti. I dati possono fornire conoscenze e possono risolvere problemi reali se analizzati con le metodologie di “data science”. Lo scopo del corso è quello di spiegare in modo pratico e intuitivo la statistica, la programmazione e le metodologie di machine learning. 
 
@@ -45,7 +45,7 @@ Programma:
 
 Il “livello avanzato” richiede la conoscenza di base del linguaggio di programmazione R e i concetti principali delle metodologie in ambito data science che possono essere ascquisite tramite la partecipazione al corso "Data Science with R – basic" 
 
-## Data Science for Smart Factory (Modulo 3)
+## Data Science for Smart Factory 
 
 Il principale campo di applicazione dove possono essere spese le competenze acquisite in questo corso è nell'ambito Industry 4.0: manutenzione predittiva, IOT analytics, anomaly detection, efficienza energetica, demand forecasting, ottimizzazione e controllo di processo. Le lezioni combinano elementi teorici essenziali con esempi ed applicazioni pratiche su dati reali, illustrative delle varie tecniche, sfruttando il software open source R. 
 
@@ -68,7 +68,7 @@ E’ indicato per:
 * operatori del comparto energetico
 
 
-## Data Mining with R (Modulo 4)
+## Data Mining with R 
 
 Durata: 4gg, 8h*4
 
