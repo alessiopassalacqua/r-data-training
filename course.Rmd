@@ -12,46 +12,37 @@ output:
 I corso proposti sono rivolti a tutte le figure professionali che necessitano strumenti efficaci per ricavare informazioni dai dati finalizzate alla conoscenza, alla decisione, al controllo, alla previsione di eventi e fenomeni.
 
 
-## Data Science with R – basic 
+## Data Science with R  
 
-Durata: 2gg, 8h + 8h
+Il corso consiste è suddiviso in due parti. La prima parte, livello base, consiste di 5 moduli di 4h ciascuno, 20h totale. Il secondo consiste di 4 moduli di 4h ciascuno, 16h totale.
 
-Programma
+**Basic**
 
-1.  Introduzione “Data Science”
-2.	Introduzione R & RStudio
-3.	Le strutture base dei dati, Data Frame
-4.	Importare dati
-5.	Statistica di base
-6.	Manipolare i dati
-7.	Visualizzazione dati 
-8.	Presentazione dei risultati
-
-
-## Data Science with R - advance 
-
-Il corso fornisce gli strumenti, i metodi e l'esperienza pratica per sviluppare accurati modelli previsionali, grazie ai quali si crea, all’interno dell’attività aziendale, un migliore processo decisionale e si rendono le tecnologie più intelligenti. I dati possono fornire conoscenze e possono risolvere problemi reali se analizzati con le metodologie di “data science”. Lo scopo del corso è quello di spiegare in modo pratico e intuitivo la statistica, la programmazione e le metodologie di machine learning. 
-
-Durata: 2gg, 8h + 8h
+Il corso di base intende offrire ai partecipanti le competenze e le conoscenze base in ambito data science che sono necessarie per estrarre informazioni utili da set di dati complessi. I partecipanti saranno in grado di gestire, manipolare e analizzare diverse tipologie di dati. Le metodologie presentate permetteranno di affrontare razionalmente ed efficacemente una varietà di problematiche aziendali.
+L’obiettivo del corso è quello di presentare le metodologie di data science da un punto di vista pragmatico, orientato alla pratica.  Le dimostrazioni pratiche e le esercitazioni daranno la possibilità di approfondire le competenze relative al linguaggio di programmazione open-source R, il più potente e diffuso software di analisi dati.
 
 Programma:
 
-1.	Introduzione ai metodi di Machine Learning
-2.	Tecniche di regressione
-3.	Tecniche di classificazione
-4.	Riduzione delle dimensioni
-5.	Clustering
-6.  Anomaly detection
+* Modulo 1. Let's start with R & RStudio
+* Modulo 2. Data Import & Manipuation
+* Modulo 3. Explorative Data Analysis
+* Modulo 4. Machine Learning: Dimension Reduction
+* Modulo 5. Machine Learning: Clustering 
 
-Il “livello avanzato” richiede la conoscenza di base del linguaggio di programmazione R e i concetti principali delle metodologie in ambito data science che possono essere ascquisite tramite la partecipazione al corso "Data Science with R – basic" 
+**Advance**
+
+La seconda parte del corso fornisce gli strumenti, i metodi e l'esperienza pratica per sviluppare accurati modelli previsionali, grazie ai quali si crea, all’interno dell’attività aziendale, un migliore processo decisionale e si rendono le tecnologie più intelligenti. I dati possono fornire conoscenze e possono risolvere problemi reali se analizzati con le metodologie di “data science”. Lo scopo del corso è quello di spiegare in modo pratico e intuitivo la statistica, la programmazione e le metodologie di machine learning. 
+
+Programma:
+
+* Modulo 6. Machine Learning: Classification I
+* Modulo 7. Machine Learning: Classification II
+* Modulo 8. Machine Learning: Regression I 
+* Modulo 9. Machine Learning: Regression II
 
 ## Data Science for Smart Factory 
 
 Il principale campo di applicazione dove possono essere spese le competenze acquisite in questo corso è nell'ambito Industry 4.0: manutenzione predittiva, IOT analytics, anomaly detection, efficienza energetica, demand forecasting, ottimizzazione e controllo di processo. Le lezioni combinano elementi teorici essenziali con esempi ed applicazioni pratiche su dati reali, illustrative delle varie tecniche, sfruttando il software open source R. 
-
-Durata: 3gg, 8h + 8h
-
-Il corso richiede la conoscenza delle metodologie di data sience e delle funzioni di machine learning che possono essere ascquisite tramite la partecipazione ai corsi "Data Science with R – basic" e "Data Science with R – advance" 
 
 Gli esempi pratici e reali di applicazione delle tecniche di **Data Science For Smart Factory** saranno relativi a:
 
@@ -70,7 +61,7 @@ E’ indicato per:
 
 ## Data Mining with R 
 
-Durata: 4gg, 8h*4
+Il corso consiste di 8 moduli di 4h ore ciascuno per un totale di 32h.
 
 Il corso Data Mining sarà affrontato attraverso un approccio sia teorico che pratico utilizzando il linguaggio di programmazione R. La prima parte del corso è introduttiva del processo di Data Mining e del software R.
 La parte teorica del corso sarà incentrata su 4 argomenti principali:
@@ -90,4 +81,18 @@ Gli esempi pratici e reali di applicazione delle tecniche di data mining saranno
 * Analisi del paniere (Basket Market Analysis)
 * Filtro anti-spam (Spam email detection)
 * Identificazione del rischio del prestito bancario (credit risk)
+
+## Advanced Visualization and Reporting in R
+
+L'obiettivo del corso è quello di fornire gli strumenti utili per integrare le potenti funzionalità di analisi dati di R all'interno di applicazioni web e report professionali. Tale approccio consente di presentare i risultati dell'analisi in modo visivamente attraente e interattivo garantendo una maggiore diffusione delle conoscenze anche verso un pubblico non tecnico.
+
+Il corso consiste di 6 moduli di durata di 4h ciascuno, per un totale di 24h.
+
+* Modulo 1. Let's start with R & RStudio
+* Modulo 2. Advanced Visualization
+* Modulo 3. Reporting modern data analysis
+* Modulo 4. Shiny Dashboard
+* Modulo 5. Dashboard by using Geospatial data
+* Modulo 6. Dashboard by using Time Series data
+
 
