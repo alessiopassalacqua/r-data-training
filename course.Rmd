@@ -14,7 +14,7 @@ I corso proposti sono rivolti a tutte le figure professionali che necessitano st
 
 ## Data Science with R  
 
-Il corso consiste è suddiviso in due parti. La prima parte, livello base, consiste di 5 moduli di 4h ciascuno, 20h totale. Il secondo consiste di 4 moduli di 4h ciascuno, 16h totale.
+Il corso è suddiviso in due parti. La prima parte, livello base, consiste di 5 moduli di 4h ciascuno, 20h totale. Il secondo consiste di 4 moduli di 4h ciascuno, 16h totale.
 
 **Basic**
 
