@@ -57,7 +57,7 @@ Questo sito è dedicato a chi vuole iniziare ad usare R ed ha poca esperienza e 
 
 Per ogni dubbio o richiesta di informazioni non esitate a contattarmi.
 
-Io sono Alessio Passalacqua, se vuoi sapere chi sono visita la mia [pagina personale](https://alessiopassalacqua.github.io/passalacqua/).
+Io sono Alessio Passalacqua, se vuoi sapere chi sono visita la mia [pagina personale](https://alessiopassalacqua.updog.co/).
 
 
 
