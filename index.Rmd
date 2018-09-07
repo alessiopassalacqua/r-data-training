@@ -41,9 +41,13 @@ Devi sapere anche che R è:
  come [airbnb](http://blog.revolutionanalytics.com/2016/04/airbnb-uses-r.html), [google, twitter, facebook](http://blog.revolutionanalytics.com/2013/05/companies-using-open-source-r-in-2013.html), [uber](http://blog.revolutionanalytics.com/2014/06/more-companies-using-r.html)
  5. Usato dai giornalisti di [Finantial Times,  e BBC](http://blog.revolutionanalytics.com/2018/06/ft-bbc-uses-r.html) per raccontare notizie tramite visualizzazioni efficaci.
 
-Se vuoi sapere di più ti consiglio questo articolo:
+Puoi trovare una ulteriore lista di aziende, enti od organizzazioni non governative che utilizzano R in qeusto [link](https://github.com/ThinkR-open/companies-using-r/blob/master/README.md). 
+
+Se vuoi saperne di più su R, ti consiglio questo articolo:
 
 [11 Reasons Why You Should Learn R](https://stepupanalytics.com/11-reasons-why-you-should-learn-r/)
+
+
 
 ## Keep in touch
 
