@@ -7,7 +7,7 @@ navbar:
     href: index.html
   - text: "Let's start"
     href: warmup.html
-  - text: "Let me see"
+  - text: "Visualization"
     href: basic_ggplot2.html
   - text: "Training Courses"
     href: course.html
