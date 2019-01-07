@@ -10,6 +10,17 @@ output:
 
 # Testimonianze
 
+## Corso Base R
+
+In tre parole "Alessio trasmette passione". Ho avuto il privilegio di partecipare al primo corso in azienda sul linguaggio R ed escludendo qualche problema iniziale di connessione (di cui il docente non ha alcuna colpa), il corso è stato davvero intenso e pieno di contenuti.
+
+Alessio ha la capacità di tenere alta l'attenzione e la curiosità dei partecipanti al corso. Le sue conoscenze sul linguaggio sono davvero profonde e comprovate da una nutrita esperienza oltre che da una sana passione per l'argomento che a tratti trascende oltre l'aspetto di istruzione e sfocia invece verso aspetti di cultura e curiosità personale.
+
+Non so se e quando avrò nuovamente l'occasione di partecipare ad un corso di approfondimento del linguaggio R e delle sue infinite librerie, ma se fosse mi piacerebbe che sia nuovamente con Alessio.
+
+Ing. Stefano Radaelli
+IT Production Support | ST Microelectronics
+
 ## Corso Data Mining
 
 Ritengo che il corso di DATA MINING tenuto da Alessio rappresenti un ottimo percorso per chi vuole comprendere appieno questa affascinante disciplina. 

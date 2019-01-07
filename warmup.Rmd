@@ -102,6 +102,7 @@ Le operazioni matematiche di base sono
 
 Per assegnare un valore ad una variabile si usano i simboli `<-` . Tale operazione permette di memorizzare l'informazione richiesta in un nuovo oggetto nell'ambiente di lavoro (workspace). 
 
+
 ```{r}
 a <- 12
 a
@@ -258,6 +259,7 @@ Oppure utilizzando la funzione `read.csv()` e specificando il percorso del file 
 dat <- read.csv("C:/dataset/iris.csv")
 ```
 
+I dati che vengono importati sono memorizzati in un oggetto chiamato data frame a cui viene assegnato il nome `dat`. Un data frame è come una tabella, ha righe, le osservazione, e colonne le variabili.
 
 # Formula
 

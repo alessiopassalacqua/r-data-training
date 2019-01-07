@@ -100,6 +100,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -114,7 +117,6 @@ body {
   padding-top: 69px;
   margin-top: -69px;
 }
-
 .section h2 {
   padding-top: 69px;
   margin-top: -69px;
@@ -134,6 +136,43 @@ body {
 .section h6 {
   padding-top: 69px;
   margin-top: -69px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,18 +194,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -313,6 +411,13 @@ div.tocify {
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
 <div id="testimonianze" class="section level1">
 <h1>Testimonianze</h1>
+<div id="corso-base-r" class="section level2">
+<h2>Corso Base R</h2>
+<p>In tre parole “Alessio trasmette passione”. Ho avuto il privilegio di partecipare al primo corso in azienda sul linguaggio R ed escludendo qualche problema iniziale di connessione (di cui il docente non ha alcuna colpa), il corso è stato davvero intenso e pieno di contenuti.</p>
+<p>Alessio ha la capacità di tenere alta l’attenzione e la curiosità dei partecipanti al corso. Le sue conoscenze sul linguaggio sono davvero profonde e comprovate da una nutrita esperienza oltre che da una sana passione per l’argomento che a tratti trascende oltre l’aspetto di istruzione e sfocia invece verso aspetti di cultura e curiosità personale.</p>
+<p>Non so se e quando avrò nuovamente l’occasione di partecipare ad un corso di approfondimento del linguaggio R e delle sue infinite librerie, ma se fosse mi piacerebbe che sia nuovamente con Alessio.</p>
+<p>Ing. Stefano Radaelli IT Production Support | ST Microelectronics</p>
+</div>
 <div id="corso-data-mining" class="section level2">
 <h2>Corso Data Mining</h2>
 <p>Ritengo che il corso di DATA MINING tenuto da Alessio rappresenti un ottimo percorso per chi vuole comprendere appieno questa affascinante disciplina. Alessio ha saputo mediare tra la complessità degli argomenti e la chiarezza nell’esposizione, dimostrandosi sempre disponibile ad ulteriori approfondimenti. Punto forte del corso è stata l’applicazione pratica dei vari concetti teorici attraverso l’uso del linguaggio R e delle sue numerose librerie partendo da un livello base fino ad esercizi via via sempre più complessi</p>
