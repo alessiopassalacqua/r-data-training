@@ -18,14 +18,14 @@ Alessio ha la capacità di tenere alta l'attenzione e la curiosità dei partecip
 
 Non so se e quando avrò nuovamente l'occasione di partecipare ad un corso di approfondimento del linguaggio R e delle sue infinite librerie, ma se fosse mi piacerebbe che sia nuovamente con Alessio.
 
-Ing. Stefano Radaelli
+Ing. Stefano Radaelli <br>
 IT Production Support | ST Microelectronics
 
 ## Corso Data Mining
 
 Ritengo che il corso di DATA MINING tenuto da Alessio rappresenti un ottimo percorso per chi vuole comprendere appieno questa affascinante disciplina. 
 Alessio ha saputo mediare tra la complessità degli argomenti e la chiarezza nell'esposizione, dimostrandosi sempre disponibile ad ulteriori approfondimenti.
-Punto forte del corso è stata l'applicazione pratica dei vari concetti teorici attraverso l'uso del linguaggio R e delle sue numerose librerie partendo da un livello base fino ad esercizi via via sempre più complessi
+Punto forte del corso è stata l'applicazione pratica dei vari concetti teorici attraverso l'uso del linguaggio R e delle sue numerose librerie partendo da un livello base fino ad esercizi via via sempre più complessi.
 
 Ing. Emidio Laterza - IT support engineer
 
