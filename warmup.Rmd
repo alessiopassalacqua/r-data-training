@@ -133,6 +133,7 @@ help(c)
 
 
 ## Vettori e Data Frames
+
 Pper sfruttare al meglio il linguaggio R, è necessaria una solida comprensione dei tipi e delle strutture di dati e di come operare su di essi.
 
 I vettori sono le strutture di dati più basilari in R. 
