@@ -45,6 +45,7 @@ L’ambiente di lavoro di RStudio è costituito da quattro finestre le cui funzi
 Prima di procedere con una nuova attività di analisi, è consigliabile aprire uno nuovo script. Dall'interfaccia di RStudio cliccare su `File` e selezionare `R Script`. Successivamente procedere con il salvataggio del file.
 
 ![](figure/script.png)
+
 <br>
 
 Per eseguire il codice riportato nello script:
