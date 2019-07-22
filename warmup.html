@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>warmup.utf8.md</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -73,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="css\rmarkdown.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -193,8 +191,6 @@ $(document).ready(function () {
   menuAnchor.closest('li.dropdown').addClass('active');
 });
 </script>
-
-<div class="container-fluid main-container">
 
 <!-- tabsets -->
 
@@ -342,8 +338,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -352,6 +346,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -434,10 +438,7 @@ div.tocify {
 <li>Workspace (informazioni riguardo gli oggetti creati, cronologia dei comandi);</li>
 <li>Plot (mostra gli output grafici, help)</li>
 </ol>
-<div class="figure">
-<img src="figure/rstudio.png" />
-
-</div>
+<p><img src="figure/rstudio.png" /></p>
 <p><br></p>
 <p>Prima di procedere con una nuova attività di analisi, è consigliabile aprire uno nuovo script. Dall’interfaccia di RStudio cliccare su <code>File</code> e selezionare <code>R Script</code>. Successivamente procedere con il salvataggio del file.</p>
 <p><img src="figure/script.png" /> <br></p>
@@ -527,10 +528,7 @@ class(y3)</code></pre>
 <p>La struttura più utilizzata per elaborare i dati in R è il dataframe, è ideale perchè lavora con dati strutturati e può contenere tutti i tipi di dati. Un dataframe è una lista di vettori (solitamente, gli attributi), che devono avere tutti la stessa lunghezza (numero di casi, istanze), ma possono essere di tipo diverso. Per creare un dataframe utilizziamo la funzione <code>data.frame()</code> e elenchiamo i vettori che comporranno il dataset finale</p>
 <pre class="r"><code>df &lt;- data.frame(vec1,vec2,vec3)</code></pre>
 <p>Tutte le variabili (scalari, vettori, matrici, dataframes) creati in R sono oggetti.</p>
-<div class="figure">
-<img src="figure/datastructure.png" />
-
-</div>
+<p><img src="figure/datastructure.png" /></p>
 </div>
 <div id="accesso-ai-dati" class="section level2">
 <h2>Accesso ai dati</h2>
@@ -577,9 +575,9 @@ class(fdat)</code></pre>
 </div>
 <div id="installazione-e-caricamento-di-una-libreria" class="section level2">
 <h2>Installazione e caricamento di una libreria</h2>
-<p>Un pacchetto in R è un insieme di funzionalità pre-costruite. Le funzioni possono calcolare una funzione matematica, ad esempio somma o creare un grafico. Di fatto, ciò che rende R una piattaforma statistica formidabile è la straordinaria ricchezza di pacchetti disponibili (ben oltre 12000 al momento della scrittura). In R, i pachetti vengono installati tramite la funzione <code>install.packages(&quot;nomepachetto&quot;)</code></p>
+<p>Un pacchetto in R è un insieme di funzionalità pre-costruite. Le funzioni possono calcolare una funzione matematica, ad esempio somma o creare un grafico. Di fatto, ciò che rende R una piattaforma statistica formidabile è la straordinaria ricchezza di pacchetti disponibili (ben oltre 12000 al momento della scrittura). In R, i pachetti vengono installati tramite la funzione <code>install.packages("nomepachetto")</code></p>
 <pre class="r"><code>install.packages(&quot;ggplot2&quot;)</code></pre>
-<p>Una volta installato il pachetto è possibile chiamare le funzioni della libreria tramite il comando <code>library(&quot;nomepachetto&quot;)</code></p>
+<p>Una volta installato il pachetto è possibile chiamare le funzioni della libreria tramite il comando <code>library("nomepachetto")</code></p>
 <pre class="r"><code>library(&quot;ggplot2&quot;)</code></pre>
 <p>Solo a seguito di questo comando le funzione del pachetto sono disponibili perchè vengono caricathe nell’ambiente di lavoro (workspace)</p>
 </div>
@@ -588,10 +586,7 @@ class(fdat)</code></pre>
 <p>R ha numerose funzioni che permettono di connettersi a sorgenti di vario tipo e leggere i dati dai formati più comuni. R fornisce un intero <a href="https://cran.r-project.org/doc/manuals/r-release/R-data.html">manuale</a> che descrive il processo di importazione/esportazione dei dati.</p>
 <p>R può importare dati contenuti in file CSV in maniera molto flessibile.</p>
 <p>Il modo più semplice e pratico per importare i dati è utilizzare la finestra in alto a sinistra <code>Environmnet</code> e cliccare su <code>Import Dataset</code>, poi utilizzare l’opzione <code>From Text(readr)</code>.</p>
-<div class="figure">
-<img src="figure/import.png" />
-
-</div>
+<p><img src="figure/import.png" /></p>
 <p>Oppure utilizzando la funzione <code>read.csv()</code> e specificando il percorso del file all’interno della funzione.</p>
 <pre class="r"><code>dat &lt;- read.csv(&quot;C:/dataset/iris.csv&quot;)</code></pre>
 <p>I dati che vengono importati sono memorizzati in un oggetto chiamato data frame a cui viene assegnato il nome <code>dat</code>. Un data frame è come una tabella, ha righe, le osservazione, e colonne le variabili.</p>
