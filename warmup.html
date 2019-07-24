@@ -425,7 +425,7 @@ div.tocify {
 </div>
 <div id="installazione-di-rstudio" class="section level1">
 <h1>Installazione di RStudio</h1>
-<p>Come tutti i linguaggi di programmazione è opportuno lavorare su un’interfaccia IDE, cioè un’applicazione grafica con una serie di strumenti che ci possano aiutare nello sviluppare ed eseguire il codice. RStudio è un ambiente di sviluppo integrato (IDE) per R. E’ un software open-source che gira su Linux, Mac OS X e Windows e può essere scaricato dal sito di <a href="http://www.rstudio.com">RStudio</a></p>
+<p>RStudio è un ambiente di sviluppo integrato (IDE) per R. Unisce un’elecante applicazione grafica con una serie di strumenti che ci possano aiutare nelle diverse fasi dello sviluppo del codice e cosa molto importante a mantenere ben organizzato il flusso di lavoro. E’ un software free che gira su Linux, Mac OS X e Windows e può essere scaricato dal sito di <a href="http://www.rstudio.com">RStudio</a></p>
 <ul>
 <li>Cliccare il pulsante <em>Download RStudio Desktop</em></li>
 <li>Procedere con l’installazione.</li>
@@ -441,8 +441,9 @@ div.tocify {
 <p><img src="figure/rstudio.png" /></p>
 <p><br></p>
 <p>Prima di procedere con una nuova attività di analisi, è consigliabile aprire uno nuovo script. Dall’interfaccia di RStudio cliccare su <code>File</code> e selezionare <code>R Script</code>. Successivamente procedere con il salvataggio del file.</p>
-<p><img src="figure/script.png" /> <br></p>
-<p>Per eseguire il codice riportato nello script:</p>
+<p><img src="figure/script.png" /></p>
+<p><br></p>
+<p>Per eseguire il codice che viene scritto all’interno dell’editor di testo:</p>
 <ol style="list-style-type: decimal">
 <li>utilizzare il comando <code>Run</code> se si vuole eseguire la riga su cui è posizionato il cursore</li>
 <li>utilizzare il comando <code>Source</code> se si vuole eseguire tutto il codice contenuto nello script</li>
@@ -458,12 +459,12 @@ div.tocify {
 <li>Tutto ciò che accade è una chiamata ad una funzione.</li>
 </ul>
 <p>Gli oggetti sono i nostri <em>mattoncini</em> lego mentre le funzioni le <em>istruzioni</em>.</p>
-<p>Attraverso le <em>istruzioni</em> manipoliamo i nostri <em>mattoncini</em>, così le funzioni ci permettono di manipolare gli oggetti. Gli oggetti sono come contitori che contengono l’informazione. Un oggetto può contenere un set di dati o i dati di un modello. Per muovere e modificare questi oggetti abbiamo bisogno delle funzioni. Tutto è una funzione, dal calcolo della media da un algoritmo di deeplearning. Per esempio la media è una funzione che agisce su una serie di dati resituendo un numero. La funzione di deep learning agisce su un dataset restituendo un modello.</p>
-<p>Questi due concetti, oggetto e funzione, sono essenziali e saranno ripresi nel proseguo di questo tutorial.</p>
+<p>Come per i lego, attraverso le <em>istruzioni</em> manipoliamo i nostri <em>mattoncini</em>, così con le funzioni manipoliamo gli oggetti per realizzare le nostre analisi. Gli oggetti sono come contitori che contengono l’informazione. Un oggetto può contenere un set di dati o i informazioni di un modello. Per manipolare e modificare questi oggetti abbiamo bisogno delle funzioni. Tutto è una funzione, dal calcolo della media all’algoritmo di deep learning. Per esempio la media è una funzione che agisce su una serie di dati resituendo un numero. La funzione di deep learning agisce su un dataset restituendo un modello.</p>
+<p>Questi due concetti, oggetto e funzione, sono essenziali e sarannoripresi nel proseguo di questo tutorial.</p>
 </div>
 <div id="comandi-di-base" class="section level1">
 <h1>Comandi di base</h1>
-<p>Il simbolo <code>#</code> serve a commentare e qualunqua cosa scritta alla sua destra non verrà eseguita:</p>
+<p>Introduciamo adesso i comandi essenziali di base. Il simbolo <code>#</code> serve a commentare e qualunqua cosa scritta alla sua destra non verrà eseguita:</p>
 <pre class="r"><code># commento</code></pre>
 <p>La linea di comando può essere utilizzata come una vera e propria calcolatrice, come è illustrato dal seguente codice:</p>
 <pre class="r"><code>21+1+18</code></pre>
@@ -478,17 +479,6 @@ div.tocify {
 <li><code>/</code> divisione</li>
 <li><code>^</code> elevamento a potenza</li>
 </ul>
-<p>Per assegnare un valore ad una variabile si usano i simboli <code>&lt;-</code> . Tale operazione permette di memorizzare l’informazione richiesta in un nuovo oggetto nell’ambiente di lavoro (workspace).</p>
-<pre class="r"><code>a &lt;- 12
-a</code></pre>
-<pre><code>## [1] 12</code></pre>
-<p>Informazioni sull’ambiente di lavoro possono essere ottenute nel riquadro di RStudio in alto a destra.</p>
-<p>Gli oggetti insieme le funzioni sono le strutture basilari della programmazione in R.</p>
-<ul>
-<li>Tutto ciò che esiste in memoria è un oggetto.</li>
-<li>Tutto ciò che accade è una funzione.</li>
-</ul>
-<p>Un oggetto può essere di diverso tipo, i più comuni sono i vettori.</p>
 <div id="le-funzioni" class="section level2">
 <h2>Le funzioni</h2>
 <p>Le funzioni hanno una scrittura di questo tipo <code>fun(arg1,arg2...)</code> dove:</p>
@@ -496,16 +486,21 @@ a</code></pre>
 <li><code>fun()</code> è il nome della funzione</li>
 <li><code>arg1,arg2,...</code> sono gli argomenti che vengono passati alla funzione</li>
 </ul>
-<p>Il risultato può essere salvato in un oggetto tramite l’operatore assegnazione.</p>
 <p>In R è possibile chiedere aiuto con <code>help</code> on con <code>?</code> seguito dal nome della funzione. In basso a destra, nel riquadro <em>Plot</em> si aprirà una finestra con un help relativo alla funzione. E’ fondamentale imparare a leggere il manuale perchè permette di navigare attraverso le funzioni esistenti per sfruttarne efficacemente le potenzialità. Nell’esempio la funzione <code>c()</code>, che è utilizzata per la creazione di nuovi oggetti come verrà illlustrato nel successivo paragrafo.</p>
 <pre class="r"><code>help(c) 
 ?c()</code></pre>
 </div>
 <div id="vettori-e-data-frames" class="section level2">
 <h2>Vettori e Data Frames</h2>
-<p>Pper sfruttare al meglio il linguaggio R, è necessaria una solida comprensione dei tipi e delle strutture di dati e di come operare su di essi.</p>
+<p>Per assegnare un valore ad una variabile si usano i simboli <code>&lt;-</code> . Tale operazione permette di memorizzare l’informazione richiesta in un nuovo oggetto nell’ambiente di lavoro (workspace).</p>
+<pre class="r"><code>a &lt;- 12
+a</code></pre>
+<pre><code>## [1] 12</code></pre>
+<p>Informazioni sull’ambiente di lavoro possono essere ottenute nel riquadro di RStudio in alto a destra.</p>
+<p>Un oggetto può essere di diverso tipo, i più comuni sono i vettori.</p>
+<p>Per sfruttare al meglio il linguaggio R, è necessaria una solida comprensione dei tipi e delle strutture di dati e di come operare su di essi.</p>
 <p>I vettori sono le strutture di dati più basilari in R.</p>
-<p>Con la funzione <code>c()</code>, <em>combine</em> , creiamo un vettore elencando gli elementi separati da una virgola</p>
+<p>Con la funzione <code>c()</code>, <em>combine</em> , creiamo un vettore elencando gli elementiseparati da una virgola</p>
 <pre class="r"><code>vec1 &lt;- c(18,2,3)
 vec1</code></pre>
 <pre><code>## [1] 18  2  3</code></pre>
@@ -525,29 +520,38 @@ class(y2)</code></pre>
 <pre class="r"><code>y3 &lt;- c(&quot;a&quot;, TRUE)  ## character
 class(y3)</code></pre>
 <pre><code>## [1] &quot;character&quot;</code></pre>
-<p>La struttura più utilizzata per elaborare i dati in R è il dataframe, è ideale perchè lavora con dati strutturati e può contenere tutti i tipi di dati. Un dataframe è una lista di vettori (solitamente, gli attributi), che devono avere tutti la stessa lunghezza (numero di casi, istanze), ma possono essere di tipo diverso. Per creare un dataframe utilizziamo la funzione <code>data.frame()</code> e elenchiamo i vettori che comporranno il dataset finale</p>
+<p>La struttura più utilizzata per elaborare i dati in R è il dataframe, è ideale perchè lavora con dati strutturati e può contenere tutti i tipi di dati. Un dataframe è una lista di vettori (solitamente, gli attributi), che devono avere tutti la stessa lunghezza (numero di casi, istanze), ma possono essere di tipo diverso. Un data frame è come una tabella, ha righe, le osservazione, e colonne le variabili. Per creare un data frame utilizziamo la funzione <code>data.frame()</code> ed elenchiamo i vettori che comporranno il dataset finale:</p>
 <pre class="r"><code>df &lt;- data.frame(vec1,vec2,vec3)</code></pre>
-<p>Tutte le variabili (scalari, vettori, matrici, dataframes) creati in R sono oggetti.</p>
+<p>Gli oggetti creati in R possono essere di diversa forma, oltre a vettori e data frame, possiamo creare matrici (vettori con più di dimensioni) e liste come mostrato in figura.</p>
 <p><img src="figure/datastructure.png" /></p>
 </div>
 <div id="accesso-ai-dati" class="section level2">
 <h2>Accesso ai dati</h2>
-<p>Ci sono diversi modi per accedere agli elementi di un vettore o dataframe, il più comune sfrutta le parentesi quadre e utilizza uno o più indici per indicare la posizione di un elemento:</p>
+<p>Una delle attività che viene svolta maggiormente durante il processo di analisi è l’accesso ai dati.<br />
+Ci sono diversi modi per accedere agli elementi di un vettore o data frame, il più comune sfrutta le parentesi quadre e utilizza uno o più indici per indicare la posizione di un elemento.</p>
+<p>Per un vettore:</p>
 <pre class="r"><code>vec1[2] # ritorna il secondo elemento del vettore</code></pre>
 <pre><code>## [1] 2</code></pre>
+<p>Nella figura seguente, una visualizzazione delle diverse modalità di accesso nel caso di vettori:</p>
+<div class="figure">
+<img src="figure/vector_element.PNG" alt="base R cheatsheet" />
+<p class="caption"><a href="http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf">base R cheatsheet</a></p>
+</div>
+<p>Discorso analogo per le matrici e data frame:</p>
 <pre class="r"><code>df[2,1] # ritorna l&#39;elemento della seconda riga e prima colonna</code></pre>
 <pre><code>## [1] 2</code></pre>
-<p>Oppure, nel caso di dataframe, utilizzando il nome della colonne all’interno delle parentisi quadre</p>
+<p><img src="figure/matrix_subsetting.png" /></p>
+<p>Nel caso di data frame, è possibile utilizzare il nome della colonne all’interno delle parentisi quadre per indicare la variabile da considerare.</p>
 <pre class="r"><code>df[1,&quot;vec1&quot;] # ritorna l&#39;elemento della prima riga e della colonna di nome &quot;vec1&quot;</code></pre>
 <pre><code>## [1] 18</code></pre>
-<p>Per selezionare una colonna all’interno del dataframe si può utilizzare il simbolo <code>$</code> dopo il nome del dataset. A seguito del simbolo <code>$</code> specificare il nome dell’attributo. Il risultato di questa operazione è quello di creare il vettore relativo all’attributo.</p>
+<p>Per selezionare una colonna all’interno del dataframe si può utilizzare il simbolo <code>$</code> dopo il nome del dataset. A seguito del simbolo <code>$</code> specificare il nome dell’attributo. Il risultato di questa operazione è quello di estrarre il vettore relativo all’attributo selezionato.</p>
 <pre class="r"><code>df$vec1</code></pre>
 <pre><code>## [1] 18  2  3</code></pre>
-<p>Tale modalità è utilizzata anche per estrarre informazioni all’interno degli oggetti che sono risultati di funzioni comeplessi, come gli oggetti creati dalle funzioni che producono modelli. Tale discussione è lasciata alle sezioni successive.</p>
+<p>Tale modalità è utilizzata anche per estrarre un oggetta all’interno di una lista specificando il suo nome.</p>
 </div>
 <div id="variabile-categorica" class="section level2">
 <h2>Variabile categorica</h2>
-<p>Le variabili categoriche sono variabili che assumono un numero limitato di valori diversi. La funzione <code>as.factor()</code> viene utilizzata per creare una variabile categorica (factor).</p>
+<p>Le variabili categoriche sono variabili che assumono un numero limitato di valori chiamati anche livelli. La funzione <code>as.factor()</code> viene utilizzata per creare una variabile categorica (factor) da un vettore.</p>
 <pre class="r"><code># vettore carattere
 dat &lt;- c(&quot;bianco&quot;,&quot;nero&quot;,&quot;nero&quot;,&quot;nero&quot;,&quot;bianco&quot;,&quot;grigio&quot;)
 class(dat)</code></pre>
@@ -559,7 +563,7 @@ class(fdat)</code></pre>
 </div>
 <div id="funzioni-utili" class="section level2">
 <h2>Funzioni utili</h2>
-<p>Elenco di funzioni utili:</p>
+<p>Qui di seguito un elenco di funzioni utili:</p>
 <ul>
 <li><code>length(object)</code> numero di elementi in un vettore</li>
 <li><code>str(object)</code> mostra la struttura di un oggetto/variabile</li>
@@ -575,11 +579,11 @@ class(fdat)</code></pre>
 </div>
 <div id="installazione-e-caricamento-di-una-libreria" class="section level2">
 <h2>Installazione e caricamento di una libreria</h2>
-<p>Un pacchetto in R è un insieme di funzionalità pre-costruite. Le funzioni possono calcolare una funzione matematica, ad esempio somma o creare un grafico. Di fatto, ciò che rende R una piattaforma statistica formidabile è la straordinaria ricchezza di pacchetti disponibili (ben oltre 12000 al momento della scrittura). In R, i pachetti vengono installati tramite la funzione <code>install.packages("nomepachetto")</code></p>
+<p>Un pacchetto in R è un insieme di funzionalità pre-costruite. Le funzioni possono calcolare una funzione matematica, ad esempio somma o creare un grafico. Di fatto, ciò che rende R una piattaforma statistica formidabile è la straordinaria ricchezza di pacchetti disponibili (ben oltre 14000 al momento della scrittura). In R, i pachetti vengono installati tramite la funzione <code>install.packages("nomepachetto")</code></p>
 <pre class="r"><code>install.packages(&quot;ggplot2&quot;)</code></pre>
-<p>Una volta installato il pachetto è possibile chiamare le funzioni della libreria tramite il comando <code>library("nomepachetto")</code></p>
+<p>Una volta installato il pachetto è possibile caricare nell’ambiente di lavoro (workspace) le funzioni della libreria tramite il comando <code>library("nomepachetto")</code>:</p>
 <pre class="r"><code>library(&quot;ggplot2&quot;)</code></pre>
-<p>Solo a seguito di questo comando le funzione del pachetto sono disponibili perchè vengono caricathe nell’ambiente di lavoro (workspace)</p>
+<p>Solo a seguito di questo comando le funzione del pachetto sono disponibili.</p>
 </div>
 <div id="importare-i-dati-in-r" class="section level2">
 <h2>Importare i dati in R</h2>
@@ -589,7 +593,7 @@ class(fdat)</code></pre>
 <p><img src="figure/import.png" /></p>
 <p>Oppure utilizzando la funzione <code>read.csv()</code> e specificando il percorso del file all’interno della funzione.</p>
 <pre class="r"><code>dat &lt;- read.csv(&quot;C:/dataset/iris.csv&quot;)</code></pre>
-<p>I dati che vengono importati sono memorizzati in un oggetto chiamato data frame a cui viene assegnato il nome <code>dat</code>. Un data frame è come una tabella, ha righe, le osservazione, e colonne le variabili.</p>
+<p>I dati che vengono importati sono memorizzati in un oggetto data frame a cui viene assegnato il nome <code>dat</code>.</p>
 </div>
 </div>
 <div id="formula" class="section level1">
