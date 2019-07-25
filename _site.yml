@@ -6,9 +6,13 @@ navbar:
   - text: "Why R"
     href: index.html
   - text: "Let's start"
-    href: warmup.html
-  - text: "Visualization"
-    href: basic_ggplot2.html
+    menu: 
+      - text: "Intro R"
+        href: warmup.html
+      - text: "Data Manipulation"
+        href: Manipolare_i_dati_con_dplyr.html
+      - text: "Visualization"
+        href: basic_ggplot2.html
   - text: "Training Courses"
     href: course.html
   - text: "Testimonial"
