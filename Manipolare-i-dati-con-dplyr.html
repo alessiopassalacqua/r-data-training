@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Alessio Passalacqua" />
+
+<meta name="date" content="2019-07-25" />
+
+<title>Manipolare i dati con dplyr</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css\rmarkdown.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">R Data Training</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Why R</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Let's start
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="warmup.html">Intro R</a>
+    </li>
+    <li>
+      <a href="Manipolare_i_dati_con_dplyr.html">Data Manipulation</a>
+    </li>
+    <li>
+      <a href="basic_ggplot2.html">Visualization</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="course.html">Training Courses</a>
+</li>
+<li>
+  <a href="testimonial.html">Testimonial</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Manipolare i dati con dplyr</h1>
+<h4 class="author"><a href="https://alessiopassalacqua.updog.co/">Alessio Passalacqua</a></h4>
+<h4 class="date">2019-07-25</h4>
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<div id="obiettivi-di-questo-tutorial" class="section level1">
+<h1>Obiettivi di questo tutorial</h1>
+<p>In questo tutorial vedremo la libreria <code>dplyr</code> che fornisce le funzioni fondamentali per trasformare e manipolare i dati.</p>
+<p><code>dplyr</code> introduce una grammatica della manipolazione dei dati in R. Fornisce un’interfaccia coerente per lavorare con i dati, indipendentemente da dove sono archiviati: <code>data.frame</code> , <code>data.table</code> o un database. Le parti chiave di dplyr sono scritte usando <code>Rcpp</code>, questa caratteristica rende molto veloce l’elaborazione dei dati caricati in memoria.</p>
+<p>La filosofia di dplyr è quella di avere piccole funzioni che facciano bene una cosa.</p>
+<p>I comandi sono facili da ricordare perchè richiamano le azioni che i comandi andranno a svolge. Inoltre si vedrà come concatenare una serie di funzioni grazie all’utilizzo dell’operatore <em>pipe</em> <code>%&gt;%</code>. Questa nuova sintassi permette di rendere il codice più semplice da leggere. La libreria ha 7 funzioni principali che vengono mostrate in tabella insieme all’equivalente comando in <strong>SQL</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Funzione</th>
+<th>Descrizione</th>
+<th>Equivalenza SQL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>select()</td>
+<td>Selecting columns (variables)</td>
+<td>SELECT</td>
+</tr>
+<tr class="even">
+<td>filter()</td>
+<td>Filter (subset) rows.</td>
+<td>WHERE</td>
+</tr>
+<tr class="odd">
+<td>slice()</td>
+<td>Choose rows (by position)</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>group_by()</td>
+<td>Group the data</td>
+<td>GROUP BY</td>
+</tr>
+<tr class="odd">
+<td>summarise()</td>
+<td>Summarise (or aggregate) data</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td>arrange()</td>
+<td>Sort the data</td>
+<td>ORDER BY</td>
+</tr>
+<tr class="odd">
+<td>join()</td>
+<td>Joining data frames (tables)</td>
+<td>JOIN</td>
+</tr>
+<tr class="even">
+<td>mutate()</td>
+<td>Creating New Variables</td>
+<td>COLUMN ALIAS</td>
+</tr>
+</tbody>
+</table>
+<p>source: <a href="https://www.listendata.com/2016/08/dplyr-tutorial.html">Data manipulation with dplyr</a></p>
+<ul>
+<li><p>Uno dei vantaggi di queste funzioni è che il risultato di ciascun comando sarà sempre un nuovo dataframe. In questo modo sarà molto più semplice eseguire una serie manipolazioni in sequenza.</p></li>
+<li><p>Una caratteristica aggiuntiva è la capacità di lavorare con i dati memorizzati direttamente in un database esterno. I vantaggi di fare questo sono che i dati possono essere gestiti in modo nativo in un database relazionale, le query possono essere condotte su quel database e solo i risultati della query restituiti nell’ambiente di lavoro.</p></li>
+<li><p>Le colonne possono essere specificate direttamente usando nomi delle variabili senza usare <code>$</code> o le <code>virgolette</code>.</p></li>
+</ul>
+</div>
+<div id="la-libreria-dplyr" class="section level1">
+<h1>La libreria dplyr</h1>
+<p>Iniziamo con l’installazione e il caricamento della libreria <code>dplyr</code>:</p>
+<pre class="r"><code>install.packages(dplyr)</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+<p>Utilizzeremo per la prima parte del tutorial il famoso dataset <code>iris</code>:</p>
+<pre class="r"><code>data(&quot;iris&quot;)</code></pre>
+<div id="select" class="section level2">
+<h2>Select</h2>
+<p>Il comando <code>select()</code> permette di selezionare una o più variabili del dataframe. Per selezionare alcune colonne è sufficiente aggiungere i nomi delle variabili come argomenti di <code>select</code>. L’ordine in cui vengono aggiunti, determinerà l’ordine in cui verranno visualizzati nell’output.</p>
+<pre class="r"><code>select(iris[1:5,],Sepal.Length,Sepal.Width)</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width
+## 1          5.1         3.5
+## 2          4.9         3.0
+## 3          4.7         3.2
+## 4          4.6         3.1
+## 5          5.0         3.6</code></pre>
+</div>
+<div id="mutate" class="section level2">
+<h2>Mutate</h2>
+<p>È possibile creare nuove colonne utilizzando quelle del dataframe con la funzione <code>mutate()</code>. Le opzioni utilizzabili all’interno dell’istruzione sono quasi infinite: praticamente tutto ciò che si può fare per i vettori, può essere fatto all’interno della funzione <code>mutate()</code>. Solitamente per una nuova colonna si utilizza un nuovo nome ma se viene utilizzato il nome di una colonna già esistente essa viene sostituita.</p>
+<pre class="r"><code>mutate(iris[1:5,],Sepal.LWratio = Sepal.Length/Sepal.Width)</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species Sepal.LWratio
+## 1          5.1         3.5          1.4         0.2  setosa      1.457143
+## 2          4.9         3.0          1.4         0.2  setosa      1.633333
+## 3          4.7         3.2          1.3         0.2  setosa      1.468750
+## 4          4.6         3.1          1.5         0.2  setosa      1.483871
+## 5          5.0         3.6          1.4         0.2  setosa      1.388889</code></pre>
+</div>
+<div id="filter" class="section level2">
+<h2>Filter</h2>
+<p>In molti casi non si vogliono includere tutte le righe nell’analisi, ma solo una selezione. La funzione <code>filter()</code> riduce le righe/osservazioni in base alle condizioni assegnate, La sintassi generale del filtro è: <code>filter(dataset, condizione)</code>. È possibile filtrare le variabili numeriche in base ai rispettivi valori. Gli operatori più utilizzati per questo sono:</p>
+<ul>
+<li><code>&gt;</code> (maggiore)</li>
+<li><code>&gt;=</code> (maggiore uguale)</li>
+<li><code>&lt;</code> (minore)</li>
+<li><code>&lt;=</code> (minore uguale)</li>
+<li><code>==</code> (uguale)</li>
+<li><code>!=</code> (diverso)</li>
+</ul>
+<pre class="r"><code>filter(iris, Sepal.Width &gt; 3.7)</code></pre>
+<pre><code>##    Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
+## 1           5.4         3.9          1.7         0.4    setosa
+## 2           5.8         4.0          1.2         0.2    setosa
+## 3           5.7         4.4          1.5         0.4    setosa
+## 4           5.4         3.9          1.3         0.4    setosa
+## 5           5.7         3.8          1.7         0.3    setosa
+## 6           5.1         3.8          1.5         0.3    setosa
+## 7           5.2         4.1          1.5         0.1    setosa
+## 8           5.5         4.2          1.4         0.2    setosa
+## 9           5.1         3.8          1.9         0.4    setosa
+## 10          5.1         3.8          1.6         0.2    setosa
+## 11          7.7         3.8          6.7         2.2 virginica
+## 12          7.9         3.8          6.4         2.0 virginica</code></pre>
+<p>Oppure per le variabile categoriche sono utilizzati i segni <code>==</code> o <code>!=</code>. Una o più condizioni possono essere usate contemporaneamente:</p>
+<pre class="r"><code>filter(iris, Species == &quot;virginica&quot;, Sepal.Width &gt; 3.7)</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
+## 1          7.7         3.8          6.7         2.2 virginica
+## 2          7.9         3.8          6.4         2.0 virginica</code></pre>
+</div>
+<div id="slice" class="section level2">
+<h2>Slice</h2>
+<p>La funzione <code>slice()</code> consente di selezionare le righe tramite la loro posizione:</p>
+<pre class="r"><code>slice(iris,8:12)</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.0         3.4          1.5         0.2  setosa
+## 2          4.4         2.9          1.4         0.2  setosa
+## 3          4.9         3.1          1.5         0.1  setosa
+## 4          5.4         3.7          1.5         0.2  setosa
+## 5          4.8         3.4          1.6         0.2  setosa</code></pre>
+</div>
+<div id="summarize" class="section level2">
+<h2>summarize</h2>
+<p>La funzione <code>summarize()</code> permette di calcolare funzioni statistiche riassuntive. Per utilizzare la funzione è sufficiente aggiungere il nome nuovo della colonna e, dopo il segno di uguale, la funzione matematica con cui vogliamo riassumere i dati <code>column_name = funzione(variabile)</code>. È possibile aggiungere più funzioni di riepilogo all’interno dell’istruzione <code>summarize()</code>.</p>
+<p>Il codice seguente mostra il calcolo della funzione <code>mean</code> e <code>sd</code> in riferimento alla variabile <code>Sepal.Length</code>:</p>
+<pre class="r"><code>summarize(iris, mean_sl = mean(Sepal.Length), sd_sl= sd(Sepal.Length ))</code></pre>
+<pre><code>##    mean_sl     sd_sl
+## 1 5.843333 0.8280661</code></pre>
+<p>La funzione viene utilizzata in successione al comando <code>group_by()</code> come verrà spiegato nella sezione <strong>split-apply-combine</strong>.</p>
+</div>
+<div id="operatore-pipe" class="section level2">
+<h2>Operatore PIPE: %&gt;%</h2>
+<p>L’operatore <strong>pipe</strong>, <code>%&gt;%</code> permette di concatenare facilmente una sequenza di funzioni. Quando la <strong>pipe</strong> è presente tra due funzioni esempio: <code>fun1() %&gt;% fun2()</code> questa sequenza può essere tradotta con <strong>esegui fun1() poi, con con output di fun1(), esegui fun2()</strong>. Tale comando è mostrato nella sezione successiva in cui <code>group_by()</code> e <code>summarize()</code> sono usati in successione. Per richiamare l’operatore <em>pipe</em> dalla tastiera è possibile utilizzare la shortcut di RStudio: <kbd>Ctrl + Shift + M</kbd> (Windows), <kbd>Cmd + Shift + M</kbd> (Mac).</p>
+</div>
+<div id="split-apply-combine" class="section level2">
+<h2>split-apply-combine</h2>
+<p>Molte delle attività di analisi dati possono essere affrontate utilizzando il paradigma “split-apply-combine”: dividere i dati in gruppi, applicare alcune analisi a ciascun gruppo e combinare i risultati in un nuovo data frame.</p>
+<p><img src="figure/split-apply-combine.png" /></p>
+<p>Il pacchetto <code>dplyr</code> è stato scritto appositamente per ottimizzare le analisi di tipo Split-Apply-Combine.</p>
+<p>La funzione <code>group_by()</code> raggruppa i dati utilizzando i livelli di una variabile categorica ed è utilizzata insieme alla funzione <code>summarize</code> per fornire statistiche a riguardo i diversi gruppi. In questo esempio le funzioni sono concatenate con l’operatore <code>%&gt;%</code>:</p>
+<pre class="r"><code>iris %&gt;% 
+  group_by(Species) %&gt;% 
+  summarize(mean_sl=mean(Sepal.Length))</code></pre>
+<pre><code>## # A tibble: 3 x 2
+##   Species    mean_sl
+##   &lt;fct&gt;        &lt;dbl&gt;
+## 1 setosa        5.01
+## 2 versicolor    5.94
+## 3 virginica     6.59</code></pre>
+</div>
+<div id="arrange" class="section level2">
+<h2>arrange</h2>
+<p>La funzione <code>arrange()</code> ordina le righe in modo crescente:</p>
+<pre class="r"><code>iris  %&gt;%
+  arrange(Sepal.Length) %&gt;% 
+  head()</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          4.3         3.0          1.1         0.1  setosa
+## 2          4.4         2.9          1.4         0.2  setosa
+## 3          4.4         3.0          1.3         0.2  setosa
+## 4          4.4         3.2          1.3         0.2  setosa
+## 5          4.5         2.3          1.3         0.3  setosa
+## 6          4.6         3.1          1.5         0.2  setosa</code></pre>
+<p>Per ordinare in modo decrescente utilizzare la funzione <code>desc()</code> come mostrato nell’esempio:</p>
+<pre class="r"><code>iris  %&gt;%
+  arrange(desc(Sepal.Length)) %&gt;% 
+  head()</code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
+## 1          7.9         3.8          6.4         2.0 virginica
+## 2          7.7         3.8          6.7         2.2 virginica
+## 3          7.7         2.6          6.9         2.3 virginica
+## 4          7.7         2.8          6.7         2.0 virginica
+## 5          7.7         3.0          6.1         2.3 virginica
+## 6          7.6         3.0          6.6         2.1 virginica</code></pre>
+</div>
+<div id="join" class="section level2">
+<h2>join</h2>
+<p>Le funzioni <code>join</code> permettono di unire due tabelle tramite una colonna in comune, chiamata anche key. Quando si unisco due tabelle si definisce <em>tabella di sinistra</em> la prima tabella che viene codificata e <em>tabella di destra</em> la seconda. I nomi delle funzionirichiamano i respettivi comandi utilizzati in SQL.</p>
+<p>Per comprendere il funzionamento delle funzioni della famiglia join facciamo riferimento agli esempi riportati nell’immagine sottostante presa da <a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">dplyr cheatsheet</a>. Nell’esempio riportato la colonna in comune è chiamata <code>x1</code>. La tabella risultante dall’unione conterrà la colonna <code>x1</code> e le altre colonne delle tabelle unite.</p>
+<p><img src="figure/join.PNG" /></p>
+<p>In molti casi la colonna in comune non è perfettamente coincidente tra le due tabelle. Infatti la tabella di destra può contenere valori di <code>x1</code> assenti nella tabella di sinistra e viceversa.</p>
+<p>Il meccanismo di unione dipende da come si selezionano i valori della colonna <code>x1</code> che andranno a costituire la tabella finale. Per questo sono possibili i seguenti meccanismi:</p>
+<p><img src="figure/dplyr_join.png" width="300" /></p>
+<ul>
+<li><p><code>left_join()</code> : estrae tutti i valori della tabella a sinistra anche se non hanno corrispondenza nella tabella a destra;</p></li>
+<li><p><code>right_join()</code> estrae tutti i valori della tabella a destra anche se non hanno corrispondenza nella tabella di sinistra.</p></li>
+<li><p><code>inner_join()</code>: il suo scopo è quello di unire due tabelle restituendo un risultato combinato sulla base di uno o più osservazioni che trovano corrispondenza in tutte le tabelle coinvolte nella join. Il comando corrispondente è</p></li>
+<li><p><code>full_join()</code>: estrae tutte le righe delle due tabelle.</p></li>
+</ul>
+<p>Vedremo adesso il loro funzionamento utilizzando i seguenti data set:</p>
+<ul>
+<li><code>band_members</code></li>
+<li><code>band_instruments</code></li>
+</ul>
+<pre class="r"><code>band_members</code></pre>
+<pre><code>## # A tibble: 3 x 2
+##   name  band   
+##   &lt;chr&gt; &lt;chr&gt;  
+## 1 Mick  Stones 
+## 2 John  Beatles
+## 3 Paul  Beatles</code></pre>
+<pre class="r"><code>band_instruments</code></pre>
+<pre><code>## # A tibble: 3 x 2
+##   name  plays 
+##   &lt;chr&gt; &lt;chr&gt; 
+## 1 John  guitar
+## 2 Paul  bass  
+## 3 Keith guitar</code></pre>
+<p>I due dataset hanno una chiave in comune, la colonna <code>name</code>.</p>
+<pre class="r"><code>band_members$name</code></pre>
+<pre><code>## [1] &quot;Mick&quot; &quot;John&quot; &quot;Paul&quot;</code></pre>
+<pre class="r"><code>band_instruments$name</code></pre>
+<pre><code>## [1] &quot;John&quot;  &quot;Paul&quot;  &quot;Keith&quot;</code></pre>
+<p>Il comando <code>left_join</code> estrae tutti i valori della colonna <code>name</code> contenuti nella tabella di sinistra, nel caso che segue <code>band_members</code></p>
+<pre class="r"><code>left_join(band_members,band_instruments,by=&quot;name&quot;)</code></pre>
+<pre><code>## # A tibble: 3 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 Mick  Stones  &lt;NA&gt;  
+## 2 John  Beatles guitar
+## 3 Paul  Beatles bass</code></pre>
+<p>Il comando <code>right_join</code> estrae tutti i valori della colonna <code>name</code> contenuti nella tabella di destra, nel caso che segue <code>band_instruments</code></p>
+<pre class="r"><code>right_join(band_members,band_instruments,by=&quot;name&quot;)</code></pre>
+<pre><code>## # A tibble: 3 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 John  Beatles guitar
+## 2 Paul  Beatles bass  
+## 3 Keith &lt;NA&gt;    guitar</code></pre>
+<p>Il comando <code>full_join</code> estrae tutti i valori della colonna <code>name</code> contenuti di entrambe le tabelle:</p>
+<pre class="r"><code>full_join(band_members,band_instruments,by=&quot;name&quot;)</code></pre>
+<pre><code>## # A tibble: 4 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 Mick  Stones  &lt;NA&gt;  
+## 2 John  Beatles guitar
+## 3 Paul  Beatles bass  
+## 4 Keith &lt;NA&gt;    guitar</code></pre>
+<p>Il comando <code>inner_join</code> estrae solo i valori della colonna <code>name</code> che sono contemporaneamente contenuti in entrambe le tabelle:</p>
+<pre class="r"><code>inner_join(band_members,band_instruments,by=&quot;name&quot;)</code></pre>
+<pre><code>## # A tibble: 2 x 3
+##   name  band    plays 
+##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
+## 1 John  Beatles guitar
+## 2 Paul  Beatles bass</code></pre>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+
+</body>
+</html>
