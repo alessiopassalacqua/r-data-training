@@ -3,23 +3,25 @@ output_dir: '.'
 navbar:
   title: R Data Training
   left:
-  - text: "Why R"
+  - text: "Me"  
+    icon: fa-home
     href: index.html
   - text: "Let's start"
     menu: 
+      - text: "Why R"
+        href: WhyR.html
       - text: "Intro R"
         href: warmup.html
       - text: "Data Manipulation"
         href: Manipolare_i_dati_con_dplyr.html
       - text: "Visualization"
         href: basic_ggplot2.html
-  - text: "Training Courses"
+  - text: "My Courses"
     href: course.html
-  - text: "Testimonial"
-    href: testimonial.html
+
 output:
   html_document:
-    theme: paper
+    theme: lumen
     highlight: textmate
     mathjax: ~
     toc_depth: 3

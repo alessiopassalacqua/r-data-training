@@ -1,0 +1,71 @@
+---
+title: "Data Types"
+author: "[Alessio Passalacqua](https://alessiopassalacqua.updog.co/)"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+```
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+Conoscere i diversi tipi di dati in un linguaggio di programmazione è fondamentale. In questa sezione faremo una panoramica delle diverse tipologie di dati per poterli comprenderli, manipolare e conoscere le loro peculiarità. Parleremo di:
+
+* Numeri
+* Stringhe
+* Date
+* NA
+* Logical
+* Categoriche
+
+# Numeri
+
+I dati numerici possono essere interi (integer) o reale (double).
+ con la funzione `c()` creiamo due vettori numerici uno con valori interi e uno con valori reali:
+
+
+```{r}
+(double_vec <- c(3,2.6,7.28))
+(integer_vec <- c(1L,8L,12L)) # L crea un numero intero
+```
+
+Le parentesi `()` esterne permettono di mostrare l'outuput di un espressione di assegnazione. 
+
+I dati numerici possono essere converti tra interi o reale con le funzioni:
+
+* `as.double()` oppure `as.numeric()` 
+* `as.integer()` 
+
+```{r}
+as.double(integer_vec)
+as.integer(double_vec)
+```
+
+In R è possibile generare sequenze in diversi modi:
+
+*  con l'operatore `:` si generano numeri consecutivi
+
+```{r}
+1:12
+```
+
+* con la funzione `seq()` una sequenza regolare:
+
+```{r}
+seq(from = 12, to = 31, by = 2)
+```
+
+* una sequenza ripetuta con `rep()`:
+
+```{r}
+rep(1:4,times=3)
+```
+
+```{r}
+rep(c(1,3,6),times=3)
+```

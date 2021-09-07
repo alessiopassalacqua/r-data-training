@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>course.utf8.md</title>
+<title>course.knit</title>
 
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -45,34 +61,9 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
-<link rel="stylesheet" href="css\rmarkdown.css" type="text/css" />
+
+<link rel="stylesheet" href="css/rmarkdown.css" type="text/css" />
 
 
 
@@ -82,13 +73,8 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -102,40 +88,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -163,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -175,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -186,10 +145,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -201,7 +173,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -237,6 +208,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -265,6 +237,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -320,7 +298,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -344,7 +322,11 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Why R</a>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Me
+  </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -353,6 +335,9 @@ div.tocify {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="WhyR.html">Why R</a>
+    </li>
     <li>
       <a href="warmup.html">Intro R</a>
     </li>
@@ -365,10 +350,7 @@ div.tocify {
   </ul>
 </li>
 <li>
-  <a href="course.html">Training Courses</a>
-</li>
-<li>
-  <a href="testimonial.html">Testimonial</a>
+  <a href="course.html">My Courses</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -378,7 +360,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -387,88 +369,164 @@ div.tocify {
 
 
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
-<div id="catalogo-corsi" class="section level1">
-<h1>CATALOGO CORSI</h1>
-<p>I corsi proposti sono rivolti ad aziende che necessitano strumenti efficaci per ricavare informazioni dai dati finalizzate alla conoscenza, alla decisione, al controllo, alla previsione di eventi e fenomeni. I contenuti trattati possono essere calibrati alle esigenze e alle richieste dell’azienda o alle conoscenze dei partecipanti.</p>
-</div>
-<div id="r-for-beginners-livello-i" class="section level1">
-<h1>R for beginners (livello I)</h1>
-<p>Rivolto ai principianti, questo corso R ha lo scopo di fornire le conoscenze relative ai principali strumenti analitici per organizzare, sintetizzare ed interpretare correttamente dati di diversa natura e provenienza.</p>
-<p>Al termine del corso i partecipanti avranno acquisito le conoscenze per svolgere in modo indipendente le loro attività di analisi dall’importazione alla creazione di report professionali e potranno proseguire il proprio studio sia in modo autonomo sia attraverso i corsi di secondo livello proposti.</p>
-<p>All’interno del corso verranno indicate le principali funzioni che permetteranno a chi opera con excel e in generale con i fogli di calcoli di passare velocemente al linguaggio R.</p>
-<p>Gli esempi pratici e reali di applicazione delle tecniche di analisi dati avranno lo scopo di permettere ai partecipanti di:</p>
-<ol style="list-style-type: decimal">
-<li>Analizzare i dati per scoprire trends, anomalie, correlazione, patterns</li>
-<li>Realizzare visualizzazioni grafiche che riflettano accuratamente il valore dei dati, sappiano raccontare una storia e che abbiano un aspetto professionale.</li>
-<li>Creare eleganti report dinamici e interattivi altamente professionali per raccontare i risultati di una ricerca o di uno studio.</li>
-</ol>
-<p>Programma:</p>
-<ol style="list-style-type: decimal">
-<li>Let’s start with R &amp; RStudio</li>
-<li>Data Import (csv, excel, database connection, web scraping)</li>
-<li>Data Manipulation</li>
-<li>Fundamentals of data visualization</li>
-<li>Interactive reports</li>
-<li>Data pre-processing (su richiesta)</li>
-<li>String manipulation (su richiesta)</li>
-</ol>
-<p>Per questo corso non si presuppone alcuna conoscenza preliminare di programmazione R.</p>
-<div id="data-science-for-beginners-livello-ii" class="section level2">
-<h2>Data science for beginners (livello II)</h2>
-<p>Il corso di secondo livello intende offrire ai partecipanti le competenze e le conoscenze base in ambito data science che sono necessarie per estrarre informazioni utili da set di dati complessi. I partecipanti saranno in grado di gestire, manipolare e analizzare diverse tipologie di dati. Le metodologie presentate permetteranno di affrontare razionalmente ed efficacemente una varietà di problematiche aziendali.</p>
-<p>L’obiettivo del corso è quello di presentare le metodologie di data science da un punto di vista pragmatico, orientato alla pratica.</p>
-<p>A seguito della trattazione teorica, gli allievi saranno guidati all’utilizzo pratico degli algoritmi attraverso dei pratici tutorial in cui saranno mostrati i comandi e le funzioni del linguaggio R relativi ai metodi coinvolti.</p>
-<p>Ecco alcuni esempi pratici e reali di applicazione delle tecniche di data science che saranno trattati durante il corso:</p>
+<p>All’interno di questa pagina troverai maggiori informazioni a riguardo i corsi e le attività di tutoring che ho svolto in passato.</p>
+<p>I corsi aziendali vengono calibrati inbase alle esigenze e alle richieste specifiche del committente e alle conoscenze dei partecipanti. Al termine dei corso i partecipanti acquisiscono le conoscenze per svolgere in modo autonomo le loro attività di analisi dall’importazione alla creazione di report professionali e potranno proseguire il proprio studio sia in modo autonomo sia attraverso la frequentazione dei corsi avanzati.</p>
+<p>Le attività di tutoring hanno avuto come obiettivo quello di preparare</p>
+<div id="corso-r---tutoring" class="section level1">
+<h1>Corso R - tutoring</h1>
 <ul>
-<li>Modello di previsione di perdita dei clienti (Churn Analysis)</li>
-<li>Modello di previsione sull’acquisto di un prodotto</li>
-<li>Segmentazione della clientela di un supermercato (Customer Segmentation)</li>
-<li>Analisi del paniere (Basket Market Analysis)</li>
-<li>Filtro anti-spam (Spam email detection)</li>
-<li>Identificazione del rischio del prestito bancario (credit risk)</li>
+<li><strong>periodo</strong> 📆: Febbraio 2021</li>
+<li><strong>durata</strong> 🕘: 28h</li>
+<li><strong>cliente</strong> 🏭: NPO Sistemi S.R.L</li>
+<li><strong>programma</strong> 📜 :
+<ul>
+<li>Get Start R &amp; Rstudio</li>
+<li>Visualizzazione e Manipolazione</li>
+<li>Report e visualizzazione avanzata</li>
+<li>Clustering and Principal Component Analysis</li>
+<li>Data Analysis of Methylation profiling</li>
+</ul></li>
+<li><strong>recensione</strong> 💬: <em>Il corso di Alessio è stato utilissimo e ho imparato veramente tanto! Questa era la mia prima esperienza con qualsiasi tipo di programma informatico. Nonostante ciò Alessio è riuscito non solo a rendere dei concetti molto complessi comprensibili ad una beginner come me, ma anche a farmi appassionare al data analysis con il suo entusiasmo e capacità di insegnare. Ho imparato ad usare le library più basic di R e, cosa più importante, ho compreso la logica dietro la programmazioni e le funzioni. Questo mi ha permesso poi di imparare ad usare in maniera indipendente delle library più specifiche. Grazie al lavoro svolto con Alessio sono riuscita a completare la mia tesi incentrate nell’identificare biomarker molecolari per il cancro al seno con il massimo dei voti. <br> <strong>Allegra Scarpa| Graduate BA in Biological Sciences</strong> </em></li>
 </ul>
-<p><strong>Programma</strong>:</p>
-<ol style="list-style-type: decimal">
-<li>Data Science/Machine Learning Introduction</li>
-<li>Dimension Reduction</li>
-<li>Clustering analysis</li>
-<li>Regression analysis</li>
-<li>Classification analysis</li>
-<li>Association Rules (su richiesta)</li>
-<li>Multi-Channel Attribution (su richiesta)</li>
-<li>Anomaly detection (su richiesta)</li>
-</ol>
 </div>
-</div>
-<div id="advanced-visualization-and-reporting-in-r-livello-ii" class="section level1">
-<h1>Advanced Visualization and Reporting in R (livello II)</h1>
-<p>L’obiettivo del corso è quello di fornire gli strumenti utili per integrare le potenti funzionalità di analisi dati di R all’interno di applicazioni web e report professionali. Tale approccio consente di presentare i risultati dell’analisi in modo visivamente attraente e interattivo garantendo una maggiore diffusione delle conoscenze anche verso un pubblico non tecnico.</p>
-<p>Programma:</p>
-<ol style="list-style-type: decimal">
-<li>Let’s start with R &amp; RStudio</li>
-<li>Modern advanced Visualization</li>
-<li>Reporting modern data analysis</li>
-<li>Shiny Dashboard</li>
-<li>Dashboard by using Geospatial data</li>
-<li>Dashboard by using Time Series data</li>
-</ol>
-</div>
-<div id="data-science-for-smart-factory-livello-ii" class="section level1">
-<h1>Data Science for Smart Factory (livello II)</h1>
-<p>Il principale campo di applicazione dove possono essere spese le competenze acquisite in questo corso è nell’ambito Industry 4.0: manutenzione predittiva, IOT analytics, anomaly detection, efficienza energetica, demand forecasting, ottimizzazione e controllo di processo. Le lezioni combinano elementi teorici essenziali con esempi ed applicazioni pratiche su dati reali, illustrative delle varie tecniche, sfruttando il software open source R.</p>
-<p>Gli esempi pratici e reali di applicazione delle tecniche di <strong>Data Science For Smart Factory</strong> saranno relativi a:</p>
+<div id="fondamenti-di-visualizzazione-dati" class="section level1">
+<h1>Fondamenti di Visualizzazione Dati</h1>
 <ul>
-<li>gestione dei processi di controllo della qualità;</li>
-<li>controllo di processi produttivi e industriali;</li>
-<li>costruzione di modelli previsionali di supporto alle decisioni</li>
+<li><strong>periodo</strong> 📆: Settembre 2020</li>
+<li><strong>durata</strong> 🕐: 8h</li>
+<li><strong>cliente</strong> 🏭: Università di Modena e Reggio Emilia</li>
+<li><strong>programma</strong> 📜 :
+<ul>
+<li>Introduzione di R e RStudio</li>
+<li>Importazione e manipolazione dati</li>
+<li>Principi di visualizzazione efficace</li>
+<li>Visualizzazione con ggplot2</li>
+<li>Come creare grafici eleganti e professionali</li>
+</ul></li>
+<li><strong>recensione</strong> 🗨️: <em>Sono un neofita di R di cui sto piano, piano scoprendo le potenzialità. Il corso di Alessio Passalacqua è stato per me molto utile. Corso molto pragmatico l’ho trovato anche molto ben calibrato, riuscendo a dare informazioni di base, ma anche dettagli più approfonditi. Molto ben spiegata la parte di costruzione di grafici di vario tipo che risultano essere molto più gradevoli ed efficaci rispetto ad altri software. La conoscenza che Alessio ha di R e la padronanza con cui ci si muove, rendono praticamente immediata la soluzione ai mille piccoli e grandi quesiti in cui ci si imbatte nella scrittura di un codice vasto come R. Dopo il corso ho utilizzato alcuni dei grafici descritti per delle presentazioni in Azienda, con grande soddisfazione e una notevole efficacia comunicativa.<br/> <strong>Alessandro D’alessandro | Responsabile di produzione</strong> </em></li>
 </ul>
-<p>E’ indicato per:</p>
+</div>
+<div id="data-analysis-and-visualization" class="section level1">
+<h1>Data Analysis and Visualization</h1>
 <ul>
-<li>ricercatori di scienze applicate</li>
-<li>impiegati e fondatori di start-up innovative</li>
-<li>responsabili e tecnici di laboratorio nell’ambito R&amp;D</li>
-<li>responsabili e tecnici di produzione</li>
-<li>operatori del comparto energetico</li>
+<li><strong>periodo</strong> 📆: Maggio 2019</li>
+<li><strong>durata</strong> 🕕: 24h</li>
+<li><strong>cliente</strong> 🏭: IFOA (Bologna)</li>
+<li><strong>programma</strong> 📜 :
+<ul>
+<li>Introduzione di R e RStudio</li>
+<li>Data manipulation</li>
+<li>Advanced Visualization and reporting</li>
+<li>Dashboard and time series analytics</li>
+<li>Geospatial data</li>
+<li>Clustering and Classification</li>
+<li>Channel Attribution</li>
+</ul></li>
+<li><strong>recensione</strong> 🗨️: <em>Ritengo che il corso tenuto da Alessio rappresenti un ottimo percorso per chi vuole comprendere appieno questa affascinante disciplina. Alessio ha saputo mediare tra la complessità degli argomenti e la chiarezza nell’esposizione, dimostrandosi sempre disponibile ad ulteriori approfondimenti. Punto forte del corso è stata l’applicazione pratica dei vari concetti teorici attraverso l’uso del linguaggio R e delle sue numerose librerie partendo da un livello base fino ad esercizi via via sempre più complessi.<br/> <strong>Ing. Emidio Laterza | IT support engineer</strong> </em></li>
+</ul>
+</div>
+<div id="data-science-for-smart-factory" class="section level1">
+<h1>Data Science for Smart Factory</h1>
+<ul>
+<li><strong>periodo</strong> 📆: Febbraio 2019</li>
+<li><strong>durata</strong> 🕔: 24h</li>
+<li><strong>cliente</strong> 🏭: ARGOMM SPA (Bergamo)</li>
+<li><strong>programma</strong> 📜 :
+<ul>
+<li>Introduzione Smart Factory</li>
+<li>R e RStudio</li>
+<li>Prettrattamento e Analisi dati Esplorativa</li>
+<li>Clustering &amp; Dimension Reduction</li>
+<li>Regressione e Classificazione</li>
+</ul></li>
+<li><strong>recensione</strong> 💬: <em>Il corso tenuto da Alessio “Data Science for smart factory” ti fornisce lo stimolo e i contenuti pratici immediatamente spendibili per affrontare l’analisi dati e trarne informazioni utili. La sua passione ci ha trasmesso l’entusiasmo per eleggere R a strumento privilegiato per esplorare i dati. <strong>Salvatore Portas | R&amp;D elastomers molding</strong> </em></li>
+</ul>
+</div>
+<div id="corso-base-r" class="section level1">
+<h1>Corso Base R</h1>
+<ul>
+<li><strong>periodo</strong> 📆: Febbraio 2019</li>
+<li><strong>durata</strong> 🕙: 16h</li>
+<li><strong>cliente</strong> 🏭: STMicroelectronics (Milano)</li>
+<li><strong>programma</strong> 📜 :
+<ul>
+<li>Introduzione R &amp; RStudio</li>
+<li>Manipolazione dati con dplyr</li>
+<li>Visualizzaione dati con ggplot2</li>
+<li>Creare report avanzati con RMarkdown</li>
+<li>Dashboard interattive con Shiny</li>
+</ul></li>
+<li><strong>recensione</strong> 🗨️: <em>Sono molto contenta di aver partecipato al corso R base tenuto da Alessio. Il corso e’ stato ben strutturato, mai noioso. Gli argomenti trattati, senza la pretesa di essere esaustivi, hanno fornito una buona base di partenza per iniziare ad esplorare il modo di R. Il livello di attenzione di tutti i partecipanti e’ stato alto per tutta la durata del corso. La competenza del docente e la chiarezza nelle spiegazioni hanno fatto si che tutti riuscissero a seguire e svolgere gli esercizi proposti. Una particolare nota di merito per la documentazione preparata dal docente. Cosi’ chiara ed essenziale sara’ un prezioso aiuto per i miei sviluppi in R. <br> <strong>Renata Sala | Engineering Data Analysis</strong> </em></li>
+<li><strong>recensione</strong> 🗨️: <em>In tre parole “Alessio trasmette passione”. Ho avuto il privilegio di partecipare al primo corso in azienda sul linguaggio R ed escludendo qualche problema iniziale di connessione (di cui il docente non ha alcuna colpa), il corso è stato davvero intenso e pieno di contenuti. Alessio ha la capacità di tenere alta l’attenzione e la curiosità dei partecipanti al corso. Le sue conoscenze sul linguaggio sono davvero profonde e comprovate da una nutrita esperienza oltre che da una sana passione per l’argomento che a tratti trascende oltre l’aspetto di istruzione e sfocia invece verso aspetti di cultura e curiosità personale. Non so se e quando avrò nuovamente l’occasione di partecipare ad un corso di approfondimento del linguaggio R e delle sue infinite librerie, ma se fosse mi piacerebbe che sia nuovamente con Alessio.<br> <strong>Stefano Radaelli | IT Production Support</strong> </em></li>
+</ul>
+</div>
+<div id="thesis-supervisor" class="section level1">
+<h1>Thesis Supervisor</h1>
+<ul>
+<li><strong>periodo</strong> 📆: Febbraio 2019</li>
+<li><strong>durata</strong> 🕔: 4 mese</li>
+<li><strong>cliente</strong> 👩‍🎓: Tesi</li>
+<li><strong>Titolo</strong> 📜 : Pretrained Convolutional Neural Networks per la classificazione di immagini di ispezioni automotive gap and flush.</li>
+</ul>
+</div>
+<div id="data-mining-con-r" class="section level1">
+<h1>Data Mining con R</h1>
+<ul>
+<li><strong>periodo</strong> 📆: Aprile 2018</li>
+<li><strong>durata</strong> 🕛: 32h</li>
+<li><strong>cliente</strong> 🏭: I.F.O.A. (Bologna)</li>
+<li><strong>programma</strong> 📜 :
+<ul>
+<li>Introduzione Data Mining</li>
+<li>Comandi di base</li>
+<li>Metodi di pretrattamento dati</li>
+<li>Medoti supervisionati e non supervisionati</li>
+<li>Metodi associativi</li>
+<li>Metodi di classificazione</li>
+<li>Metodi di clustering</li>
+<li>Metodi per Outlier Detection</li>
+</ul></li>
+<li><strong>recensione</strong> 💬: <em>Mi ritengo molto soddisfatta del corso di data mining sostenuto, in particolare perché ho avuto la possibilità di poter visionare nozioni puramente teoriche e di non immediata comprensione direttamente sul software R. Questo tipo di corso infatti, ti permette di avere una prima infarinatura del software R, un software molto potente e indispensabile per la figura del Data Analyst. Il docente è stato molto disponibile nel dare diverse interpretazioni dei diversi argomenti trattati ed è riuscito a far capire i concetti più difficili attraverso approfondimenti alla lavagna ed esempi pratici. Avevo già sostenuto un esame di data mining all’università, ma questo corso mi ha permesso di comprendere meglio i ragionamenti alla base di questa tematica e mi ha dato la possibilità di ampliare ulteriormente le mie conoscenze in questo settore permettendomi di vedere gli stessi concetti ad angolature diverse.<br> <strong>Dr. Roberta Rizzo | Laureata in Statitisca economia e impresa</strong> </em></li>
+</ul>
+</div>
+<div id="controllo-e-monitoraggio-di-processi-di-produzione" class="section level1">
+<h1>Controllo e monitoraggio di processi di produzione</h1>
+<ul>
+<li><strong>periodo</strong> 📆: Novembre 2016</li>
+<li><strong>durata</strong> 🕐: 20h</li>
+<li><strong>cliente</strong> 🏭: SolidPower SpA (Trento)</li>
+<li><strong>programma</strong> 📜:
+<ul>
+<li>Presentazione di R e comandi di base</li>
+<li>Visualizzazione in R</li>
+<li>Analisi Esplrorativa Multivariata</li>
+<li>Identificare e Descrivere gli outliers</li>
+<li>Outliers and anomaly detection inR</li>
+<li>Multivariate Statistical Process Control</li>
+<li>Design of Experiments per l’ottimizzazione di processo</li>
+<li>Principal Component &amp; Partial Least Square Regression</li>
+<li>Regressione &amp; Classification</li>
+</ul></li>
+<li><strong>recensione</strong> 🗨️: <em>Pur approfondendo alcuni temi di logica e programmazione in R, il corso è efficace nel trasmettere l’importanza di una corretta gestione ed analisi dei dati e l’utilizzo di tecniche statistiche multivariate per esplorare correlazioni, controllare e monitorare processi, gestire modelli e anomalie. Il corso è strutturato in una serie di capitoli teorici, ciascuno corredato da una sezione pratica. La parte teorica è completa e ben organizzata. E’ consigliabile consultarla anche successivamente al corso visto il gran numero di informazioni e link che approfondiscono ulteriormente le tematiche discusse in classe. La sezione pratica permette di utilizzare subito gli strumenti e i metodi introdotti teoricamente, grazie ad una gran numero di istruzioni ed esempi chiari e comprensibili. Inoltre, gli esempi forniti sono stati molto attinenti alla formazione del gruppo. Questo ci ha permesso di comprendere le tecniche proposte e di poterle impiegare immediatamente nel nostro ambiente lavorativo quotidiano. Personalmente, da neofita di R e con una conoscenza abbastanza limitata di C++ e Basic, il corso mi ha permesso di acquisire una discreta indipendenza già dalla prima lezione. In poche settimane abbiamo iniziato a gestire alcuni set di dati con R ed applicare analisi statistiche multivariate introdotte durante il corso con successo. <br> <strong>Ing. Andrea Azzolini | R&amp;D Scientist</strong> </em></li>
+<li><strong>recensione</strong> 💬: <em>Il taglio del corso è stato molto pratico e incentrato sull’utilizzo di “R” come software per l’analisi dei dati. Sono stati inevitabili quanto utili i richiami teorici di statistica e il corso si è ben districato tra argomenti anche molto complessi offrendo una chiave di lettura pratica puntando alla “sostanza” di ciascun tema. Tutto è stato traslato alla fine in comandi di “R” attraverso esercizi ben strutturati e ben presentati. Nel complesso un ottimo corso per i tanti spunti di approfondimento su tematiche come la strutturazione, l’analisi e l’interpretazione dei dati e per gli aspetti pratico-applicativi della programmazione in R per l’analisi PCA, MSPC e modelli predittivi. Un corso che potrebbe essere definito “di base” per la programmazione in R, ma su “argomenti di statistica avanzata” e che è consigliabile anche alle figure aziendali che faranno poco uso di R perché getta le basi per un linguaggio comune e una comune sensibilità verso la data analysis.<br> </em>Ing. Sergio Ceschini | Responsabile dell’area System Engineering** *</li>
+</ul>
+</div>
+<div id="analisi-dati-per-la-fabbrica-intelligente" class="section level1">
+<h1>Analisi dati per la fabbrica intelligente</h1>
+<ul>
+<li><strong>periodo</strong> 📆: Ottobre 2016</li>
+<li><strong>durata</strong> 🕖: 8h</li>
+<li><strong>cliente</strong> 🏭: LMSpace (Padova)</li>
+<li><strong>programma</strong> 📜:
+<ul>
+<li>Introduzione delle Smart Factory</li>
+<li>Presentazione R</li>
+<li>Comandi di base di R e Manipolazione dati</li>
+<li>Tecniche di analisi esplorativa</li>
+<li>Analisi esplorativa multivariata</li>
+<li>Process Control e Anomaly detection</li>
+</ul></li>
+<li><strong>recensione</strong> 🗨️: <em>Il data analyst Alessio Passalacqua ci ha regalato uno degli interventi più belli sul tema Big Data come trasformare i dati in innovazione. Abbiamo scoperto le metodologie di analisi dati più innovative e gli ultimi sviluppi nel campo del Machine Learning e della Data Driven Innovation. In pochi click siamo passati dall’ Industria 1.0 a quella 4.0 imparando come creare valore attraverso nuovi modelli di business.<br> <strong>Alessandro Tronchin | ICT Manager</strong> </em></li>
 </ul>
 </div>
 
@@ -483,7 +541,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -501,7 +559,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -510,6 +568,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -522,7 +583,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
